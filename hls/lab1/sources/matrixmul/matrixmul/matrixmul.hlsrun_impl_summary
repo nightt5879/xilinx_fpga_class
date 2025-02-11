@@ -1,0 +1,268 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\matrixmul.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/11/25 16:34:08",
+ "timestampMillis": "1739262848756",
+ "buildStep": {
+  "cmdId": "7e588306-6fc7-460a-8a19-b2b580b1a0ee",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 16:34:08",
+ "timestampMillis": "1739262848756",
+ "status": {
+  "cmdId": "7e588306-6fc7-460a-8a19-b2b580b1a0ee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855329",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855331",
+ "buildStep": {
+  "cmdId": "99176088-a294-4cb5-aa0f-65756ba7c002",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855332",
+ "status": {
+  "cmdId": "99176088-a294-4cb5-aa0f-65756ba7c002",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855334",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855335",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855335",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855336",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855336",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:34:15",
+ "timestampMillis": "1739262855337",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:39:13",
+ "timestampMillis": "1739263153714",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:39:13",
+ "timestampMillis": "1739263153716",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 16:39:13",
+ "timestampMillis": "1739263153717",
+ "status": {
+  "cmdId": "99176088-a294-4cb5-aa0f-65756ba7c002",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 16:39:14",
+ "timestampMillis": "1739263154057",
+ "status": {
+  "cmdId": "7e588306-6fc7-460a-8a19-b2b580b1a0ee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:39:14",
+ "timestampMillis": "1739263154061",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 16:39:14",
+ "timestampMillis": "1739263154061",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

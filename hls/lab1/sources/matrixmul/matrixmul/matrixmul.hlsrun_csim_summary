@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\matrixmul.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/11/25 15:33:18",
+ "timestampMillis": "1739259198366",
+ "buildStep": {
+  "cmdId": "dcfc59e5-faf3-48cb-87ff-adca97d822a4",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\logs\\matrixmul.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls-debug.cfg --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls-debug.cfg",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 15:33:18",
+ "timestampMillis": "1739259198366",
+ "status": {
+  "cmdId": "dcfc59e5-faf3-48cb-87ff-adca97d822a4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/11/25 15:33:23",
+ "timestampMillis": "1739259203194",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/11/25 15:33:23",
+ "timestampMillis": "1739259203195",
+ "buildStep": {
+  "cmdId": "1d59c1c6-c436-4485-87f9-1fb61f8006ca",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul\\matrixmul\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 15:33:23",
+ "timestampMillis": "1739259203196",
+ "status": {
+  "cmdId": "1d59c1c6-c436-4485-87f9-1fb61f8006ca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 15:33:24",
+ "timestampMillis": "1739259204674",
+ "status": {
+  "cmdId": "1d59c1c6-c436-4485-87f9-1fb61f8006ca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/11/25 15:33:24",
+ "timestampMillis": "1739259204875",
+ "status": {
+  "cmdId": "dcfc59e5-faf3-48cb-87ff-adca97d822a4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 15:33:24",
+ "timestampMillis": "1739259204876",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/11/25 15:33:24",
+ "timestampMillis": "1739259204877",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

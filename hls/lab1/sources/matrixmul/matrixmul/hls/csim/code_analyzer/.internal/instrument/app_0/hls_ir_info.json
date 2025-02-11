@@ -1,0 +1,74 @@
+{
+    "top_level_hw_fn_id": 212,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_matrixmul_test.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_matrixmul_test",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul_test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul_test.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "212": {
+            "fn_id": 212,
+            "mangled_name": "_Z9matrixmulPA3_cS0_PA3_s",
+            "fully_qualified_name": "matrixmul",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab1\\sources\\matrixmul.cpp",
+                "line": 31,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "6": {
+            "fn_id": 212,
+            "lp_id": 6,
+            "label": "Row"
+        },
+        "7": {
+            "fn_id": 212,
+            "lp_id": 7,
+            "label": "Col"
+        },
+        "8": {
+            "fn_id": 212,
+            "lp_id": 8,
+            "label": "Product"
+        }
+    }
+}
