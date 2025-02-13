@@ -1,0 +1,14 @@
+<pragmas>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="83" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="87" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="77" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="67" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="71" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="61" pragmaType="pipeline" parentfunction="dct_2d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="98" pragmaType="pipeline" parentfunction="read_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="101" pragmaType="pipeline" parentfunction="read_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="113" pragmaType="pipeline" parentfunction="write_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="116" pragmaType="pipeline" parentfunction="write_data" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="40" pragmaType="pipeline" parentfunction="dct_1d" off="1" ii="0" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" line="43" pragmaType="pipeline" parentfunction="dct_1d" off="1" ii="0" rewind="0" style=""/>
+</pragmas>

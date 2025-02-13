@@ -1,0 +1,568 @@
+Execute     source -notrace -encoding utf-8 E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 E:/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+INFO-FLOW: Workspace E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls opened at Thu Feb 13 18:11:52 +0800 2025
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 0.131 sec.
+Execute   apply_ini E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(8)
+Execute     add_files E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(9)
+Execute     add_files -tb E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(10)
+Execute     add_files -tb E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(11)
+Execute     add_files -tb E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=dct' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(7)
+Execute     set_top dct 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/xilinx/Vitis/2024.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 0.768 sec.
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.869 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(12)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.899 sec.
+Execute   apply_ini E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/config.cmdline 
+Execute   ::AP::init_summary_file csynth 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.249 seconds; current allocated memory: 161.973 MB.
+Execute       set_directive_top dct -name=dct 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO: [HLS 200-10] Analyzing design file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c as C
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c -foptimization-record-file=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot E:/xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-mingw32 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/xilinx/Vitis/2024.2/common/technology/autopilot -I E:/xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c {-hls-platform-db-name=E:/xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.c.clang.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.c.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c {-hls-platform-db-name=E:/xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/clang.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  -directive=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/.systemc_flag -fix-errors E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  -directive=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/all.directive.json -fix-errors E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c std=gnu99 -target fpga  
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang-tidy.loop-label.err.log
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.diag.yml E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c -- -std=gnu99 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -std=gnu99 -fgnu89-inline -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/xilinx/Vitis/2024.2/common/technology/autopilot -I E:/xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.bc {-hls-platform-db-name=E:/xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.pp.0.c.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.069 seconds; current allocated memory: 164.625 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc -args  "E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.g.bc"  
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.g.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+Execute       run_link_or_opt -opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -args E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -args E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/xilinx/Vitis/2024.2/win64/lib/libhlsm_39.bc E:/xilinx/Vitis/2024.2/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/xilinx/Vitis/2024.2/win64/lib/libhlsm_39.bc E:/xilinx/Vitis/2024.2/win64/lib/libhlsmc++_39.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+Command       run_link_or_opt done; 1.93 sec.
+Execute       run_link_or_opt -opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -args E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion 
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 1.062 sec.
+Execute       run_link_or_opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -args E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/xilinx/Vitis/2024.2/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/xilinx/Vitis/2024.2/win64/lib/libfloatconversion_39.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+Execute       run_link_or_opt -opt -out E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc -args E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct 
+INFO-FLOW: run_clang exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc > E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: E:/xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=dct -mllvm -hls-db-dir -mllvm E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=E:/xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 2> E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 242 Compile/Link E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 242 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 178 Unroll/Inline (step 1) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 178 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 156 Unroll/Inline (step 2) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 156 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 142 Unroll/Inline (step 3) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 142 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Unroll/Inline (step 4) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Array/Struct (step 1) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Array/Struct (step 2) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Array/Struct (step 3) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Array/Struct (step 4) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 135 Array/Struct (step 5) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 135 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 135 Performance (step 1) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 135 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Performance (step 2) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Performance (step 3) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 133 Performance (step 4) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 137 HW Transforms (step 1) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 185 HW Transforms (step 2) E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 185 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+Command       send_msg_by_id done; 0.77 sec.
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+INFO: [HLS 214-178] Inlining function 'dct_1d' into 'dct_2d' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:53:0)
+INFO: [HLS 214-178] Inlining function 'read_data' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO: [HLS 214-178] Inlining function 'dct_2d' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO: [HLS 214-178] Inlining function 'write_data' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.365 seconds; current allocated memory: 166.809 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 166.809 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dct -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.0.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 171.074 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.1.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.2.prechk.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 172.734 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.g.1.bc to E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.1.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.1.tmp.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 193.895 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.2.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.3.bc -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 193.910 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.391 sec.
+Command     elaborate done; 10.851 sec.
+Execute     ap_eval exec zip -j E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+Execute       ap_set_top_model dct 
+Execute       get_model_list dct -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model dct 
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dct
+INFO-FLOW: Configuring Module : dct ...
+Execute       set_default_model dct 
+Execute       apply_spec_resource_limit dct 
+INFO-FLOW: Model list for preprocess: dct
+INFO-FLOW: Preprocessing Module: dct ...
+Execute       set_default_model dct 
+Execute       cdfg_preprocess -model dct 
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for synthesis: dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct 
+Execute       schedule -model dct 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=tmp_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=tmp_12) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.135 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 193.910 MB.
+Execute       syn_report -verbosereport -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.sched.adb -f 
+INFO-FLOW: Finish scheduling dct.
+Execute       set_default_model dct 
+Execute       bind -model dct 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 193.910 MB.
+Execute       syn_report -verbosereport -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.bind.adb -f 
+INFO-FLOW: Finish binding dct.
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for RTL generation: dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct -top_prefix  -sub_prefix dct_ -mg_file E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'dct_row_outbuf_RAM_AUTO_1R1W' using auto RAMs.
+Command       create_rtl_model done; 0.121 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 196.613 MB.
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vhdl -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/vhdl/dct 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vlog -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/verilog/dct 
+Execute       syn_report -csynth -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/dct_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/dct_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model dct -f -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.adb 
+Execute       db_write -model dct -bindview -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct -p E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct 
+Execute       export_constraint_db -f -tool general -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.constraint.tcl 
+Execute       syn_report -designview -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.design.xml 
+Execute       syn_report -csynthDesign -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth.rpt -MHOut E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -wcfg -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model dct -o E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.protoinst 
+Execute       sc_get_clocks dct 
+Execute       sc_get_portdomain dct 
+INFO-FLOW: Model list for RTL component generation: dct
+INFO-FLOW: Handling components in module [dct] ... 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.compgen.tcl 
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_32s_32_4_1.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_32s_32_4_1
+INFO-FLOW: Found component dct_dct_coeff_table_ROM_AUTO_1R.
+INFO-FLOW: Append model dct_dct_coeff_table_ROM_AUTO_1R
+INFO-FLOW: Found component dct_row_outbuf_RAM_AUTO_1R1W.
+INFO-FLOW: Append model dct_row_outbuf_RAM_AUTO_1R1W
+INFO-FLOW: Append model dct
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: dct_mac_muladd_16s_15s_32s_32_4_1 dct_dct_coeff_table_ROM_AUTO_1R dct_row_outbuf_RAM_AUTO_1R1W dct
+INFO-FLOW: Generating E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_32s_32_4_1
+INFO-FLOW: To file: write model dct_dct_coeff_table_ROM_AUTO_1R
+INFO-FLOW: To file: write model dct_row_outbuf_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model dct
+INFO-FLOW: Generating E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/vhdl' dstVlogDir='E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/vlog' tclDir='E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db' modelList='dct_mac_muladd_16s_15s_32s_32_4_1
+dct_dct_coeff_table_ROM_AUTO_1R
+dct_row_outbuf_RAM_AUTO_1R1W
+dct
+' expOnly='0'
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.666 seconds; current allocated memory: 203.953 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='dct_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='dct_mac_muladd_16s_15s_32s_32_4_1
+dct_dct_coeff_table_ROM_AUTO_1R
+dct_row_outbuf_RAM_AUTO_1R1W
+dct
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/top-io-be.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.tbgen.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.compgen.dataonly.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.tbgen.tcl 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/dct.constraint.tcl 
+Execute       sc_get_clocks dct 
+Execute       source E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST dct MODULE2INSTS {dct dct} INST2MODULE {dct dct} INSTDATA {dct {DEPTH 1 CHILDREN {}}} MODULEDATA {dct {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME row_outbuf_U SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:54 VARIABLE row_outbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 64 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME col_outbuf_U SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55 VARIABLE col_outbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 64 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME col_inbuf_U SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55 VARIABLE col_inbuf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 64 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME buf_2d_in_U SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:125 VARIABLE buf_2d_in LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 64 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_1p PRAGMA {} RTLNAME buf_2d_out_U SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:126 VARIABLE buf_2d_out LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 64 1} STORAGEUSAGE {ram_1p array} DISPNAME {bind_storage ram_1p} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln97_fu_386_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:97 VARIABLE icmp_ln97 LOOP RD_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln97_fu_392_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:97 VARIABLE add_ln97 LOOP RD_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln100_fu_415_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:100 VARIABLE icmp_ln100 LOOP RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln100_fu_421_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:100 VARIABLE add_ln100 LOOP RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln103_fu_431_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:103 VARIABLE add_ln103 LOOP RD_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln60_fu_448_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:60 VARIABLE icmp_ln60 LOOP Row_DCT_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln60_fu_454_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:60 VARIABLE add_ln60 LOOP Row_DCT_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln39_fu_477_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39 VARIABLE icmp_ln39 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln39_fu_483_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39 VARIABLE add_ln39 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln47_2_fu_505_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:47 VARIABLE add_ln47_2 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln42_fu_519_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42 VARIABLE icmp_ln42 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln42_fu_525_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42 VARIABLE add_ln42 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln44_fu_535_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:44 VARIABLE add_ln44 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln45_fu_545_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE add_ln45 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U1 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE mul_ln45 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U1 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE sext_ln45_1 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U1 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE tmp_3 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln47_fu_559_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:47 VARIABLE add_ln47 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln66_fu_587_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:66 VARIABLE icmp_ln66 LOOP Xpose_Row_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln66_fu_593_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:66 VARIABLE add_ln66 LOOP Xpose_Row_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln70_fu_620_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:70 VARIABLE icmp_ln70 LOOP Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln70_fu_626_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:70 VARIABLE add_ln70 LOOP Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln73_fu_648_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73 VARIABLE add_ln73 LOOP Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln73_1_fu_658_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73 VARIABLE add_ln73_1 LOOP Xpose_Row_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln76_fu_674_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:76 VARIABLE icmp_ln76 LOOP Col_DCT_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln76_fu_680_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:76 VARIABLE add_ln76 LOOP Col_DCT_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln39_1_fu_703_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39 VARIABLE icmp_ln39_1 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln39_1_fu_709_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39 VARIABLE add_ln39_1 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln47_3_fu_731_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:47 VARIABLE add_ln47_3 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln42_1_fu_745_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42 VARIABLE icmp_ln42_1 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln42_1_fu_751_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42 VARIABLE add_ln42_1 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln44_1_fu_761_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:44 VARIABLE add_ln44_1 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln45_2_fu_771_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE add_ln45_2 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE mul_ln45_1 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE sext_ln45_3 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_32s_32_4_1_U2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:45 VARIABLE tmp_12 LOOP DCT_Inner_Loop BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln47_1_fu_785_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:47 VARIABLE add_ln47_1 LOOP DCT_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln82_fu_813_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:82 VARIABLE icmp_ln82 LOOP Xpose_Col_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln82_fu_819_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:82 VARIABLE add_ln82 LOOP Xpose_Col_Outer_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln86_fu_846_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:86 VARIABLE icmp_ln86 LOOP Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln86_fu_852_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:86 VARIABLE add_ln86 LOOP Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln89_fu_874_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:89 VARIABLE add_ln89 LOOP Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln89_1_fu_884_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:89 VARIABLE add_ln89_1 LOOP Xpose_Col_Inner_Loop BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln112_fu_900_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:112 VARIABLE icmp_ln112 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln112_fu_906_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:112 VARIABLE add_ln112 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln115_fu_924_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:115 VARIABLE icmp_ln115 LOOP WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln115_fu_930_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:115 VARIABLE add_ln115 LOOP WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln118_fu_940_p2 SOURCE E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:118 VARIABLE add_ln118 LOOP WR_Loop_Col BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME dct_coeff_table_U SOURCE {} VARIABLE dct_coeff_table LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {15 64 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 2 BRAM 5 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.497 seconds; current allocated memory: 206.074 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+Execute       syn_report -model dct -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+Command     autosyn done; 1.739 sec.
+Command   csynth_design done; 12.762 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

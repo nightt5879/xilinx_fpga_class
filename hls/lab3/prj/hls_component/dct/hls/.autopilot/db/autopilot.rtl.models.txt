@@ -1,0 +1,4 @@
+dct_mac_muladd_16s_15s_32s_32_4_1
+dct_dct_coeff_table_ROM_AUTO_1R
+dct_row_outbuf_RAM_AUTO_1R1W
+dct

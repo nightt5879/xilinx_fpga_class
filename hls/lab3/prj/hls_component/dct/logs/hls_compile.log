@@ -1,0 +1,88 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.249 seconds; current allocated memory: 161.973 MB.
+INFO: [HLS 200-10] Analyzing design file 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.069 seconds; current allocated memory: 164.625 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 242 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 178 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 156 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 142 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 135 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 135 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 133 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 137 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 185 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab3/prj/hls_component/dct/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'dct_1d' into 'dct_2d' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:53:0)
+INFO: [HLS 214-178] Inlining function 'read_data' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO: [HLS 214-178] Inlining function 'dct_2d' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO: [HLS 214-178] Inlining function 'write_data' into 'dct' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:123:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.365 seconds; current allocated memory: 166.809 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 166.809 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 171.074 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 172.734 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 193.895 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 193.910 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=tmp_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=tmp_12) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 193.910 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 193.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'dct_row_outbuf_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 196.613 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.666 seconds; current allocated memory: 203.953 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.497 seconds; current allocated memory: 206.074 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.934 seconds; peak allocated memory: 206.188 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 20s
