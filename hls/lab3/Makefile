@@ -40,8 +40,15 @@ USE_SYSTEMC 				= false
 # ######################################################
 # Automatically setup the software paths
 SHELL           := sh
-KERNEL          := $(shell if [[ $$(uname -s) == Linux ]];then echo Linux; else echo Win; fi)
-ARCH            := $(shell if [[ $$(uname -m) =~ 64$$ ]];then echo x86_64; else echo x86; fi)
+ifeq ($(OS),Windows_NT)
+    KERNEL := Win
+    ARCH := x86_64
+else
+    KERNEL := $(shell uname -s)
+    ARCH := $(shell uname -m)
+endif
+# KERNEL          := $(shell if [[ $$(uname -s) == Linux ]];then echo Linux; else echo Win; fi)
+# ARCH            := $(shell if [[ $$(uname -m) =~ 64$$ ]];then echo x86_64; else echo x86; fi)
 OS              := $(KERNEL)_$(ARCH)
 ifeq ($(KERNEL), Win)
 VIVADO_HLS_EXE_FILENAME := vivado_hls.bat
@@ -50,7 +57,8 @@ else
 VIVADO_HLS_EXE_FILENAME := vivado_hls
 APCC:= apcc
 endif
-VIVADO_HLS_EXE   := $(shell which $(VIVADO_HLS_EXE_FILENAME))
+# VIVADO_HLS_EXE   := $(shell which $(VIVADO_HLS_EXE_FILENAME))
+VIVADO_HLS_EXE   := E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis_hls.exe
 VIVADO_HLS_ROOT  := $(VIVADO_HLS_EXE:/bin/$(VIVADO_HLS_EXE_FILENAME)=)
 VIVADO_HLS_INC_PATH := $(VIVADO_HLS_ROOT)/include
 SYSTEMC_INC_PATH := $(VIVADO_HLS_ROOT)/$(OS)/tools/systemc/include
