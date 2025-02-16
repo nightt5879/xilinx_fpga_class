@@ -39,7 +39,10 @@ endgroup
 regenerate_bd_layout
 # set_property ip_repo_paths  C:/xup/hls/labs/lab4/ip_repo [current_project]
 # update_ip_catalog
-set_property ip_repo_paths {E:/robot/project/xilinx_fpga_class/hls/lab4/ip_repo} [current_project]
+# set_property ip_repo_paths {E:/robot/project/xilinx_fpga_class/hls/lab4/ip_repo} [current_project]
+# update_ip_catalog
+set repo_path [file normalize "./ip_repo"]
+set_property ip_repo_paths $repo_path [current_project]
 update_ip_catalog
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0

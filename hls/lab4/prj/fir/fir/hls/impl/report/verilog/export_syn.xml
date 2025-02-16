@@ -1,0 +1,157 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2024.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>1.860</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>1.860</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>1.860</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>8.140</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>8.140</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>8.140</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>8.140</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>3</DSP>
+      <FF>145</FF>
+      <LATCH>0</LATCH>
+      <LUT>274</LUT>
+      <SRL>2</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>288</BRAM>
+      <CLB>0</CLB>
+      <DSP>1248</DSP>
+      <FF>234240</FF>
+      <LUT>117120</LUT>
+      <URAM>64</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="fir" DISPNAME="inst" RTLNAME="fir">
+      <SubModules count="4">fir_io_s_axi_U grp_fir_Pipeline_loop_fu_80 mac_muladd_16s_10s_31s_31_4_1_U8 shift_reg_U</SubModules>
+      <Resources DSP="3" FF="145" LUT="274"/>
+      <LocalResources DSP="1" FF="23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/fir_io_s_axi_U" DEPTH="1" TYPE="rtl" MODULENAME="fir_io_s_axi" DISPNAME="io_s_axi_U" RTLNAME="fir_fir_io_s_axi">
+      <Resources FF="70" LUT="59"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_loop_fu_80" DEPTH="1" TYPE="function" MODULENAME="fir_Pipeline_loop" DISPNAME="grp_fir_Pipeline_loop_fu_80" RTLNAME="fir_fir_Pipeline_loop">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_37s_37_4_1_U1</SubModules>
+      <Resources DSP="1" FF="20" LUT="71"/>
+      <LocalResources FF="18" LUT="12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="fir_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="58"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_37s_37_4_1" DISPNAME="mac_muladd_16s_16s_37s_37_4_1_U1" RTLNAME="fir_mac_muladd_16s_16s_37s_37_4_1">
+      <Resources DSP="1" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_37s_37_4_1_U1" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:49" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln49" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="loop" OPTYPE="sext" PRAGMA="" RTLNAME="mac_muladd_16s_16s_37s_37_4_1_U1" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:49" STORAGESUBTYPE="" URAM="0" VARIABLE="sext_ln49_2" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_37s_37_4_1_U1" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:49" STORAGESUBTYPE="" URAM="0" VARIABLE="acc" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mac_muladd_16s_10s_31s_31_4_1_U8" DEPTH="1" TYPE="resource" MODULENAME="mac_muladd_16s_10s_31s_31_4_1" DISPNAME="mac_muladd_16s_10s_31s_31_4_1_U8" RTLNAME="fir_mac_muladd_16s_10s_31s_31_4_1">
+      <Resources DSP="1" FF="16"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_10s_31s_31_4_1_U8" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln52" VISIBLE="true"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sext" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="sext" PRAGMA="" RTLNAME="mac_muladd_16s_10s_31s_31_4_1_U8" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52" STORAGESUBTYPE="" URAM="0" VARIABLE="sext_ln52_1" VISIBLE="false"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_10s_31s_31_4_1_U8" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52" STORAGESUBTYPE="" URAM="0" VARIABLE="acc" VISIBLE="true"/>
+    </RtlModule>
+    <RtlModule CELL="inst/shift_reg_U" DEPTH="1" TYPE="resource" MODULENAME="shift_reg_RAM_AUTO_1R1W" DISPNAME="shift_reg_U" RTLNAME="fir_shift_reg_RAM_AUTO_1R1W">
+      <Resources FF="16" LUT="144"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="shift_reg_U" SOURCE="" STORAGESIZE="16 58 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p" URAM="0" VARIABLE="shift_reg" VISIBLE="true"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="1.804" DATAPATH_LOGIC_DELAY="1.804" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="mul_ln44_reg_132_reg/DSP_OUTPUT_INST/ALU_OUT[10]" LOGIC_LEVELS="4" MAX_FANOUT="1" SLACK="8.140" STARTPOINT_PIN="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST/CLK">
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="1.804" DATAPATH_LOGIC_DELAY="1.804" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="mul_ln44_reg_132_reg/DSP_OUTPUT_INST/ALU_OUT[11]" LOGIC_LEVELS="4" MAX_FANOUT="1" SLACK="8.140" STARTPOINT_PIN="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST/CLK">
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="1.804" DATAPATH_LOGIC_DELAY="1.804" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="mul_ln44_reg_132_reg/DSP_OUTPUT_INST/ALU_OUT[12]" LOGIC_LEVELS="4" MAX_FANOUT="1" SLACK="8.140" STARTPOINT_PIN="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST/CLK">
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="1.804" DATAPATH_LOGIC_DELAY="1.804" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="mul_ln44_reg_132_reg/DSP_OUTPUT_INST/ALU_OUT[13]" LOGIC_LEVELS="4" MAX_FANOUT="1" SLACK="8.140" STARTPOINT_PIN="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST/CLK">
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="1.804" DATAPATH_LOGIC_DELAY="1.804" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="mul_ln44_reg_132_reg/DSP_OUTPUT_INST/ALU_OUT[14]" LOGIC_LEVELS="4" MAX_FANOUT="1" SLACK="8.140" STARTPOINT_PIN="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST/CLK">
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+      <CELL NAME="mul_ln44_reg_132_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/fir_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/fir_failfast_synth.rpt"/>
+    <ReportFile TYPE="power" PATH="verilog/report/fir_power_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/fir_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/fir_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/fir_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/fir_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sun Feb 16 18:57:11 +0800 2025"/>
+    <item NAME="Version" VALUE="2024.2 (Build 5238294 on Nov  8 2024)"/>
+    <item NAME="Project" VALUE="fir"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynquplus"/>
+    <item NAME="Target device" VALUE="xczu5eg-sfvc784-1-e"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE=""/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sun Feb 16 18:53:45 2025
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/fir_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu5eg-sfvc784-1-e
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------+------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|                         Instance                        |                           Module                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++---------------------------------------------------------+------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper                                            |                                                      (top) |        274 |        176 |      96 |    2 | 145 |      0 |      0 |    0 |          3 |
+|   bd_0_i                                                |                                                       bd_0 |        274 |        176 |      96 |    2 | 145 |      0 |      0 |    0 |          3 |
+|     hls_inst                                            |                                            bd_0_hls_inst_0 |        274 |        176 |      96 |    2 | 145 |      0 |      0 |    0 |          3 |
+|       (hls_inst)                                        |                                            bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |    0 |          0 |
+|       inst                                              |                                        bd_0_hls_inst_0_fir |        274 |        176 |      96 |    2 | 145 |      0 |      0 |    0 |          3 |
+|         (inst)                                          |                                        bd_0_hls_inst_0_fir |          0 |          0 |       0 |    0 |  23 |      0 |      0 |    0 |          1 |
+|         fir_io_s_axi_U                                  |                           bd_0_hls_inst_0_fir_fir_io_s_axi |         59 |         59 |       0 |    0 |  70 |      0 |      0 |    0 |          0 |
+|         grp_fir_Pipeline_loop_fu_80                     |                      bd_0_hls_inst_0_fir_fir_Pipeline_loop |         71 |         69 |       0 |    2 |  20 |      0 |      0 |    0 |          1 |
+|           (grp_fir_Pipeline_loop_fu_80)                 |                      bd_0_hls_inst_0_fir_fir_Pipeline_loop |         12 |         10 |       0 |    2 |  18 |      0 |      0 |    0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U      | bd_0_hls_inst_0_fir_flow_control_loop_pipe_sequential_init |         58 |         58 |       0 |    0 |   2 |      0 |      0 |    0 |          0 |
+|           mac_muladd_16s_16s_37s_37_4_1_U1              |          bd_0_hls_inst_0_fir_mac_muladd_16s_16s_37s_37_4_1 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
+|             fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U |  bd_0_hls_inst_0_fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0 |          1 |          1 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
+|         mac_muladd_16s_10s_31s_31_4_1_U8                |          bd_0_hls_inst_0_fir_mac_muladd_16s_10s_31s_31_4_1 |          0 |          0 |       0 |    0 |  16 |      0 |      0 |    0 |          1 |
+|           fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U   |  bd_0_hls_inst_0_fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0 |          0 |          0 |       0 |    0 |  16 |      0 |      0 |    0 |          1 |
+|         shift_reg_U                                     |                bd_0_hls_inst_0_fir_shift_reg_RAM_AUTO_1R1W |        144 |         48 |      96 |    0 |  16 |      0 |      0 |    0 |          0 |
++---------------------------------------------------------+------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+
+

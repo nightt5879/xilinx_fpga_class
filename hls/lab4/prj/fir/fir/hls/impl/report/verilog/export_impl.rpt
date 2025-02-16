@@ -1,0 +1,291 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Sun Feb 16 18:57:11 +0800 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         fir
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              206
+FF:               145
+DSP:              3
+BRAM:             0
+URAM:             0
+SRL:              2
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 1.860       |
+| Post-Route     | 2.790       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++----------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                         | LUT | FF  | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                         | 206 | 145 | 3   |      |      |     |        |      |         |          |        |
+|   (inst)                                     |     | 23  | 1   |      |      |     |        |      |         |          |        |
+|   fir_io_s_axi_U                             | 55  | 70  |     |      |      |     |        |      |         |          |        |
+|   grp_fir_Pipeline_loop_fu_80                | 65  | 20  | 1   |      |      |     |        |      |         |          |        |
+|     (grp_fir_Pipeline_loop_fu_80)            | 9   | 18  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U | 56  | 2   |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_37s_37_4_1_U1         |     |     | 1   |      |      |     |        |      |         |          |        |
+|   mac_muladd_16s_10s_31s_31_4_1_U8           |     | 16  | 1   |      |      |     |        |      |         |          |        |
+|   shift_reg_U                                | 89  | 16  |     |      |      |     |        |      |         |          |        |
++----------------------------------------------+-----+-----+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 0.18%  | OK     |
+| FD                                                        | 50%       | 0.06%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.09%  | OK     |
+| CARRY8                                                    | 25%       | 0.00%  | OK     |
+| MUXF7                                                     | 15%       | 0.01%  | OK     |
+| DSP                                                       | 80%       | 0.24%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| URAM                                                      | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 0.24%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 2196      | 13     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.23   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.350ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.239ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                              | ENDPOINT PIN                                                                                                                               | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                             |                                                                                                                                            |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 7.210 | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg/C                                              | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/B[4]  |            3 |         84 |          2.460 |          0.648 |        1.812 |
+| Path2 | 7.230 | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg/C                                              | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/B[12] |            3 |         84 |          2.445 |          0.555 |        1.890 |
+| Path3 | 7.240 | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/B[10] |            3 |         53 |          2.435 |          0.589 |        1.846 |
+| Path4 | 7.253 | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg/C                                              | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/B[5]  |            3 |         84 |          2.421 |          0.669 |        1.752 |
+| Path5 | 7.282 | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/B[6]  |            3 |         53 |          2.392 |          0.572 |        1.820 |
++-------+-------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                          | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__7/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[4]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__24/DP                                                                                                  | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[12]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[10]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__9/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[5]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[6]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                          | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__7/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[4]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__24/DP                                                                                                  | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[12]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[10]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__9/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[5]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[6]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                          | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__7/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[4]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__24/DP                                                                                                  | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[12]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[10]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__9/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[5]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[6]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                          | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__7/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[4]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__24/DP                                                                                                  | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[12]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[10]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__9/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[5]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[6]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                          | Primitive Type         |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__7/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[4]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__24/DP                                                                                                  | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[12]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[10]_i_1                                                                                                               | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80_ap_start_reg_reg                                                                                         | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ram_reg_0_31_0_0_i_8                                            | CLB.LUT.LUT3           |
+    | shift_reg_U/ram_reg_0_15_0_0__9/DP                                                                                                   | CLB.LUTRAM.RAM32X1D    |
+    | shift_reg_U/q1[5]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg                                            | REGISTER.SDR.FDRE      |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/p_reg_reg_i_55                                                  | CLB.LUT.LUT3           |
+    | grp_fir_Pipeline_loop_fu_80/flow_control_loop_pipe_sequential_init_U/i2_fu_38[5]_i_1                                                 | CLB.LUT.LUT6           |
+    | shift_reg_U/q1[6]_i_1                                                                                                                | CLB.LUT.LUT5           |
+    | grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    +--------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+-------------------------------------------------------------+
+| Report Type              | Report Location                                             |
++--------------------------+-------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/fir_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/fir_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/fir_power_routed.rpt                    |
+| status                   | impl/verilog/report/fir_status_routed.rpt                   |
+| timing                   | impl/verilog/report/fir_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/fir_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/fir_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/fir_utilization_hierarchical_routed.rpt |
++--------------------------+-------------------------------------------------------------+
+
+

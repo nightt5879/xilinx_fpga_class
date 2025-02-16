@@ -1385,3 +1385,449 @@ Execute   close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+Execute     source -notrace -encoding utf-8 E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/clock.tcl 
+Execute       source -encoding utf-8 E:/xilinx/Vitis/2024.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base64/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bee/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bench/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/bibtex/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cache/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/cmdline/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/comm/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/control/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/counter/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/crc/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/csv/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/dns/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/docstrip/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/doctools/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/exif/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fileutil/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ftpd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/fumagic/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_fa/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_me/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/grammar_peg/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/html/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/htmlparse/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/http/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ident/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/inifile/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/interp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/irc/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/javascript/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/jpeg/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/json/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ldap/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/log/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/map/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mapproj/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/math/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md4/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/md5crypt/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/mime/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/multiplexer/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ncgi/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nmea/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nns/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/nntp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ntp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/otp/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/page/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pluginmgr/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/png/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pop3d/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/profiler/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/rcs/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/report/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/ripemd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sasl/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/sha1/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/simulation/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/smtpd/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/snit/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/soundex/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stooop/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/stringprep/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/struct/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tar/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/term/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/textutil/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tie/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/tiff/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/transfer/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/treeql/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/try/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uev/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/units/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uri/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/uuid/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/wip/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute       source E:/xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command     ap_source done; 0.118 sec.
+INFO-FLOW: Workspace E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls opened at Sun Feb 16 18:50:22 +0800 2025
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xczu5eg-sfvc784-1-e 
+Execute       create_platform xczu5eg-sfvc784-1-e -board  
+DBG:HLSDevice: Trying to load device library: E:/xilinx/Vitis/2024.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/xilinx/Vivado/2024.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+Command       create_platform done; 0.807 sec.
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.214 sec.
+Execute       ap_part_info -name xczu5eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.045 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.227 sec.
+Execute   apply_ini E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg 
+Execute     send_msg_by_id WARNING @200-1921@%s [hls] entry 'csim.flags=-I"E:/xilinx/Vitis/2024.2/include/legacy"' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(12) 
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'csim.flags=-I"E:/xilinx/Vitis/2024.2/include/legacy"' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(12)
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(10)
+Execute     add_files E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(11)
+Execute     add_files E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat 
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(8)
+Execute     add_files -tb E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c 
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=fir' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(7)
+Execute     set_top fir 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu5eg-sfvc784-1-e' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu5eg-sfvc784-1-e' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(1)
+Execute     set_part xczu5eg-sfvc784-1-e 
+Execute       create_platform xczu5eg-sfvc784-1-e -board  
+Command       create_platform done; 0.155 sec.
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu5eg-sfvc784-1-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.251 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(9)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.293 sec.
+Execute   apply_ini E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/config.cmdline 
+Execute   ::AP::init_summary_file vivado-impl 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   export_design -flow impl 
+Execute     config_export -flow=impl 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=fir xml_exists=1
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to fir
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=9 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='fir_mac_muladd_16s_16s_37s_37_4_1
+fir_fir_Pipeline_loop_c_ROM_AUTO_1R
+fir_flow_control_loop_pipe_sequential_init
+fir_mul_16s_10s_25_1_1
+fir_mac_muladd_16s_10s_31s_31_4_1
+fir_shift_reg_RAM_AUTO_1R1W
+fir_fir_io_s_axi
+fir_Pipeline_loop
+fir
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source E:/xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/top-io-be.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.compgen.dataonly.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.compgen.dataonly.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.rtl_wrap.cfg.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.compgen.dataonly.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir_Pipeline_loop.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.constraint.tcl 
+Execute     sc_get_clocks fir 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.constraint.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.constraint.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/fir.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     source E:/xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data names -quiet 
+Execute     ap_part_info -name xczu5eg-sfvc784-1-e -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/impl.bat
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix fir_ TopModuleNoPrefix fir TopModuleWithPrefix fir' export_design_flow='impl' impl_dir='E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xczu5eg-sfvc784-1-e 
+INFO-FLOW: DBG:PUTS:     writing export xml file: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000001F384B10AC4' export_design_flow='impl' export_rpt='E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xczu5eg-sfvc784-1-e 
+INFO-FLOW: DBG:PUTS:     writing export xml file: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode000001F384B16434' export_design_flow='syn' export_rpt='E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s fir/fir.zip 
+INFO: [HLS 200-802] Generated output file fir/fir.zip
+Command   export_design done; 407.967 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

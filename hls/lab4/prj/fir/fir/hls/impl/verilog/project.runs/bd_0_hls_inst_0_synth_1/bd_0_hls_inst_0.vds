@@ -1,0 +1,469 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Feb 16 18:51:13 2025
+# Process ID         : 17244
+# Current directory  : E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line       : vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file           : E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file       : E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On         : nightt_insider
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency      : 1896 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16487 MB
+# Swap memory        : 22548 MB
+# Total Virtual      : 39036 MB
+# Available Virtual  : 9275 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: Dispatch client connection id - 58752
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xczu5eg-sfvc784-1-e -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1606.387 ; gain = 184.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fir' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fir_shift_reg_RAM_AUTO_1R1W' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_shift_reg_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './fir_shift_reg_RAM_AUTO_1R1W.dat' is read successfully [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_shift_reg_RAM_AUTO_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'fir_shift_reg_RAM_AUTO_1R1W' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_shift_reg_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fir_fir_Pipeline_loop' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_Pipeline_loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fir_fir_Pipeline_loop_c_ROM_AUTO_1R' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_Pipeline_loop_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './fir_fir_Pipeline_loop_c_ROM_AUTO_1R.dat' is read successfully [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_Pipeline_loop_c_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'fir_fir_Pipeline_loop_c_ROM_AUTO_1R' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_Pipeline_loop_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fir_mac_muladd_16s_16s_37s_37_4_1' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_mac_muladd_16s_16s_37s_37_4_1' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'fir_flow_control_loop_pipe_sequential_init' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_flow_control_loop_pipe_sequential_init' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_fir_Pipeline_loop' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_Pipeline_loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fir_fir_io_s_axi' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_io_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_io_s_axi.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'fir_fir_io_s_axi' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_io_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'fir_mul_16s_10s_25_1_1' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mul_16s_10s_25_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'fir_mul_16s_10s_25_1_1' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mul_16s_10s_25_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fir_mac_muladd_16s_10s_31s_31_4_1' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:54]
+INFO: [Synth 8-6157] synthesizing module 'fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0' [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fir_mac_muladd_16s_10s_31s_31_4_1' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_fir_io_s_axi.v:284]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port rst in module fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[1] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[31] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module fir_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module fir_fir_Pipeline_loop_c_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module fir_shift_reg_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1721.984 ; gain = 300.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1721.984 ; gain = 300.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1721.984 ; gain = 300.379
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1721.984 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1831.625 ; gain = 0.340
+Finished Parsing XDC File [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/fir_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1831.625 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1831.625 ; gain = 410.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1831.625 ; gain = 410.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1831.625 ; gain = 410.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'fir_fir_io_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'fir_fir_io_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "fir_shift_reg_RAM_AUTO_1R1W:/ram_reg" of size (depth=58 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'fir_fir_io_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'fir_fir_io_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1831.625 ; gain = 410.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               37 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	                6 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---RAMs : 
+	              928 Bit	(58 X 16 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   37 Bit        Muxes := 2     
+	  60 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '31' bits. [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '37' bits. [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '37' bits. [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v:36]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '31' bits. [e:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/816d/hdl/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v:36]
+INFO: [Synth 8-6904] The RAM "inst/shift_reg_U/ram_reg" of size (depth=58 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+DSP Report: Generating DSP mul_ln44_reg_132_reg, operation Mode is: (A*(B:0x3fe86))'.
+DSP Report: register mul_ln44_reg_132_reg is absorbed into DSP mul_ln44_reg_132_reg.
+DSP Report: operator mul_16s_10s_25_1_1_U7/tmp_product is absorbed into DSP mul_ln44_reg_132_reg.
+DSP Report: Generating DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (P or C)+(A''*B'')'.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/m is absorbed into DSP grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C'+((A:0x3ffffe86)'*B2)')'.
+DSP Report: register mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register acc_2_loc_fu_56_reg is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg.
+WARNING: [Synth 8-7129] Port s_axi_fir_io_AWADDR[1] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_AWADDR[0] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[31] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[30] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[29] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[28] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[27] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[26] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[25] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[24] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[23] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[22] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[21] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[20] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[19] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[18] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[17] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[16] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WSTRB[3] in module fir is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WSTRB[2] in module fir is either unconnected or has no load
+INFO: [Synth 8-6904] The RAM "inst/shift_reg_U/ram_reg" of size (depth=58 x width=16) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3332] Sequential element (fir_io_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module fir.
+WARNING: [Synth 8-3332] Sequential element (fir_io_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module fir.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1831.625 ; gain = 410.020
+---------------------------------------------------------------------------------
+ Sort Area is  mac_muladd_16s_10s_31s_31_4_1_U8/fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0_U/p_reg_reg_4 : 0 0 : 2587 2587 : Used 1 time 0
+ Sort Area is  grp_fir_Pipeline_loop_fu_80/mac_muladd_16s_16s_37s_37_4_1_U1/fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0_U/p_reg_reg_2 : 0 0 : 2555 2555 : Used 1 time 0
+ Sort Area is  mul_ln44_reg_132_reg_0 : 0 0 : 357 357 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives                   | 
++------------+---------------------+-----------+----------------------+------------------------------+
+|inst        | shift_reg_U/ram_reg | Implied   | 64 x 16              | RAM16X1D x 32 RAM32X1D x 16  | 
++------------+---------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | (A*(B:0x3fe86))'            | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|fir         | (P or C)+(A''*B'')'         | 17     | 17     | 37     | -      | 37     | 2    | 2    | 0    | -    | -     | 1    | 1    | 
+|fir         | (C'+((A:0x3ffffe86)'*B2)')' | 17     | 18     | 31     | -      | 31     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
++------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 2489.359 ; gain = 1067.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2517.109 ; gain = 1095.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives                   | 
++------------+---------------------+-----------+----------------------+------------------------------+
+|inst        | shift_reg_U/ram_reg | Implied   | 64 x 16              | RAM16X1D x 32 RAM32X1D x 16  | 
++------------+---------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2519.004 ; gain = 1097.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fir         | grp_fir_Pipeline_loop_fu_80/icmp_ln48_reg_200_pp0_iter3_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fir         | grp_fir_Pipeline_loop_fu_80/ap_loop_exit_ready_pp0_iter4_reg_reg   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | (A'*B)'        | 30     | 18     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|fir         | Dynamic        | -      | -      | -      | -      | 37     | -    | -    | -    | -    | -     | 1    | 1    | 
+|fir         | (C'+(A'*B')')' | 30     | 18     | 48     | -      | 31     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |DSP_ALU         |     3|
+|3     |DSP_A_B_DATA    |     3|
+|6     |DSP_C_DATA      |     3|
+|8     |DSP_MULTIPLIER  |     3|
+|9     |DSP_M_DATA      |     3|
+|11    |DSP_OUTPUT      |     3|
+|12    |DSP_PREADD      |     3|
+|13    |DSP_PREADD_DATA |     3|
+|14    |LUT1            |     2|
+|15    |LUT2            |     7|
+|16    |LUT3            |    54|
+|17    |LUT4            |    54|
+|18    |LUT5            |    46|
+|19    |LUT6            |    46|
+|20    |MUXF7           |     1|
+|21    |RAM16X1D        |    32|
+|22    |RAM32X1D        |    16|
+|23    |SRL16E          |     2|
+|24    |FDRE            |   144|
+|25    |FDSE            |     1|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2716.484 ; gain = 1185.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 2716.484 ; gain = 1294.879
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2716.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2716.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 16 instances
+
+Synth Design complete | Checksum: d92bb194
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 2716.484 ; gain = 2287.469
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2716.484 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = abf1fac4c3747ec4
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2716.484 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 18:52:21 2025...
