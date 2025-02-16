@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Feb 16 15:25:27 2025
-# Process ID         : 24532
+# Start of session at: Sun Feb 16 16:41:50 2025
+# Process ID         : 20500
 # Current directory  : E:/robot/project/xilinx_fpga_class/hls/lab4
 # Command line       : vivado.exe -source pynq_z2_audio_project_create.tcl
 # Log file           : E:/robot/project/xilinx_fpga_class/hls/lab4/vivado.log
@@ -19,16 +19,8 @@
 # Host memory        : 16487 MB
 # Swap memory        : 22548 MB
 # Total Virtual      : 39036 MB
-# Available Virtual  : 15199 MB
+# Available Virtual  : 12301 MB
 #-----------------------------------------------------------
 start_gui
 source pynq_z2_audio_project_create.tcl
-# start_gui
-# create_project audio ./audio -part xc7z020clg400-1
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2024.2/data/ip'.
-# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
-ERROR: [Board 49-71] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7z020clg400-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 15:29:57 2025...
+update_compile_order -fileset sources_1

@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Feb 16 15:35:06 2025
-# Process ID         : 41432
+# Start of session at: Sun Feb 16 16:45:28 2025
+# Process ID         : 17180
 # Current directory  : E:/robot/project/xilinx_fpga_class/hls/lab4
 # Command line       : vivado.exe -source pynq_z2_audio_project_create.tcl
 # Log file           : E:/robot/project/xilinx_fpga_class/hls/lab4/vivado.log
@@ -19,7 +19,7 @@
 # Host memory        : 16487 MB
 # Swap memory        : 22548 MB
 # Total Virtual      : 39036 MB
-# Available Virtual  : 15207 MB
+# Available Virtual  : 12493 MB
 #-----------------------------------------------------------
 start_gui
 source pynq_z2_audio_project_create.tcl
@@ -28,6 +28,7 @@ source pynq_z2_audio_project_create.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2024.2/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 1243.273 ; gain = 114.941
 # set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 # set_property simulator_language Verilog [current_project]
 # create_bd_design system
@@ -53,11 +54,10 @@ CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has ne
 CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
 # endgroup
 # regenerate_bd_layout
-# set_property ip_repo_paths  C:/xup/hls/labs/lab4/ip_repo [current_project]
+# set_property ip_repo_paths {E:/robot/project/xilinx_fpga_class/hls/lab4/ip_repo} [current_project]
 # update_ip_catalog
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/xup/hls/labs/lab4/ip_repo'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/robot/project/xilinx_fpga_class/hls/lab4/ip_repo'.
 # startgroup
 # create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
 # endgroup
@@ -65,14 +65,17 @@ If this directory should no longer be in your list of user repositories, go to t
 # set_property -dict [list CONFIG.C_GPIO_WIDTH {2} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS_2 {1} ] [get_bd_cells axi_gpio_0]
 # endgroup
 # startgroup
-# create_bd_cell -type ip -vlnv xilinx.com:user:zed_audio_ctrl:1.0 zed_audio_ctrl_0
-ERROR: [BD 5-390] IP definition not found for VLNV: xilinx.com:user:zed_audio_ctrl:1.0 
-ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
-
-    while executing
-"create_bd_cell -type ip -vlnv xilinx.com:user:zed_audio_ctrl:1.0 zed_audio_ctrl_0"
-    (file "pynq_z2_audio_project_create.tcl" line 49)
-INFO: [Common 17-17] undo 'startgroup'
+# create_bd_cell -type ip -vlnv xilinx.com:user:audio_codec_ctrl:1.0 audio_codec_ctrl_0
+# endgroup
+# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins audio_codec_ctrl_0/S_AXI]
+Slave segment '/audio_codec_ctrl_0/S_AXI/reg0' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+# create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 GPIO
+# connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/GPIO] [get_bd_intf_ports GPIO]
+# endgroup
+ERROR: [Common 17-149] No command group has been started; maybe undo stack has been cleared after startgroup
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 15:36:51 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 16 16:47:38 2025...
