@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1739498365731">
+  <ports id="1" name="input_r" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="output_r" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="31" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="34" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="35" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="47" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="50" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@ports.1"/>
+  <edges id="52" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="53" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="108" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="109" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="110" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="111" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="112" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="113" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="114" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="115" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="116" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="117" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <blocks id="21" name="dct" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="row_outbuf" lineNumber="53" originalName="row_outbuf" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="row_outbuf_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="81" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="53" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="col_outbuf" lineNumber="54" originalName="col_outbuf" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="col_outbuf_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="81" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="54" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="col_inbuf" lineNumber="54" originalName="col_inbuf" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="col_inbuf_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="81" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="54" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="buf_2d_in" lineNumber="118" originalName="in_block" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="buf_2d_in_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="81" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="118" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="buf_2d_out" lineNumber="119" originalName="buf" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="buf_2d_out_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="81" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="119" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="_ln0" rtlName="grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_56" coreId="4294967295" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>input_r</dataInputObjs>
+      <constName>dct_Pipeline_RD_Loop_Row_RD_Loop_Col</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="_ln0" rtlName="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop_fu_64" coreId="4294967295" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="_ln0" rtlName="grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_72" coreId="4294967295" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln0" rtlName="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop_fu_78" coreId="4294967295" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="_ln0" rtlName="grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_86" coreId="4294967295" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="_ln0" rtlName="grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_92" coreId="4294967295" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>output_r</dataOutputObjs>
+      <constName>dct_Pipeline_WR_Loop_Row_WR_Loop_Col</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln128" lineNumber="128" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct" opcode="ret" nodeLabel="11.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="128" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>118</validLinenumbers>
+      <validLinenumbers>119</validLinenumbers>
+      <validLinenumbers>128</validLinenumbers>
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <expressionNodes realName="col_inbuf_alloca_fu_44">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_outbuf_alloca_fu_40">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_alloca_fu_48">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_outbuf_alloca_fu_36">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_out_alloca_fu_52">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_72">
+    <nodeIds>16</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop_fu_64">
+    <nodeIds>15</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_86">
+    <nodeIds>18</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_92">
+    <nodeIds>19</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_56">
+    <nodeIds>14</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop_fu_78">
+    <nodeIds>17</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="dct_coeff_table" portID="100">
+    <nodeIds>15</nodeIds>
+    <nodeIds>17</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="15" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="15" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="16" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="16" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="17" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="17" stage="1" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="18" stage="2" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="18" stage="1" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="19" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="2"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1323" mMaxLatency="1323">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

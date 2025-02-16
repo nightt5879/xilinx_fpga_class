@@ -1,0 +1,198 @@
+
+
+================================================================
+== Vitis HLS Report for 'read_data'
+================================================================
+* Date:           Fri Feb 14 14:37:54 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        dct_solution6
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.082 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       67|       67|  0.670 us|  0.670 us|   65|   65|  loop auto-rewind stp (delay=1 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                           |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- RD_Loop_Row_RD_Loop_Col  |       65|       65|         3|          1|          1|    64|       yes|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.08>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%indvar_flatten2 = alloca i32 1"   --->   Operation 6 'alloca' 'indvar_flatten2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%r3 = alloca i32 1"   --->   Operation 7 'alloca' 'r3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%c4 = alloca i32 1"   --->   Operation 8 'alloca' 'c4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %c4"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%store_ln0 = store i4 0, i4 %r3"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (1.58ns)   --->   "%store_ln0 = store i6 0, i6 %indvar_flatten2"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc8"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%icmp_ln965 = phi i1 0, void %entry, i1 %icmp_ln96, void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 14 'phi' 'icmp_ln965' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%indvar_flatten2_load = load i6 %indvar_flatten2" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 15 'load' 'indvar_flatten2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%r3_load = load i4 %r3" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 16 'load' 'r3_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%c4_load = load i4 %c4" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:91]   --->   Operation 17 'load' 'c4_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (1.73ns)   --->   "%add_ln94 = add i4 %r3_load, i4 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 18 'add' 'add_ln94' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (1.02ns)   --->   "%select_ln91 = select i1 %icmp_ln965, i4 0, i4 %c4_load" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:91]   --->   Operation 19 'select' 'select_ln91' <Predicate = true> <Delay = 1.02> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (1.02ns)   --->   "%r = select i1 %icmp_ln965, i4 %add_ln94, i4 %r3_load" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 20 'select' 'r' <Predicate = true> <Delay = 1.02> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.02> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%empty = trunc i4 %r" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 21 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln96 = trunc i4 %select_ln91" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 22 'trunc' 'trunc_ln96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.82ns)   --->   "%add_ln94_1 = add i6 %indvar_flatten2_load, i6 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 23 'add' 'add_ln94_1' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (1.65ns)   --->   "%switch_ln99 = switch i3 %trunc_ln96, void %arrayidx712.case.7, i3 0, void %arrayidx712.case.0, i3 1, void %arrayidx712.case.1, i3 2, void %arrayidx712.case.2, i3 3, void %arrayidx712.case.3, i3 4, void %arrayidx712.case.4, i3 5, void %arrayidx712.case.5, i3 6, void %arrayidx712.case.6" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 24 'switch' 'switch_ln99' <Predicate = true> <Delay = 1.65>
+ST_1 : Operation 25 [1/1] (1.73ns)   --->   "%c = add i4 %select_ln91, i4 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 25 'add' 'c' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (1.73ns)   --->   "%icmp_ln96 = icmp_eq  i4 %c, i4 8" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 26 'icmp' 'icmp_ln96' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (1.82ns)   --->   "%icmp_ln94 = icmp_eq  i6 %indvar_flatten2_load, i6 63" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 27 'icmp' 'icmp_ln94' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%store_ln96 = store i4 %c, i4 %c4" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 28 'store' 'store_ln96' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln94 = store i4 %r, i4 %r3" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 29 'store' 'store_ln94' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 30 [1/1] (1.58ns)   --->   "%store_ln94 = store i6 %add_ln94_1, i6 %indvar_flatten2" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 30 'store' 'store_ln94' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln94 = br i1 %icmp_ln94, void %for.inc8, void %for.end10" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 31 'br' 'br_ln94' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.07>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_3 = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %empty, i3 0" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 32 'bitconcatenate' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln96 = zext i4 %select_ln91" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96]   --->   Operation 33 'zext' 'zext_ln96' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (1.82ns)   --->   "%add_ln99 = add i6 %tmp_3, i6 %zext_ln96" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 34 'add' 'add_ln99' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i6 %add_ln99" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 35 'zext' 'zext_ln99' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%input_r_addr = getelementptr i16 %input_r, i64 0, i64 %zext_ln99" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 36 'getelementptr' 'input_r_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [2/2] (3.25ns)   --->   "%input_r_load = load i6 %input_r_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 37 'load' 'input_r_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+
+State 3 <SV = 2> <Delay = 5.57>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @RD_Loop_Row_RD_Loop_Col_str"   --->   Operation 38 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln94 = zext i4 %r" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 40 'zext' 'zext_ln94' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%buf_0_addr = getelementptr i16 %buf_0, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 41 'getelementptr' 'buf_0_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%buf_1_addr = getelementptr i16 %buf_1, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 42 'getelementptr' 'buf_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%buf_2_addr = getelementptr i16 %buf_2, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 43 'getelementptr' 'buf_2_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%buf_3_addr = getelementptr i16 %buf_3, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 44 'getelementptr' 'buf_3_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%buf_4_addr = getelementptr i16 %buf_4, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 45 'getelementptr' 'buf_4_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%buf_5_addr = getelementptr i16 %buf_5, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 46 'getelementptr' 'buf_5_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%buf_6_addr = getelementptr i16 %buf_6, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 47 'getelementptr' 'buf_6_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%buf_7_addr = getelementptr i16 %buf_7, i64 0, i64 %zext_ln94" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94]   --->   Operation 48 'getelementptr' 'buf_7_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%specpipeline_ln97 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:97]   --->   Operation 49 'specpipeline' 'specpipeline_ln97' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/2] ( I:3.25ns O:3.25ns )   --->   "%input_r_load = load i6 %input_r_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 50 'load' 'input_r_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_3 : Operation 51 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_6_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 51 'store' 'store_ln99' <Predicate = (trunc_ln96 == 6)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 52 'br' 'br_ln99' <Predicate = (trunc_ln96 == 6)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_5_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 53 'store' 'store_ln99' <Predicate = (trunc_ln96 == 5)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 54 'br' 'br_ln99' <Predicate = (trunc_ln96 == 5)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_4_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 55 'store' 'store_ln99' <Predicate = (trunc_ln96 == 4)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 56 'br' 'br_ln99' <Predicate = (trunc_ln96 == 4)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_3_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 57 'store' 'store_ln99' <Predicate = (trunc_ln96 == 3)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 58 'br' 'br_ln99' <Predicate = (trunc_ln96 == 3)> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_2_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 59 'store' 'store_ln99' <Predicate = (trunc_ln96 == 2)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 60 'br' 'br_ln99' <Predicate = (trunc_ln96 == 2)> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_1_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 61 'store' 'store_ln99' <Predicate = (trunc_ln96 == 1)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 62 'br' 'br_ln99' <Predicate = (trunc_ln96 == 1)> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_0_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 63 'store' 'store_ln99' <Predicate = (trunc_ln96 == 0)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 64 'br' 'br_ln99' <Predicate = (trunc_ln96 == 0)> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] ( I:2.32ns O:2.32ns )   --->   "%store_ln99 = store i16 %input_r_load, i3 %buf_7_addr" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 65 'store' 'store_ln99' <Predicate = (trunc_ln96 == 7)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 81 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln99 = br void %arrayidx712.exit" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99]   --->   Operation 66 'br' 'br_ln99' <Predicate = (trunc_ln96 == 7)> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (1.58ns)   --->   "%ret_ln101 = ret" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:101]   --->   Operation 67 'ret' 'ret_ln101' <Predicate = (icmp_ln94)> <Delay = 1.58>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 6.082ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'c4' [14]  (1.588 ns)
+	'load' operation 4 bit ('c4_load', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:91) on local variable 'c4' [22]  (0.000 ns)
+	'select' operation 4 bit ('select_ln91', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:91) [26]  (1.024 ns)
+	'add' operation 4 bit ('c', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96) [73]  (1.735 ns)
+	'icmp' operation 1 bit ('icmp_ln96', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:96) [74]  (1.735 ns)
+
+ <State 2>: 5.079ns
+The critical path consists of the following:
+	'add' operation 6 bit ('add_ln99', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99) [42]  (1.825 ns)
+	'getelementptr' operation 6 bit ('input_r_addr', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99) [44]  (0.000 ns)
+	'load' operation 16 bit ('input_r_load', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99) on array 'input_r' [45]  (3.254 ns)
+
+ <State 3>: 5.576ns
+The critical path consists of the following:
+	'load' operation 16 bit ('input_r_load', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99) on array 'input_r' [45]  (3.254 ns)
+	'store' operation 0 bit ('store_ln99', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99) of variable 'input_r_load', E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:99 on array 'buf_1' [64]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

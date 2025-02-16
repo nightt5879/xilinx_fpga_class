@@ -1,0 +1,214 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct_1d_Pipeline_DCT_Outer_Loop'
+================================================================
+* Date:           Fri Feb 14 10:39:53 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        dct_solution4
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.580 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       16|       16|  0.160 us|  0.160 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- DCT_Outer_Loop  |       14|       14|         8|          1|          1|     8|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    5|       -|      -|    -|
+|Expression       |        -|    -|       0|    136|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    3|       0|     18|    -|
+|Memory           |        0|    -|     119|     16|    -|
+|Multiplexer      |        -|    -|       0|     36|    -|
+|Register         |        -|    -|     557|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    8|     676|    238|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    3|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------+---------------------+---------+----+---+----+-----+
+    |        Instance        |        Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +------------------------+---------------------+---------+----+---+----+-----+
+    |mul_14ns_16s_29_1_1_U3  |mul_14ns_16s_29_1_1  |        0|   1|  0|   6|    0|
+    |mul_15s_16s_29_1_1_U4   |mul_15s_16s_29_1_1   |        0|   1|  0|   6|    0|
+    |mul_15s_16s_29_1_1_U5   |mul_15s_16s_29_1_1   |        0|   1|  0|   6|    0|
+    +------------------------+---------------------+---------+----+---+----+-----+
+    |Total                   |                     |        0|   3|  0|  18|    0|
+    +------------------------+---------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    +-----------------------------------+--------------------------------+--------------+
+    |              Instance             |             Module             |  Expression  |
+    +-----------------------------------+--------------------------------+--------------+
+    |mac_muladd_16s_15s_13ns_29_4_1_U6  |mac_muladd_16s_15s_13ns_29_4_1  |  i0 * i1 + i2|
+    |mac_muladd_16s_15s_29ns_29_4_1_U8  |mac_muladd_16s_15s_29ns_29_4_1  |  i0 + i1 * i2|
+    |mac_muladd_16s_15s_29s_29_4_1_U7   |mac_muladd_16s_15s_29s_29_4_1   |  i0 + i1 * i2|
+    |mac_muladd_16s_15s_29s_29_4_1_U9   |mac_muladd_16s_15s_29s_29_4_1   |  i0 + i1 * i2|
+    |mac_muladd_16s_15s_29s_29_4_1_U10  |mac_muladd_16s_15s_29s_29_4_1   |  i0 + i1 * i2|
+    +-----------------------------------+--------------------------------+--------------+
+
+    * Memory: 
+    +----------------------------+---------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |           Memory           |                                Module                               | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------------------+---------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |dct_1d_dct_coeff_table_0_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_0_ROM_AUTO_1R  |        0|  14|   2|    0|     8|   14|     1|          112|
+    |dct_1d_dct_coeff_table_1_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_1_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_2_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_2_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_3_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_3_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_4_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_4_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_5_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_5_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_6_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_6_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    |dct_1d_dct_coeff_table_7_U  |dct_1d_Pipeline_DCT_Outer_Loop_dct_1d_dct_coeff_table_7_ROM_AUTO_1R  |        0|  15|   2|    0|     8|   15|     1|          120|
+    +----------------------------+---------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                       |                                                                     |        0| 119|  16|    0|    64|  119|     8|          952|
+    +----------------------------+---------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln39_fu_295_p2    |         +|   0|  0|  13|           4|           1|
+    |add_ln46_2_fu_359_p2  |         +|   0|  0|  29|          29|          29|
+    |add_ln46_6_fu_355_p2  |         +|   0|  0|  36|          29|          29|
+    |add_ln46_7_fu_363_p2  |         +|   0|  0|  29|          29|          29|
+    |add_ln46_8_fu_381_p2  |         +|   0|  0|  14|           6|           6|
+    |icmp_ln39_fu_289_p2   |      icmp|   0|  0|  13|           4|           5|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0| 136|         102|         101|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_1     |   9|          2|    4|          8|
+    |k_fu_74                  |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |add_ln46_1_reg_602                |  29|   0|   29|          0|
+    |add_ln46_6_reg_607                |  29|   0|   29|          0|
+    |add_ln46_reg_597                  |  29|   0|   29|          0|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg  |   1|   0|    1|          0|
+    |coeff_2_reg_552                   |  15|   0|   15|          0|
+    |coeff_4_reg_562                   |  15|   0|   15|          0|
+    |coeff_reg_542                     |  14|   0|   14|          0|
+    |k_1_reg_477                       |   4|   0|    4|          0|
+    |k_fu_74                           |   4|   0|    4|          0|
+    |mul_ln46_2_reg_577                |  29|   0|   29|          0|
+    |mul_ln46_4_reg_582                |  29|   0|   29|          0|
+    |mul_ln46_6_reg_587                |  29|   0|   29|          0|
+    |sext_ln46_1_cast_reg_472          |  29|   0|   29|          0|
+    |sext_ln46_2_cast_reg_442          |  29|   0|   29|          0|
+    |sext_ln46_3_cast_reg_447          |  29|   0|   29|          0|
+    |sext_ln46_4_cast_reg_452          |  29|   0|   29|          0|
+    |sext_ln46_5_cast_reg_437          |  29|   0|   29|          0|
+    |sext_ln46_6_cast_reg_457          |  29|   0|   29|          0|
+    |sext_ln46_7_cast_reg_467          |  29|   0|   29|          0|
+    |sext_ln46_cast_reg_462            |  29|   0|   29|          0|
+    |trunc_ln_reg_612                  |  16|   0|   16|          0|
+    |zext_ln39_reg_486                 |   4|   0|   64|         60|
+    |k_1_reg_477                       |  64|  32|    4|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 557|  32|  557|         60|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+--------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++--------------+-----+-----+------------+--------------------------------+--------------+
+|ap_clk        |   in|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|ap_start      |   in|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|ap_done       |  out|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|ap_idle       |  out|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|ap_ready      |  out|    1|  ap_ctrl_hs|  dct_1d_Pipeline_DCT_Outer_Loop|  return value|
+|zext_ln46_1   |   in|    6|     ap_none|                     zext_ln46_1|        scalar|
+|dst_address0  |  out|    6|   ap_memory|                             dst|         array|
+|dst_ce0       |  out|    1|   ap_memory|                             dst|         array|
+|dst_we0       |  out|    1|   ap_memory|                             dst|         array|
+|dst_d0        |  out|   16|   ap_memory|                             dst|         array|
+|sext_ln46_1   |   in|   16|     ap_none|                     sext_ln46_1|        scalar|
+|sext_ln46_7   |   in|   16|     ap_none|                     sext_ln46_7|        scalar|
+|sext_ln46     |   in|   16|     ap_none|                       sext_ln46|        scalar|
+|sext_ln46_6   |   in|   16|     ap_none|                     sext_ln46_6|        scalar|
+|sext_ln46_4   |   in|   16|     ap_none|                     sext_ln46_4|        scalar|
+|sext_ln46_3   |   in|   16|     ap_none|                     sext_ln46_3|        scalar|
+|sext_ln46_2   |   in|   16|     ap_none|                     sext_ln46_2|        scalar|
+|sext_ln46_5   |   in|   16|     ap_none|                     sext_ln46_5|        scalar|
++--------------+-----+-----+------------+--------------------------------+--------------+
+

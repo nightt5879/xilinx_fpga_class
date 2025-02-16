@@ -1,17 +1,41 @@
-# 2025-02-13T16:41:49.644358400
+# 2025-02-14T09:36:43.558698900
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="prj")
 
-comp = client.create_hls_component(name = "hls_component",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
-
-comp = client.get_component(name="hls_component")
+comp = client.get_component(name="dct_solution2")
 comp.run(operation="SYNTHESIS")
 
-comp.run(operation="CO_SIMULATION")
+comp = client.clone_component(name="dct_solution2",new_name="dct_solution")
 
-comp = client.clone_component(name="hls_component",new_name="dct_solution2")
+client.delete_component(name="dct_solution")
 
+comp = client.clone_component(name="dct_solution2",new_name="dct_solution3")
+
+comp = client.get_component(name="dct_solution3")
+comp.run(operation="SYNTHESIS")
+
+comp = client.clone_component(name="dct_solution3",new_name="dct_solution4")
+
+comp = client.get_component(name="dct_solution4")
+comp.run(operation="SYNTHESIS")
+
+comp = client.clone_component(name="dct_solution4",new_name="dct_solution5")
+
+comp = client.get_component(name="dct_solution5")
+comp.run(operation="SYNTHESIS")
+
+comp = client.clone_component(name="dct_solution5",new_name="dct_solution6")
+
+comp = client.get_component(name="dct_solution6")
+comp.run(operation="SYNTHESIS")
+
+comp = client.clone_component(name="dct_solution6",new_name="dct_solution7")
+
+comp = client.get_component(name="dct_solution7")
+comp.run(operation="SYNTHESIS")
+
+comp = client.get_component(name="dct_solution6")
 comp.run(operation="SYNTHESIS")
 

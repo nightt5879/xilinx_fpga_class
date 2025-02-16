@@ -1,0 +1,109 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'csim.flags=-I"E:/xilinx/Vitis/2024.2/include/legacy"' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu5eg-sfvc784-1-e' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(5)
+WARNING: [HLS 200-40] Skipped source file 'fir_coef.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.569 seconds; current allocated memory: 162.191 MB.
+INFO: [HLS 200-10] Analyzing design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.327 seconds; current allocated memory: 164.766 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 45 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 40 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 32 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 39 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop> at E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:48:9 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.793 seconds; current allocated memory: 166.820 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 166.820 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 170.875 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 172.066 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 192.641 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 195.539 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_Pipeline_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 199.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 200.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=acc) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 200.270 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 200.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_Pipeline_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_Pipeline_loop' pipeline 'loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_37s_37_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_Pipeline_loop'.
+INFO: [RTMG 210-279] Implementing memory 'fir_fir_Pipeline_loop_c_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.19 seconds; current allocated memory: 202.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'y', 'x' to AXI-Lite port fir_io.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_10s_31s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_10s_25_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [RTMG 210-278] Implementing memory 'fir_shift_reg_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 203.234 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.477 seconds; current allocated memory: 206.707 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.646 seconds; current allocated memory: 209.926 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 270.27 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 16.138 seconds; peak allocated memory: 210.195 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 21s

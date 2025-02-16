@@ -1,0 +1,310 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 60, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 122, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 124, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 127, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 42, Column: 7 }
+Function:        dct_1d
+Args:            
+  - String:          'Loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 31, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        DCT_Inner_Loop
+  - String:          ''' ('
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          dct_1d
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 60, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 122, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 124, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 127, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dct_ir
+Args:            
+  - Callee:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dct_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 34, Column: 0 }
+Function:        dct_1d
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           dct_1d.dct_coeff_table
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 34, Column: 0 }
+Function:        dct
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=dct_1d.dct_coeff_table'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  dct
+  - String:          ' '
+  - varLoc:          'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:40:9'
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 40, Column: 9 }
+  - VarName:         dct_1d.dct_coeff_table
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 40, Column: 9 }
+Function:        dct
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            dct_1d.dct_coeff_table
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 34, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          dct_1d.dct_coeff_table
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 60, Column: 7 }
+Function:        dct
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

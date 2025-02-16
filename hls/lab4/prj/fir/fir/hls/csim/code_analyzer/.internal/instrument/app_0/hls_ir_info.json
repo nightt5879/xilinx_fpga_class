@@ -1,0 +1,33 @@
+{
+    "top_level_hw_fn_id": 206,
+    "functions": {
+        "206": {
+            "fn_id": 206,
+            "mangled_name": "fir",
+            "fully_qualified_name": "fir",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                "line": 31,
+                "column": 1
+            }
+        },
+        "17": {
+            "fn_id": 17,
+            "mangled_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "fully_qualified_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        }
+    },
+    "loops": {
+        "2": {
+            "fn_id": 206,
+            "lp_id": 2,
+            "label": "loop"
+        }
+    }
+}

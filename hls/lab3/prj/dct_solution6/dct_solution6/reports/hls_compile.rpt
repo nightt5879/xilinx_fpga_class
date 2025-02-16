@@ -1,0 +1,273 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dct'
+================================================================
++ General Information: 
+    * Date:           Fri Feb 14 14:38:01 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        dct_solution6
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |                    Modules                    | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |         |           |           |     |
+    |                    & Loops                    | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +-----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |+ dct*                                         |     -|  0.63|      417|  4.170e+03|         -|       64|     -|  dataflow|  3 (1%)|  16 (7%)|  1790 (1%)|  1558 (2%)|    -|
+    | + read_data                                   |     -|  1.22|       67|    670.000|         -|       67|     -|        no|       -|        -|   44 (~0%)|  178 (~0%)|    -|
+    |  o RD_Loop_Row_RD_Loop_Col                    |     -|  7.30|       65|    650.000|         3|        1|    64|       yes|       -|        -|          -|          -|    -|
+    | + Loop_Row_DCT_Loop_proc                      |     -|  0.63|       72|    720.000|         -|       72|     -|        no|       -|   8 (3%)|  686 (~0%)|  370 (~0%)|    -|
+    |  o Row_DCT_Loop_DCT_Outer_Loop                |     -|  7.30|       70|    700.000|         8|        1|    64|       yes|       -|        -|          -|          -|    -|
+    | + Loop_Xpose_Row_Outer_Loop_proc              |     -|  1.22|       67|    670.000|         -|       67|     -|        no|       -|        -|   37 (~0%)|  178 (~0%)|    -|
+    |  o Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop  |     -|  7.30|       65|    650.000|         3|        1|    64|       yes|       -|        -|          -|          -|    -|
+    | + Loop_Col_DCT_Loop_proc                      |     -|  0.63|       72|    720.000|         -|       72|     -|        no|       -|   8 (3%)|  686 (~0%)|  370 (~0%)|    -|
+    |  o Col_DCT_Loop_DCT_Outer_Loop                |     -|  7.30|       70|    700.000|         8|        1|    64|       yes|       -|        -|          -|          -|    -|
+    | + Loop_Xpose_Col_Outer_Loop_proc              |     -|  0.79|       67|    670.000|         -|       67|     -|        no|       -|        -|   43 (~0%)|  192 (~0%)|    -|
+    |  o Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop  |     -|  7.30|       65|    650.000|         3|        1|    64|       yes|       -|        -|          -|          -|    -|
+    | + write_data                                  |     -|  0.79|       67|    670.000|         -|       67|     -|        no|       -|        -|   36 (~0%)|  178 (~0%)|    -|
+    |  o WR_Loop_Row_WR_Loop_Col                    |     -|  7.30|       65|    650.000|         3|        1|    64|       yes|       -|        -|          -|          -|    -|
+    +-----------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++-------------------+-----------+----------+
+| Port              | Direction | Bitwidth |
++-------------------+-----------+----------+
+| input_r_address0  | out       | 6        |
+| input_r_address1  | out       | 6        |
+| input_r_d0        | out       | 16       |
+| input_r_d1        | out       | 16       |
+| input_r_q0        | in        | 16       |
+| input_r_q1        | in        | 16       |
+| output_r_address0 | out       | 6        |
+| output_r_address1 | out       | 6        |
+| output_r_d0       | out       | 16       |
+| output_r_d1       | out       | 16       |
+| output_r_q0       | in        | 16       |
+| output_r_q1       | in        | 16       |
++-------------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| input    | in        | short*   |
+| output   | out       | short*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-------------------+---------+----------+
+| Argument | HW Interface      | HW Type | HW Usage |
++----------+-------------------+---------+----------+
+| input    | input_r_address0  | port    | offset   |
+| input    | input_r_ce0       | port    |          |
+| input    | input_r_d0        | port    |          |
+| input    | input_r_q0        | port    |          |
+| input    | input_r_we0       | port    |          |
+| input    | input_r_address1  | port    | offset   |
+| input    | input_r_ce1       | port    |          |
+| input    | input_r_d1        | port    |          |
+| input    | input_r_q1        | port    |          |
+| input    | input_r_we1       | port    |          |
+| output   | output_r_address0 | port    | offset   |
+| output   | output_r_ce0      | port    |          |
+| output   | output_r_d0       | port    |          |
+| output   | output_r_q0       | port    |          |
+| output   | output_r_we0      | port    |          |
+| output   | output_r_address1 | port    | offset   |
+| output   | output_r_ce1      | port    |          |
+| output   | output_r_d1       | port    |          |
+| output   | output_r_q1       | port    |          |
+| output   | output_r_we1      | port    |          |
++----------+-------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                                  | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++---------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + dct                                 | 16  |        |              |        |           |         |
+|  + read_data                          | 0   |        |              |        |           |         |
+|    add_ln94_fu_243_p2                 |     |        | add_ln94     | add    | fabric    | 0       |
+|    select_ln91_fu_249_p3              |     |        | select_ln91  | select | auto_sel  | 0       |
+|    r_fu_257_p3                        |     |        | r            | select | auto_sel  | 0       |
+|    add_ln99_fu_322_p2                 |     |        | add_ln99     | add    | fabric    | 0       |
+|    add_ln94_1_fu_273_p2               |     |        | add_ln94_1   | add    | fabric    | 0       |
+|    c_fu_279_p2                        |     |        | c            | add    | fabric    | 0       |
+|    icmp_ln96_fu_285_p2                |     |        | icmp_ln96    | seteq  | auto      | 0       |
+|    icmp_ln94_fu_291_p2                |     |        | icmp_ln94    | seteq  | auto      | 0       |
+|  + Loop_Row_DCT_Loop_proc             | 8   |        |              |        |           |         |
+|    add_ln61_fu_347_p2                 |     |        | add_ln61     | add    | fabric    | 0       |
+|    select_ln57_fu_353_p3              |     |        | select_ln57  | select | auto_sel  | 0       |
+|    i_fu_361_p3                        |     |        | i            | select | auto_sel  | 0       |
+|    add_ln46_8_fu_543_p2               |     |        | add_ln46_8   | add    | fabric    | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U13  | 1   |        | mul_ln46     | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U14 | 1   |        | mul_ln46_1   | mul    | dsp_slice | 3       |
+|    mul_16s_14ns_29_1_1_U10            | 1   |        | mul_ln46_2   | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29ns_29_4_1_U17 | 1   |        | mul_ln46_3   | mul    | dsp_slice | 3       |
+|    mul_16s_15s_29_1_1_U11             | 1   |        | mul_ln46_4   | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U15  | 1   |        | mul_ln46_5   | mul    | dsp_slice | 3       |
+|    mul_16s_15s_29_1_1_U12             | 1   |        | mul_ln46_6   | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U16  | 1   |        | mul_ln46_7   | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U13  | 1   |        | add_ln46     | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U15  | 1   |        | add_ln46_1   | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U16  | 1   |        | add_ln46_3   | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U14 | 1   |        | add_ln46_4   | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29ns_29_4_1_U17 | 1   |        | add_ln46_5   | add    | dsp_slice | 3       |
+|    add_ln46_6_fu_510_p2               |     |        | add_ln46_6   | add    | fabric    | 0       |
+|    k_fu_397_p2                        |     |        | k            | add    | fabric    | 0       |
+|    add_ln61_1_fu_403_p2               |     |        | add_ln61_1   | add    | fabric    | 0       |
+|    icmp_ln39_fu_409_p2                |     |        | icmp_ln39    | seteq  | auto      | 0       |
+|    icmp_ln61_fu_415_p2                |     |        | icmp_ln61    | seteq  | auto      | 0       |
+|  + Loop_Xpose_Row_Outer_Loop_proc     | 0   |        |              |        |           |         |
+|    add_ln66_fu_239_p2                 |     |        | add_ln66     | add    | fabric    | 0       |
+|    select_ln57_fu_245_p3              |     |        | select_ln57  | select | auto_sel  | 0       |
+|    j_fu_257_p3                        |     |        | j            | select | auto_sel  | 0       |
+|    add_ln72_fu_314_p2                 |     |        | add_ln72     | add    | fabric    | 0       |
+|    add_ln66_1_fu_265_p2               |     |        | add_ln66_1   | add    | fabric    | 0       |
+|    i_fu_271_p2                        |     |        | i            | add    | fabric    | 0       |
+|    icmp_ln69_fu_277_p2                |     |        | icmp_ln69    | seteq  | auto      | 0       |
+|    icmp_ln66_fu_283_p2                |     |        | icmp_ln66    | seteq  | auto      | 0       |
+|  + Loop_Col_DCT_Loop_proc             | 8   |        |              |        |           |         |
+|    add_ln75_fu_347_p2                 |     |        | add_ln75     | add    | fabric    | 0       |
+|    select_ln57_fu_353_p3              |     |        | select_ln57  | select | auto_sel  | 0       |
+|    i_fu_361_p3                        |     |        | i            | select | auto_sel  | 0       |
+|    add_ln46_15_fu_543_p2              |     |        | add_ln46_15  | add    | fabric    | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U52  | 1   |        | mul_ln46     | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U53 | 1   |        | mul_ln46_8   | mul    | dsp_slice | 3       |
+|    mul_16s_14ns_29_1_1_U49            | 1   |        | mul_ln46_9   | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29ns_29_4_1_U56 | 1   |        | mul_ln46_10  | mul    | dsp_slice | 3       |
+|    mul_16s_15s_29_1_1_U50             | 1   |        | mul_ln46_11  | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U54  | 1   |        | mul_ln46_12  | mul    | dsp_slice | 3       |
+|    mul_16s_15s_29_1_1_U51             | 1   |        | mul_ln46_13  | mul    | auto      | 0       |
+|    mac_muladd_16s_15s_29s_29_4_1_U55  | 1   |        | mul_ln46_14  | mul    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U52  | 1   |        | add_ln46     | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U54  | 1   |        | add_ln46_8   | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29s_29_4_1_U55  | 1   |        | add_ln46_10  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_13ns_29_4_1_U53 | 1   |        | add_ln46_11  | add    | dsp_slice | 3       |
+|    mac_muladd_16s_15s_29ns_29_4_1_U56 | 1   |        | add_ln46_12  | add    | dsp_slice | 3       |
+|    add_ln46_13_fu_510_p2              |     |        | add_ln46_13  | add    | fabric    | 0       |
+|    k_fu_397_p2                        |     |        | k            | add    | fabric    | 0       |
+|    add_ln75_1_fu_403_p2               |     |        | add_ln75_1   | add    | fabric    | 0       |
+|    icmp_ln39_fu_409_p2                |     |        | icmp_ln39    | seteq  | auto      | 0       |
+|    icmp_ln75_fu_415_p2                |     |        | icmp_ln75    | seteq  | auto      | 0       |
+|  + Loop_Xpose_Col_Outer_Loop_proc     | 0   |        |              |        |           |         |
+|    add_ln80_fu_115_p2                 |     |        | add_ln80     | add    | fabric    | 0       |
+|    select_ln57_fu_121_p3              |     |        | select_ln57  | select | auto_sel  | 0       |
+|    j_fu_133_p3                        |     |        | j            | select | auto_sel  | 0       |
+|    add_ln86_fu_157_p2                 |     |        | add_ln86     | add    | fabric    | 0       |
+|    add_ln86_1_fu_216_p2               |     |        | add_ln86_1   | add    | fabric    | 0       |
+|    i_fu_163_p2                        |     |        | i            | add    | fabric    | 0       |
+|    add_ln80_1_fu_169_p2               |     |        | add_ln80_1   | add    | fabric    | 0       |
+|    icmp_ln83_fu_175_p2                |     |        | icmp_ln83    | seteq  | auto      | 0       |
+|    icmp_ln80_fu_181_p2                |     |        | icmp_ln80    | seteq  | auto      | 0       |
+|  + write_data                         | 0   |        |              |        |           |         |
+|    add_ln108_fu_119_p2                |     |        | add_ln108    | add    | fabric    | 0       |
+|    select_ln105_fu_125_p3             |     |        | select_ln105 | select | auto_sel  | 0       |
+|    r_fu_133_p3                        |     |        | r            | select | auto_sel  | 0       |
+|    add_ln113_fu_194_p2                |     |        | add_ln113    | add    | fabric    | 0       |
+|    c_fu_145_p2                        |     |        | c            | add    | fabric    | 0       |
+|    add_ln108_1_fu_151_p2              |     |        | add_ln108_1  | add    | fabric    | 0       |
+|    icmp_ln110_fu_157_p2               |     |        | icmp_ln110   | seteq  | auto      | 0       |
+|    icmp_ln108_fu_163_p2               |     |        | icmp_ln108   | seteq  | auto      | 0       |
++---------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------------------+----------------+------+------+------+--------+---------------------------+------+---------+------------------+
+| Name                           | Usage          | Type | BRAM | URAM | Pragma | Variable                  | Impl | Latency | Bitwidth, Depth, |
+|                                |                |      |      |      |        |                           |      |         | Banks            |
++--------------------------------+----------------+------+------+------+--------+---------------------------+------+---------+------------------+
+| + dct                          |                |      | 3    | 0    |        |                           |      |         |                  |
+|   buf_2d_in_U                  | ram_1p channel | pipo |      |      |        | buf_2d_in                 | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_8_U                | ram_1p channel | pipo |      |      |        | buf_2d_in_8               | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_9_U                | ram_1p channel | pipo |      |      |        | buf_2d_in_9               | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_10_U               | ram_1p channel | pipo |      |      |        | buf_2d_in_10              | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_11_U               | ram_1p channel | pipo |      |      |        | buf_2d_in_11              | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_12_U               | ram_1p channel | pipo |      |      |        | buf_2d_in_12              | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_13_U               | ram_1p channel | pipo |      |      |        | buf_2d_in_13              | auto | 1       | 16, 8, 2         |
+|   buf_2d_in_14_U               | ram_1p channel | pipo |      |      |        | buf_2d_in_14              | auto | 1       | 16, 8, 2         |
+|   row_outbuf_U                 | ram_1p channel | pipo | 1    |      |        | row_outbuf                | auto | 1       | 16, 64, 2        |
+|   col_inbuf_7_U                | ram_1p channel | pipo |      |      |        | col_inbuf_7               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_6_U                | ram_1p channel | pipo |      |      |        | col_inbuf_6               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_5_U                | ram_1p channel | pipo |      |      |        | col_inbuf_5               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_4_U                | ram_1p channel | pipo |      |      |        | col_inbuf_4               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_3_U                | ram_1p channel | pipo |      |      |        | col_inbuf_3               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_2_U                | ram_1p channel | pipo |      |      |        | col_inbuf_2               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_1_U                | ram_1p channel | pipo |      |      |        | col_inbuf_1               | auto | 1       | 16, 8, 2         |
+|   col_inbuf_U                  | ram_1p channel | pipo |      |      |        | col_inbuf                 | auto | 1       | 16, 8, 2         |
+|   col_outbuf_U                 | ram_1p channel | pipo | 1    |      |        | col_outbuf                | auto | 1       | 16, 64, 2        |
+|   buf_2d_out_U                 | ram_1p channel | pipo | 1    |      |        | buf_2d_out                | auto | 1       | 16, 64, 2        |
+|  + Loop_Row_DCT_Loop_proc      |                |      | 0    | 0    |        |                           |      |         |                  |
+|    dct_1d_dct_coeff_table_02_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_02 | auto | 1       | 14, 8, 1         |
+|    dct_1d_dct_coeff_table_13_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_13 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_24_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_24 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_35_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_35 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_46_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_46 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_57_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_57 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_68_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_68 | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_79_U | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_79 | auto | 1       | 15, 8, 1         |
+|  + Loop_Col_DCT_Loop_proc      |                |      | 0    | 0    |        |                           |      |         |                  |
+|    dct_1d_dct_coeff_table_0_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_0  | auto | 1       | 14, 8, 1         |
+|    dct_1d_dct_coeff_table_1_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_1  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_2_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_2  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_3_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_3  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_4_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_4  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_5_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_5  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_6_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_6  | auto | 1       | 15, 8, 1         |
+|    dct_1d_dct_coeff_table_7_U  | rom_1p         |      |      |      |        | dct_1d_dct_coeff_table_7  | auto | 1       | 15, 8, 1         |
++--------------------------------+----------------+------+------+------+--------+---------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------------+-------------------------------------+
+| Type            | Options                                | Location                            |
++-----------------+----------------------------------------+-------------------------------------+
+| pipeline        |                                        | ../../dct.c:40 in dct_1d            |
+| inline          |                                        | ../../dct.c:53 in dct_2d            |
+| array_partition | variable=col_inbuf dim=2 type=complete | ../../dct.c:56 in dct_2d, col_inbuf |
+| pipeline        |                                        | ../../dct.c:70 in dct_2d            |
+| pipeline        |                                        | ../../dct.c:84 in dct_2d            |
+| pipeline        |                                        | ../../dct.c:97 in read_data         |
+| pipeline        |                                        | ../../dct.c:111 in write_data       |
+| dataflow        |                                        | ../../dct.c:119 in dct              |
+| array_partition | variable=buf_2d_in dim=2 type=complete | ../../dct.c:122 in dct, buf_2d_in   |
++-----------------+----------------------------------------+-------------------------------------+
+
+* Inferred Pragmas
++--------------------------+-----------------+------------------------------------------------------+-------------------------------------------------------+
+| Source                   | Inferred Pragma | Options                                              | Location                                              |
++--------------------------+-----------------+------------------------------------------------------+-------------------------------------------------------+
+| pipeline  ../../dct.c:40 | array_partition | dim=2 type=complete  variable=dct_1d.dct_coeff_table | variable dct_1d.dct_coeff_table in dct ../../dct.c:34 |
++--------------------------+-----------------+------------------------------------------------------+-------------------------------------------------------+
+
+

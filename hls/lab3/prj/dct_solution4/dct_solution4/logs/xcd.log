@@ -1,0 +1,25 @@
+02/14/25 10:39:29: Running xcd server. This server was built by gradle.
+02/14/25 10:39:29: Server was asked to start on port: '50754'
+02/14/25 10:39:29: Server is using token UUID: '74fb967a-229f-4a26-bb17-be1f64b03cdc'
+02/14/25 10:39:29: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/14/25 10:39:29: Attempting to start server on port '50754'
+02/14/25 10:39:29: Running Dispatch Server
+02/14/25 10:39:29: Version 2.2.0
+02/14/25 10:39:31: Dispatch Server: Accepted socket connection from client
+02/14/25 10:39:31: Starting Socket connection
+02/14/25 10:39:31: EXCHANGE_TOKEN received, server token: 74fb967a-229f-4a26-bb17-be1f64b03cdc, passed token: 74fb967a-229f-4a26-bb17-be1f64b03cdc
+02/14/25 10:39:31: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+02/14/25 10:39:31: SESSION_MGR: creating session with session uuid: 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' and name 'v++_compile_dct_solution4'
+02/14/25 10:39:31: KERNEL_SVC: creating session with uuid: 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' and name 'v++_compile_dct_solution4'
+02/14/25 10:39:31: GUIDANCE_SMGR: creating guidance session with uuid: 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' and name 'v++_compile_dct_solution4'
+02/14/25 10:39:31: SYSTEM_DIAGRAM: creating session with uuid: 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' and name 'v++_compile_dct_solution4'
+02/14/25 10:39:36: Dispatch Server: Accepted socket connection from client
+02/14/25 10:39:36: Starting Socket connection
+02/14/25 10:39:56: SESSION_MGR: closing session for UUID 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' with name 'v++_compile_dct_solution4'
+02/14/25 10:39:56: KERNEL_SVC: closing session for UUID 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' with name 'v++_compile_dct_solution4'
+02/14/25 10:39:56: GUIDANCE_SMGR: closing session for UUID 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' with name 'v++_compile_dct_solution4'
+02/14/25 10:39:56: SYSTEM_DIAGRAM: closing session for UUID 'f3f69f4d-06ef-4477-81f4-dbb0afa5135c' with name 'v++_compile_dct_solution4'
+02/14/25 10:39:56: STOP_SERVER received, server token: 74fb967a-229f-4a26-bb17-be1f64b03cdc, passed token: 74fb967a-229f-4a26-bb17-be1f64b03cdc
+02/14/25 10:39:56: Socket received request to stop server.
+02/14/25 10:39:56: Dispatch Server: do_await_stop
+02/14/25 10:39:56: SERVER: destructor for server bound to port 50754

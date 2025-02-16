@@ -37,10 +37,9 @@ void dct_1d(dct_data_t src[DCT_SIZE], dct_data_t dst[DCT_SIZE])
 
 DCT_Outer_Loop:
    for (k = 0; k < DCT_SIZE; k++) {
-#pragma HLS PIPELINE off
+#pragma HLS PIPELINE
 DCT_Inner_Loop:
       for(n = 0, tmp = 0; n < DCT_SIZE; n++) {
-#pragma HLS PIPELINE off
          int coeff = (int)dct_coeff_table[k][n];
          tmp += src[n] * coeff;
       }
@@ -51,40 +50,38 @@ DCT_Inner_Loop:
 void dct_2d(dct_data_t in_block[DCT_SIZE][DCT_SIZE],
       dct_data_t out_block[DCT_SIZE][DCT_SIZE])
 {
+#pragma HLS INLINE
    dct_data_t row_outbuf[DCT_SIZE][DCT_SIZE];
    dct_data_t col_outbuf[DCT_SIZE][DCT_SIZE], col_inbuf[DCT_SIZE][DCT_SIZE];
+#pragma HLS ARRAY_PARTITION variable=col_inbuf dim=2 type=complete
    unsigned i, j;
 
    // DCT rows
 Row_DCT_Loop:
    for(i = 0; i < DCT_SIZE; i++) {
-#pragma HLS PIPELINE off
       dct_1d(in_block[i], row_outbuf[i]);
    }
    // Transpose data in order to re-use 1D DCT code
 Xpose_Row_Outer_Loop:
    for (j = 0; j < DCT_SIZE; j++)
-#pragma HLS PIPELINE off
        
 Xpose_Row_Inner_Loop:
       for(i = 0; i < DCT_SIZE; i++)
-#pragma HLS PIPELINE off
+#pragma HLS PIPELINE
           
          col_inbuf[j][i] = row_outbuf[i][j];
    // DCT columns
 Col_DCT_Loop:
    for (i = 0; i < DCT_SIZE; i++) {
-#pragma HLS PIPELINE off
       dct_1d(col_inbuf[i], col_outbuf[i]);
    }
    // Transpose data back into natural order
 Xpose_Col_Outer_Loop:
    for (j = 0; j < DCT_SIZE; j++)
-#pragma HLS PIPELINE off
        
 Xpose_Col_Inner_Loop:
       for(i = 0; i < DCT_SIZE; i++)
-#pragma HLS PIPELINE off
+#pragma HLS PIPELINE
           
          out_block[j][i] = col_outbuf[i][j];
 }
@@ -95,10 +92,9 @@ void read_data(short input[N], short buf[DCT_SIZE][DCT_SIZE])
 
 RD_Loop_Row:
    for (r = 0; r < DCT_SIZE; r++) {
-#pragma HLS PIPELINE off
 RD_Loop_Col:
       for (c = 0; c < DCT_SIZE; c++)
-#pragma HLS PIPELINE off
+#pragma HLS PIPELINE
           
          buf[r][c] = input[r * DCT_SIZE + c];
    }
@@ -110,10 +106,9 @@ void write_data(short buf[DCT_SIZE][DCT_SIZE], short output[N])
 
 WR_Loop_Row:
    for (r = 0; r < DCT_SIZE; r++) {
-#pragma HLS PIPELINE off
 WR_Loop_Col:
       for (c = 0; c < DCT_SIZE; c++)
-#pragma HLS PIPELINE off
+#pragma HLS PIPELINE
           
          output[r * DCT_SIZE + c] = buf[r][c];
    }
@@ -121,8 +116,10 @@ WR_Loop_Col:
 
 void dct(short input[N], short output[N])
 {
+#pragma HLS DATAFLOW
 
    short buf_2d_in[DCT_SIZE][DCT_SIZE];
+#pragma HLS ARRAY_PARTITION variable=buf_2d_in dim=2 type=complete
    short buf_2d_out[DCT_SIZE][DCT_SIZE];
 
    // Read input data. Fill the internal buffer.

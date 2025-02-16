@@ -1,0 +1,208 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 60, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 122, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 124, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 127, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 60, Column: 7 }
+Function:        dct_2d
+Args:            
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 122, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 124, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 127, Column: 4 }
+Function:        dct
+Args:            
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_dct_ir
+Args:            
+  - Callee:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_dct_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 52, Column: 0 }
+Function:        dct_2d
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_1d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 31, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          read_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 88, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          dct_2d
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 52, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                   Line: 116, Column: 0 }
+Function:        dct
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          write_data
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 102, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          dct
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c', 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...

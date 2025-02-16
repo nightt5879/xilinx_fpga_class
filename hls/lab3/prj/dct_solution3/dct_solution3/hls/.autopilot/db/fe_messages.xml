@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:52:0" msg_body="Inlining function 'dct_1d' into 'dct_2d'">
+        <args Callee="dct_1d" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 31 Column 0" Caller="dct_2d" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 52 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'read_data' into 'dct'">
+        <args Callee="read_data" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 88 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'dct_2d' into 'dct'">
+        <args Callee="dct_2d" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 52 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'write_data' into 'dct'">
+        <args Callee="write_data" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 102 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

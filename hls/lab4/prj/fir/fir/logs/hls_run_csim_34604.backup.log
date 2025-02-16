@@ -1,0 +1,95 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'cflags=E:/xilinx/Vitis/2024.2/include/legacy' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:\xilinx\Vitis\2024.2\vcxx\data\autopilot\legacy\ap_cint.h' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'E:/xilinx/Vitis/2024.2/vcxx/data/autopilot/legacy/ap_cint.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu5eg-sfvc784-1-e' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as test bench code with instrumentation
+In file included from E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:29:
+In file included from E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:30:
+In file included from e:\xilinx\vitis\2024.2\vcxx\data\autopilot/ap_int.h:10:
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_common.h:18:2: error: Must use at least C++11 to use this header
+#error Must use at least C++11 to use this header
+ ^
+In file included from E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:29:
+In file included from E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:30:
+In file included from e:\xilinx\vitis\2024.2\vcxx\data\autopilot/ap_int.h:10:
+In file included from e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_common.h:55:
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:47:2: error: "AP data type can only be used in C++"
+#error "AP data type can only be used in C++"
+ ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:133:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:133:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:136:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:136:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:139:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:139:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:142:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:142:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:145:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:145:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:148:1: error: unknown type name 'template'
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:148:10: error: expected identifier or '('
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:151:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:151:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:155:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:155:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+         ^
+e:\xilinx\vitis\2024.2\vcxx\data\autopilot/etc/ap_decl.h:159:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as hardware code with instrumentation'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.546 seconds; peak allocated memory: 162.383 MB.

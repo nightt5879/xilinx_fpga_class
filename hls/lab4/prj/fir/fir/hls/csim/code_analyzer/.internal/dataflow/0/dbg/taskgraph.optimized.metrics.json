@@ -1,0 +1,1094 @@
+[
+    {
+        "name": "fir",
+        "df_function": "%F206",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 31,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 52,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 31,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 52,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 fir) BB 'codeRepl' [Atomic,Call,Atomic] 'Outline_T3_F206_R2_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 35,
+                        "column": 16
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 44,
+                        "column": 36
+                    }
+                },
+                "display_name": "llvm.memcpy.p0i8.p0i8.i64()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 35,
+                                    "column": 16
+                                },
+                                "id": "VId_12_[?(?,16)]",
+                                "name": "c[*]",
+                                "display_name": "const coef_t c[59]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 116,
+                                                "end": 118,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 44,
+                                        "column": 36
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 35,
+                                        "column": 16
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 41,
+                                    "column": 0
+                                },
+                                "id": "VId_15_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "access_type": "i38",
+                                    "access_bit_width": 38,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 40,
+                                    "column": 0
+                                },
+                                "id": "VId_1_[?(?,16)]",
+                                "name": "shift_reg[*]",
+                                "display_name": "data_t shift_reg[58]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 114,
+                                                "end": 116,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 44,
+                                        "column": 14
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 4
+                },
+                "subregions": [
+                    {
+                        "id": "%F207_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 35,
+                                "column": 16
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 35,
+                                "column": 16
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F207_R2",
+                        "description": "<call 'llvm.memcpy.p0i8.p0i8.i64'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 35,
+                                "column": 16
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 35,
+                                "column": 16
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F207_R3",
+                        "description": "<function exit>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 44,
+                                "column": 14
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 44,
+                                "column": 36
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 fir) BB 'codeRepl1' [Atomic,Loop,Atomic] 'Outline_T4_F206_R3_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 45,
+                        "column": 9
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 48,
+                        "column": 3
+                    }
+                },
+                "display_name": "loop",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 41,
+                                    "column": 0
+                                },
+                                "id": "VId_15_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i38",
+                                    "access_bit_width": 38,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 35,
+                                    "column": 16
+                                },
+                                "id": "VId_12_[?(?,16)]",
+                                "name": "c[*]",
+                                "display_name": "const coef_t c[59]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 2,
+                                                "end": 116,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 46,
+                                        "column": 39
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 57
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 41,
+                                    "column": 0
+                                },
+                                "id": "VId_19_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "access_type": "i38",
+                                    "access_bit_width": 38,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 40,
+                                    "column": 0
+                                },
+                                "id": "VId_1_[?(?,16)]",
+                                "name": "shift_reg[*]",
+                                "display_name": "data_t shift_reg[58]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 114,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 46,
+                                        "column": 17
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 57
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 2,
+                                                "end": 116,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 47,
+                                        "column": 17
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 57
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 116
+                },
+                "subregions": [
+                    {
+                        "id": "%F208_R1",
+                        "description": "<function entry>"
+                    },
+                    {
+                        "id": "%F208_R2",
+                        "description": "<loop 'loop'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 45,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 48,
+                                "column": 3
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F208_R4",
+                        "description": "<function exit>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 46,
+                                "column": 8
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 46,
+                                "column": 8
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 114,
+                            "max": 114
+                        },
+                        "ii": {
+                            "min": 2,
+                            "max": 2
+                        },
+                        "effective_tc": {
+                            "min": 57,
+                            "max": 57
+                        },
+                        "tc": {
+                            "min": 57,
+                            "max": 57
+                        },
+                        "ureg_id": "%L2",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 45,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 48,
+                                "column": 3
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "shift_reg",
+                                    "display_name": "shift_reg",
+                                    "id": "1",
+                                    "location": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 40,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 2,
+                                    "max": 2
+                                },
+                                "required_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variable": {
+                                    "name": "c",
+                                    "display_name": "c",
+                                    "id": "17",
+                                    "location": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 35,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "acc [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "add [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                            "line": 46,
+                                            "column": 8
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "i [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "sub [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                            "line": 46,
+                                            "column": 28
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 fir) BB 'codeRepl2' [Atomic] 'Outline_T5_F206_R15_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 49,
+                        "column": 6
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                        "line": 51,
+                        "column": 11
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 41,
+                                    "column": 0
+                                },
+                                "id": "VId_19_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "acc_t acc"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i38",
+                                    "access_bit_width": 38,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 35,
+                                    "column": 16
+                                },
+                                "id": "VId_12_[?(?,16)]",
+                                "name": "c[*]",
+                                "display_name": "const coef_t c[59]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_10_*0(0,16)arg",
+                                "name": "(*y)",
+                                "display_name": "data_t *y"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 51,
+                                        "column": 6
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 33,
+                                    "column": 0
+                                },
+                                "id": "VId_11_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "data_t x"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                    "line": 40,
+                                    "column": 0
+                                },
+                                "id": "VId_1_[?(?,16)]",
+                                "name": "shift_reg[*]",
+                                "display_name": "data_t shift_reg[58]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                        "line": 50,
+                                        "column": 15
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 1
+                },
+                "subregions": [
+                    {
+                        "id": "%F209_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 49,
+                                "column": 6
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                                "line": 51,
+                                "column": 11
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            }
+        },
+        "channels": {
+            "shift_reg[*]_RAW_1_3_#0": {
+                "name": "shift_reg[*]_RAW_1_3_#0",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 16,
+                    "channel_rate": 1.3793103448275862E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "acc_RAW_3_4_#1": {
+                "name": "acc_RAW_3_4_#1",
+                "variable_id": "VId_15_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 38,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 41,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 38,
+                    "channel_rate": 3.275862068965517E-1
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "c[*]_RAW_3_4_#2": {
+                "name": "c[*]_RAW_3_4_#2",
+                "variable_id": "VId_12_[?(?,16)]",
+                "variable_name": "c[*]",
+                "declaration": "const coef_t c[59]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 35,
+                    "column": 16
+                },
+                "metrics": {
+                    "volume": 912,
+                    "channel_rate": 7.862068965517241E0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "shift_reg[*]_WAR_3_4_#3": {
+                "name": "shift_reg[*]_WAR_3_4_#3",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "WAR",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "c[*]_RAR_3_4_#4": {
+                "name": "c[*]_RAR_3_4_#4",
+                "variable_id": "VId_12_[?(?,16)]",
+                "variable_name": "c[*]",
+                "declaration": "const coef_t c[59]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 35,
+                    "column": 16
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "shift_reg[*]_RAR_3_4_#5": {
+                "name": "shift_reg[*]_RAR_3_4_#5",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "x_RAW_1_5_#6": {
+                "name": "x_RAW_1_5_#6",
+                "variable_id": "VId_11_!c?(?,?)",
+                "variable_name": "x",
+                "declaration": "data_t x",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 33,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 16,
+                    "channel_rate": 1.3793103448275862E-1
+                },
+                "source": "1",
+                "sink": "5"
+            },
+            "acc_RAW_4_5_#7": {
+                "name": "acc_RAW_4_5_#7",
+                "variable_id": "VId_19_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "acc_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 38,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 41,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 38,
+                    "channel_rate": 3.275862068965517E-1
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "shift_reg[*]_WAR_4_5_#8": {
+                "name": "shift_reg[*]_WAR_4_5_#8",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "WAR",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "shift_reg[*]_WAW_4_5_#9": {
+                "name": "shift_reg[*]_WAW_4_5_#9",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "c[*]_RAR_4_5_#10": {
+                "name": "c[*]_RAR_4_5_#10",
+                "variable_id": "VId_12_[?(?,16)]",
+                "variable_name": "c[*]",
+                "declaration": "const coef_t c[59]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 35,
+                    "column": 16
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "(*y)_RAW_5_2_#11": {
+                "name": "(*y)_RAW_5_2_#11",
+                "variable_id": "VId_10_*0(0,16)arg",
+                "variable_name": "(*y)",
+                "declaration": "data_t *y",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 16,
+                    "channel_rate": 1.3793103448275862E-1
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "shift_reg[*]_RAW_5_2_#12": {
+                "name": "shift_reg[*]_RAW_5_2_#12",
+                "variable_id": "VId_1_[?(?,16)]",
+                "variable_name": "shift_reg[*]",
+                "declaration": "data_t shift_reg[58]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 16,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+                    "line": 40,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 16,
+                    "channel_rate": 1.3793103448275862E-1
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

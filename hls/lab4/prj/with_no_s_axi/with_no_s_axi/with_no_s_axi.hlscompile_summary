@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\with_no_s_axi.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/16/25 14:40:38",
+ "timestampMillis": "1739688038034",
+ "buildStep": {
+  "cmdId": "8f379914-d606-423c-8e21-521f055c3616",
+  "name": "v++",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\logs\\with_no_s_axi.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\hls_config.cfg --work_dir with_no_s_axi ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\hls_config.cfg",
+   "--work_dir",
+   "with_no_s_axi"
+  ],
+  "iniFiles": [
+   {
+    "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\hls_config.cfg",
+    "content": "part=xczu5eg-sfvc784-1-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=fir\ntb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c\ncsim.code_analyzer=1\nsyn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c\nsyn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat\ncsim.flags=-I\"E:/xilinx/Vitis/2024.2/include/legacy\"\n"
+   }
+  ],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/16/25 14:40:38",
+ "timestampMillis": "1739688038034",
+ "status": {
+  "cmdId": "8f379914-d606-423c-8e21-521f055c3616",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042534",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir.c",
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\fir_coef.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042534",
+ "buildStep": {
+  "cmdId": "0de81bf2-dc2b-494f-85f1-fb63641de503",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042535",
+ "status": {
+  "cmdId": "0de81bf2-dc2b-494f-85f1-fb63641de503",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042535",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042535",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:42",
+ "timestampMillis": "1739688042536",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056473",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056474",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056474",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056474",
+ "status": {
+  "cmdId": "0de81bf2-dc2b-494f-85f1-fb63641de503",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056648",
+ "status": {
+  "cmdId": "8f379914-d606-423c-8e21-521f055c3616",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056682",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\reports\\v++_compile_with_no_s_axi_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/16/25 14:40:56",
+ "timestampMillis": "1739688056683",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi\\with_no_s_axi\\reports\\.db\\v++_compile_with_no_s_axi_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

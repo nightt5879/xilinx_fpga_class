@@ -1,33 +1,52 @@
-// MIT License
-// Copyright (c) 2022 Advanced Micro Devices, Inc. All rights reserved.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in all
-// copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// SOFTWARE.
 
-//////////////////////////////////////////////////////////////////////////////////
-// Module Name: lab4 FIR
-// Purpose:
-//    This is the header for Lab4 fir.c
-// Reference:
-//////////////////////////////////////////////////////////////////////////////////
+
+// #ifndef _AUTOPILOT_CINT_H_
+// #define _AUTOPILOT_CINT_H_
+
+// #error ERROR: [HLS 211-200] ap_cint.h is not supported by Code Analyzer C simulation
+
+// #ifdef __cplusplus
+// #warning This header file cannot be used in a C++ design. C-synthesis will fail. 
+// #endif
+
+// #if (defined __llvm__) || \
+//     (defined AESL_TB) || (defined AUTOPILOT_BC_SIM) || (__RTL_SIMULATION__)
+
+// #ifndef __openclc
+// #ifndef __SYNTHESIS__
+// #include <string.h>
+// #include <stdio.h>
+// #endif
+// #endif
+
+// #ifdef __CYGWIN__
+// #  ifdef feof
+// #    undef feof
+// #  endif
+
+// #  ifdef ferror
+// #    undef ferror
+// #  endif
+// #endif
+
+
+// #include "etc/autopilot_apint.h"
+
+// #else
+// #  ifdef __cplusplus
+// #  error This header file cannot be used in a C++ design. 
+// #  else
+// #  error This header file does not support debugging. Do not select "Debug" in GUI.
+// #  endif
+// #endif /* SYN or AUTOCC */
+// #endif /* #ifndef _AUTOPILOT_CINT_H_ */
+
+
+
 #ifndef _FIR_H_ 
 #define _FIR_H_
-#include "ap_cint.h"
+// #include "ap_cint.h"
+#include "E:/xilinx/Vitis/2024.2/include/legacy/ap_cint.h"
 #define N	58
 #define SAMPLES N+10 // just few more samples then number of taps
 typedef short	coef_t;

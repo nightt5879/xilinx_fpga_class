@@ -1,0 +1,22 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fir_ir
+Args:            
+  - Callee:          fir
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c', 
+                       Line: 34, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fir_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        loop
+  - String:          '> at '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:48:9'
+  - String:          ' '
+...

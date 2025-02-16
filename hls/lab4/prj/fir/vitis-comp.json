@@ -1,0 +1,12 @@
+{
+  "name": "fir",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "fir"
+  },
+  "template": "empty_hls_component"
+}

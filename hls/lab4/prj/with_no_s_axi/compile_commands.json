@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi",
+    "arguments": [
+      "E:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=fir",
+      "-c",
+      "E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c"
+    ],
+    "file": "E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c"
+  },
+  {
+    "directory": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\with_no_s_axi",
+    "arguments": [
+      "E:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c"
+    ],
+    "file": "E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c"
+  }
+]

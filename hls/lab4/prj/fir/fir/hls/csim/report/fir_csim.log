@@ -1,0 +1,70 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../../fir_test.c in debug mode
+csim.mk:88: recipe for target 'obj/fir_test.o' failed
+In file included from ../../../../../../fir_test.c:30:
+In file included from ../../../../../../fir.h:48:
+In file included from E:/xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from E:/xilinx/Vitis/2024.2/include/etc/ap_common.h:41:
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:47:2: error: "AP data type can only be used in C++"
+#error "AP data type can only be used in C++"
+ ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:133:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:133:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:136:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:136:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:139:1: error: unknown type name 'template'
+template <int _AP_W>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:139:10: error: expected identifier or '('
+template <int _AP_W>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:142:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:142:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:145:1: error: unknown type name 'template'
+template <int _AP_W, bool _AP_S>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:145:10: error: expected identifier or '('
+template <int _AP_W, bool _AP_S>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:148:1: error: unknown type name 'template'
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:148:10: error: expected identifier or '('
+template <int _AP_W1, typename _AP_T1, int _AP_W2, typename _AP_T2>
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:151:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:151:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, bool _AP_S = true, ap_q_mode _AP_Q = AP_TRN,
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:155:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:155:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+         ^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:159:1: error: unknown type name 'template'
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+^
+E:/xilinx/Vitis/2024.2/include/etc/ap_decl.h:159:10: error: expected identifier or '('
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q = AP_TRN,
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [obj/fir_test.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

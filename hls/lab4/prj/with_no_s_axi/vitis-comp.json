@@ -1,0 +1,11 @@
+{
+  "name": "with_no_s_axi",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "with_no_s_axi"
+  }
+}

@@ -1,0 +1,291 @@
+0 -32768 378
+1 0 73
+2 0 -27
+3 0 -170
+4 0 -298
+5 0 -352
+6 0 -302
+7 0 -168
+8 0 -14
+9 0 80
+10 0 64
+11 0 -53
+12 0 -186
+13 0 -216
+14 0 -40
+15 0 356
+16 0 867
+17 0 1283
+18 0 1366
+19 0 954
+20 0 51
+21 0 -1132
+22 0 -2227
+23 0 -2829
+24 0 -2647
+25 0 -1633
+26 0 -25
+27 0 1712
+28 0 3042
+29 0 -29229
+30 0 3042
+31 0 1712
+32 0 -25
+33 0 -1633
+34 0 -2647
+35 0 -2829
+36 0 -2227
+37 0 -1132
+38 0 51
+39 0 954
+40 0 1366
+41 0 1283
+42 0 867
+43 0 356
+44 0 -40
+45 0 -216
+46 0 -186
+47 0 -53
+48 0 64
+49 0 80
+50 0 -14
+51 0 -168
+52 0 -302
+53 0 -352
+54 0 -298
+55 0 -170
+56 0 -27
+57 0 73
+58 0 378
+59 0 0
+60 0 0
+61 0 0
+62 0 0
+63 0 0
+64 0 0
+65 0 0
+66 0 0
+67 0 0
+
+E:\robot\project\xilinx_fpga_class\hls\lab4\prj\fir\fir\hls\sim\verilog>set PATH= 
+
+E:\robot\project\xilinx_fpga_class\hls\lab4\prj\fir\fir\hls\sim\verilog>call E:/xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_fir_top glbl -Oenable_linking_all_libraries  -prj fir.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s fir  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fir_top glbl -Oenable_linking_all_libraries -prj fir.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s fir 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/AESL_axi_slave_fir_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_fir_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_fir_io_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_io_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_fir_Pipeline_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_fir_Pipeline_loop_c_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop_c_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_10s_31s_31_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_mul_16s_10s_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mul_16s_10s_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir_shift_reg_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_shift_reg_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fir_shift_reg_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop_c_ROM_AUTO...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop
+Compiling module xil_defaultlib.fir_fir_io_s_axi
+Compiling module xil_defaultlib.fir_mul_16s_10s_25_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_10s_31s_31_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_10s_31s_31_4_...
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.AESL_axi_slave_fir_io
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fir_top
+Compiling module work.glbl
+Built simulation snapshot fir
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Feb 16 14:45:59 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -autoloadwcfg -tclbatch {fir.tcl}
+Time resolution is 1 ps
+source fir.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 68 [0.00%] @ "125000"
+// RTL Simulation : 1 / 68 [14.93%] @ "1165000"
+// RTL Simulation : 2 / 68 [14.93%] @ "2195000"
+// RTL Simulation : 3 / 68 [14.93%] @ "3105000"
+// RTL Simulation : 4 / 68 [14.93%] @ "4015000"
+// RTL Simulation : 5 / 68 [14.93%] @ "4925000"
+// RTL Simulation : 6 / 68 [14.93%] @ "5835000"
+// RTL Simulation : 7 / 68 [14.93%] @ "6745000"
+// RTL Simulation : 8 / 68 [14.93%] @ "7655000"
+// RTL Simulation : 9 / 68 [14.93%] @ "8565000"
+// RTL Simulation : 10 / 68 [14.93%] @ "9475000"
+// RTL Simulation : 11 / 68 [14.93%] @ "10385000"
+// RTL Simulation : 12 / 68 [14.93%] @ "11295000"
+// RTL Simulation : 13 / 68 [14.93%] @ "12205000"
+// RTL Simulation : 14 / 68 [14.93%] @ "13115000"
+// RTL Simulation : 15 / 68 [14.93%] @ "14025000"
+// RTL Simulation : 16 / 68 [14.93%] @ "14935000"
+// RTL Simulation : 17 / 68 [14.93%] @ "15845000"
+// RTL Simulation : 18 / 68 [14.93%] @ "16755000"
+// RTL Simulation : 19 / 68 [14.93%] @ "17665000"
+// RTL Simulation : 20 / 68 [14.93%] @ "18575000"
+// RTL Simulation : 21 / 68 [14.93%] @ "19485000"
+// RTL Simulation : 22 / 68 [14.93%] @ "20395000"
+// RTL Simulation : 23 / 68 [14.93%] @ "21305000"
+// RTL Simulation : 24 / 68 [14.93%] @ "22215000"
+// RTL Simulation : 25 / 68 [14.93%] @ "23125000"
+// RTL Simulation : 26 / 68 [14.93%] @ "24035000"
+// RTL Simulation : 27 / 68 [14.93%] @ "24945000"
+// RTL Simulation : 28 / 68 [14.93%] @ "25855000"
+// RTL Simulation : 29 / 68 [14.93%] @ "26765000"
+// RTL Simulation : 30 / 68 [14.93%] @ "27675000"
+// RTL Simulation : 31 / 68 [14.93%] @ "28585000"
+// RTL Simulation : 32 / 68 [14.93%] @ "29495000"
+// RTL Simulation : 33 / 68 [14.93%] @ "30405000"
+// RTL Simulation : 34 / 68 [14.93%] @ "31315000"
+// RTL Simulation : 35 / 68 [14.93%] @ "32225000"
+// RTL Simulation : 36 / 68 [14.93%] @ "33135000"
+// RTL Simulation : 37 / 68 [14.93%] @ "34045000"
+// RTL Simulation : 38 / 68 [14.93%] @ "34955000"
+// RTL Simulation : 39 / 68 [14.93%] @ "35865000"
+// RTL Simulation : 40 / 68 [14.93%] @ "36775000"
+// RTL Simulation : 41 / 68 [14.93%] @ "37685000"
+// RTL Simulation : 42 / 68 [14.93%] @ "38595000"
+// RTL Simulation : 43 / 68 [14.93%] @ "39505000"
+// RTL Simulation : 44 / 68 [14.93%] @ "40415000"
+// RTL Simulation : 45 / 68 [14.93%] @ "41325000"
+// RTL Simulation : 46 / 68 [14.93%] @ "42235000"
+// RTL Simulation : 47 / 68 [14.93%] @ "43145000"
+// RTL Simulation : 48 / 68 [14.93%] @ "44055000"
+// RTL Simulation : 49 / 68 [14.93%] @ "44965000"
+// RTL Simulation : 50 / 68 [14.93%] @ "45875000"
+// RTL Simulation : 51 / 68 [14.93%] @ "46785000"
+// RTL Simulation : 52 / 68 [14.93%] @ "47695000"
+// RTL Simulation : 53 / 68 [14.93%] @ "48605000"
+// RTL Simulation : 54 / 68 [14.93%] @ "49515000"
+// RTL Simulation : 55 / 68 [14.93%] @ "50425000"
+// RTL Simulation : 56 / 68 [14.93%] @ "51335000"
+// RTL Simulation : 57 / 68 [14.93%] @ "52245000"
+// RTL Simulation : 58 / 68 [14.93%] @ "53155000"
+// RTL Simulation : 59 / 68 [14.93%] @ "54065000"
+// RTL Simulation : 60 / 68 [14.93%] @ "54975000"
+// RTL Simulation : 61 / 68 [14.93%] @ "55885000"
+// RTL Simulation : 62 / 68 [14.93%] @ "56795000"
+// RTL Simulation : 63 / 68 [14.93%] @ "57705000"
+// RTL Simulation : 64 / 68 [14.93%] @ "58615000"
+// RTL Simulation : 65 / 68 [14.93%] @ "59525000"
+// RTL Simulation : 66 / 68 [14.93%] @ "60435000"
+// RTL Simulation : 67 / 68 [14.93%] @ "61345000"
+// RTL Simulation : 68 / 68 [100.00%] @ "62255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 62315 ns : File "E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir/hls/sim/verilog/fir.autotb.v" Line 279
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Feb 16 14:46:02 2025...
+0 -32768 378
+1 0 73
+2 0 -27
+3 0 -170
+4 0 -298
+5 0 -352
+6 0 -302
+7 0 -168
+8 0 -14
+9 0 80
+10 0 64
+11 0 -53
+12 0 -186
+13 0 -216
+14 0 -40
+15 0 356
+16 0 867
+17 0 1283
+18 0 1366
+19 0 954
+20 0 51
+21 0 -1132
+22 0 -2227
+23 0 -2829
+24 0 -2647
+25 0 -1633
+26 0 -25
+27 0 1712
+28 0 3042
+29 0 -29229
+30 0 3042
+31 0 1712
+32 0 -25
+33 0 -1633
+34 0 -2647
+35 0 -2829
+36 0 -2227
+37 0 -1132
+38 0 51
+39 0 954
+40 0 1366
+41 0 1283
+42 0 867
+43 0 356
+44 0 -40
+45 0 -216
+46 0 -186
+47 0 -53
+48 0 64
+49 0 80
+50 0 -14
+51 0 -168
+52 0 -302
+53 0 -352
+54 0 -298
+55 0 -170
+56 0 -27
+57 0 73
+58 0 378
+59 0 0
+60 0 0
+61 0 0
+62 0 0
+63 0 0
+64 0 0
+65 0 0
+66 0 0
+67 0 0

@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vitis HLS Report for 'fir'
+================================================================
+* Date:           Sun Feb 16 14:40:54 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        with_no_s_axi
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.700 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       67|       67|  0.670 us|  0.670 us|   68|   68|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%acc_2_loc = alloca i64 1"   --->   Operation 7 'alloca' 'acc_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (0.79ns)   --->   "%shift_reg_load = load i16 57" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:47]   --->   Operation 8 'load' 'shift_reg_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 58> <RAM>
+
+State 2 <SV = 1> <Delay = 3.70>
+ST_2 : Operation 9 [1/2] ( I:0.79ns O:0.79ns )   --->   "%shift_reg_load = load i16 57" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:47]   --->   Operation 9 'load' 'shift_reg_load' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 58> <RAM>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln44 = sext i16 %shift_reg_load" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:44]   --->   Operation 10 'sext' 'sext_ln44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (2.91ns)   --->   "%mul_ln44 = mul i25 %sext_ln44, i25 33554054" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:44]   --->   Operation 11 'mul' 'mul_ln44' <Predicate = true> <Delay = 2.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.08>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%x_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %x"   --->   Operation 12 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [2/2] (0.48ns)   --->   "%call_ln44 = call void @fir_Pipeline_loop, i25 %mul_ln44, i31 %acc_2_loc, i16 %shift_reg, i16 %c" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:44]   --->   Operation 13 'call' 'call_ln44' <Predicate = true> <Delay = 0.48> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%sext_ln52 = sext i16 %x_read" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 14 'sext' 'sext_ln52' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [3/3] (1.08ns) (grouped into DSP with root node acc)   --->   "%mul_ln52 = mul i26 %sext_ln52, i26 67108486" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 15 'mul' 'mul_ln52' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 1.08>
+ST_4 : Operation 16 [1/2] (0.83ns)   --->   "%call_ln44 = call void @fir_Pipeline_loop, i25 %mul_ln44, i31 %acc_2_loc, i16 %shift_reg, i16 %c" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:44]   --->   Operation 16 'call' 'call_ln44' <Predicate = true> <Delay = 0.83> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 17 [2/3] (1.08ns) (grouped into DSP with root node acc)   --->   "%mul_ln52 = mul i26 %sext_ln52, i26 67108486" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 17 'mul' 'mul_ln52' <Predicate = true> <Delay = 1.08> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 0.83>
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%acc_2_loc_load = load i31 %acc_2_loc" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:48]   --->   Operation 18 'load' 'acc_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [1/3] (0.00ns) (grouped into DSP with root node acc)   --->   "%mul_ln52 = mul i26 %sext_ln52, i26 67108486" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 19 'mul' 'mul_ln52' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 20 [1/1] (0.00ns) (grouped into DSP with root node acc)   --->   "%sext_ln52_1 = sext i26 %mul_ln52" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 20 'sext' 'sext_ln52_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [2/2] (0.83ns) (root node of the DSP)   --->   "%acc = add i31 %acc_2_loc_load, i31 %sext_ln52_1" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 21 'add' 'acc' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 22 [1/1] ( I:0.79ns O:0.79ns )   --->   "%store_ln53 = store i16 %x_read, i16 0" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:53]   --->   Operation 22 'store' 'store_ln53' <Predicate = true> <Delay = 0.79> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.79> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 58> <RAM>
+
+State 6 <SV = 5> <Delay = 0.83>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%spectopmodule_ln31 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:31]   --->   Operation 23 'spectopmodule' 'spectopmodule_ln31' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %y"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %y, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %x"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %x, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [1/2] (0.83ns) (root node of the DSP)   --->   "%acc = add i31 %acc_2_loc_load, i31 %sext_ln52_1" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52]   --->   Operation 28 'add' 'acc' <Predicate = true> <Delay = 0.83> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.69> <IPBlock> <Opcode : '' 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %acc, i32 15, i32 30" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:54]   --->   Operation 29 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%write_ln54 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %y, i16 %trunc_ln1" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:54]   --->   Operation 30 'write' 'write_ln54' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln55 = ret" [E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:55]   --->   Operation 31 'ret' 'ret_ln55' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 3.700ns
+The critical path consists of the following:
+	'load' operation 16 bit ('shift_reg_load', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:47) on array 'shift_reg' [12]  (0.790 ns)
+	'mul' operation 25 bit ('mul_ln44', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:44) [14]  (2.910 ns)
+
+ <State 3>: 1.088ns
+The critical path consists of the following:
+	wire read operation ('x') on port 'x' [5]  (0.000 ns)
+	'mul' operation 26 bit of DSP[20] ('mul_ln52', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52) [18]  (1.088 ns)
+
+ <State 4>: 1.088ns
+The critical path consists of the following:
+	'mul' operation 26 bit of DSP[20] ('mul_ln52', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52) [18]  (1.088 ns)
+
+ <State 5>: 0.831ns
+The critical path consists of the following:
+	'load' operation 31 bit ('acc_2_loc_load', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:48) on local variable 'acc_2_loc' [16]  (0.000 ns)
+	'add' operation 31 bit of DSP[20] ('acc', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52) [20]  (0.831 ns)
+
+ <State 6>: 0.831ns
+The critical path consists of the following:
+	'add' operation 31 bit of DSP[20] ('acc', E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:52) [20]  (0.831 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

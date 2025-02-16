@@ -1,0 +1,34 @@
+{
+  "0": {
+    "basicblocks": 39,
+    "calls": "1 1",
+    "file": "dct.c",
+    "fileloc": 116,
+    "instructions": 254,
+    "loads": {
+      "L": 19,
+      "T": 1
+    },
+    "name": "dct",
+    "stores": {
+      "L": 17,
+      "T": 1
+    },
+    "total_instructions": 370
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "dct.c",
+    "fileloc": 30,
+    "instructions": 58,
+    "loads": {
+      "G": 8
+    },
+    "name": "dct_1d",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 58
+  }
+}

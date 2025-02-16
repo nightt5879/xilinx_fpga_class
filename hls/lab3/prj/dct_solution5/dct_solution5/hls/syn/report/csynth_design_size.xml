@@ -1,0 +1,54 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 244, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 272, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 252, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 244, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 239, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 370, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 370, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 370, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 370, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 370, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 370, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 370, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 490, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 378, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 382, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 395, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="dct" col1="dct.c:116" col2="244" col3="239" col4="370" col5="378" col6="395">
+                    <row id="2" col0="read_data" col1="dct.c:88" col2="27" col3="" col4="" col5="" col6=""/>
+                    <row id="4" col0="dct_2d" col1="dct.c:50" col2="171" col3="" col4="" col5="" col6="">
+                        <row id="1" col0="dct_1d" col1="dct.c:30" col2="72" col2_disp=" 72 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="3" col0="write_data" col1="dct.c:102" col2="27" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="dct_1d" col1="dct.c:30" col2="" col3="146" col3_disp="146 (2 calls)" col4="132" col4_disp="132 (2 calls)" col5="116" col5_disp="116 (2 calls)" col6="124" col6_disp="124 (2 calls)"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

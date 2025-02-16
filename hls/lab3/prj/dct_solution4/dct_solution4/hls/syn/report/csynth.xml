@@ -1,0 +1,999 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>dct</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>647</Best-caseLatency>
+            <Average-caseLatency>647</Average-caseLatency>
+            <Worst-caseLatency>647</Worst-caseLatency>
+            <Best-caseRealTimeLatency>6.470 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>6.470 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>6.470 us</Worst-caseRealTimeLatency>
+            <Interval-min>648</Interval-min>
+            <Interval-max>648</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <Row_DCT_Loop>
+                <Slack>7.30</Slack>
+                <TripCount>8</TripCount>
+                <Latency>184</Latency>
+                <AbsoluteTimeLatency>1840</AbsoluteTimeLatency>
+                <IterationLatency>23</IterationLatency>
+                <InstanceList/>
+            </Row_DCT_Loop>
+            <Col_DCT_Loop>
+                <Slack>7.30</Slack>
+                <TripCount>8</TripCount>
+                <Latency>184</Latency>
+                <AbsoluteTimeLatency>1840</AbsoluteTimeLatency>
+                <IterationLatency>23</IterationLatency>
+                <InstanceList/>
+            </Col_DCT_Loop>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+            <SummaryOfLoopViolations>
+                <Row_DCT_Loop>
+                    <Name>Row_DCT_Loop</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:59~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                </Row_DCT_Loop>
+                <Col_DCT_Loop>
+                    <Name>Col_DCT_Loop</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                </Col_DCT_Loop>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>5</BRAM_18K>
+            <DSP>8</DSP>
+            <FF>991</FF>
+            <LUT>1325</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>dct</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_address0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_ce0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_q0</name>
+            <Object>input_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_address0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_ce0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_we0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_r_d0</name>
+            <Object>output_r</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>dct</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_94</InstName>
+                    <ModuleName>dct_Pipeline_RD_Loop_Row_RD_Loop_Col</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>94</ID>
+                    <BindInstances>icmp_ln92_fu_101_p2 add_ln92_1_fu_107_p2 add_ln92_fu_124_p2 icmp_ln94_fu_130_p2 select_ln89_fu_136_p3 select_ln92_fu_144_p3 add_ln97_fu_168_p2 add_ln94_fu_174_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_1d_fu_102</InstName>
+                    <ModuleName>dct_1d</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>102</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_dct_1d_Pipeline_DCT_Outer_Loop_fu_133</InstName>
+                            <ModuleName>dct_1d_Pipeline_DCT_Outer_Loop</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>133</ID>
+                            <BindInstances>icmp_ln39_fu_289_p2 add_ln39_fu_295_p2 add_ln46_8_fu_381_p2 mac_muladd_16s_15s_29s_29_4_1_U7 mac_muladd_16s_15s_13ns_29_4_1_U6 mul_14ns_16s_29_1_1_U3 mac_muladd_16s_15s_29ns_29_4_1_U8 mul_15s_16s_29_1_1_U4 mac_muladd_16s_15s_29s_29_4_1_U9 mul_15s_16s_29_1_1_U5 mac_muladd_16s_15s_29s_29_4_1_U10 mac_muladd_16s_15s_29s_29_4_1_U7 mac_muladd_16s_15s_29s_29_4_1_U9 mac_muladd_16s_15s_29s_29_4_1_U10 mac_muladd_16s_15s_13ns_29_4_1_U6 mac_muladd_16s_15s_29ns_29_4_1_U8 add_ln46_6_fu_355_p2 dct_1d_dct_coeff_table_0_U dct_1d_dct_coeff_table_1_U dct_1d_dct_coeff_table_2_U dct_1d_dct_coeff_table_3_U dct_1d_dct_coeff_table_4_U dct_1d_dct_coeff_table_5_U dct_1d_dct_coeff_table_6_U dct_1d_dct_coeff_table_7_U</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_126</InstName>
+                    <ModuleName>dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>126</ID>
+                    <BindInstances>icmp_ln64_fu_97_p2 add_ln64_1_fu_103_p2 add_ln64_fu_120_p2 icmp_ln67_fu_126_p2 select_ln55_fu_132_p3 select_ln64_fu_144_p3 add_ln70_fu_180_p2 add_ln70_1_fu_186_p2 add_ln67_fu_192_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_132</InstName>
+                    <ModuleName>dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>132</ID>
+                    <BindInstances>icmp_ln78_fu_97_p2 add_ln78_1_fu_103_p2 add_ln78_fu_120_p2 icmp_ln81_fu_126_p2 select_ln55_fu_132_p3 select_ln78_fu_144_p3 add_ln84_fu_180_p2 add_ln84_1_fu_186_p2 add_ln81_fu_192_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_138</InstName>
+                    <ModuleName>dct_Pipeline_WR_Loop_Row_WR_Loop_Col</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>138</ID>
+                    <BindInstances>icmp_ln106_fu_101_p2 add_ln106_1_fu_107_p2 add_ln106_fu_124_p2 icmp_ln108_fu_130_p2 select_ln103_fu_136_p3 select_ln106_fu_144_p3 add_ln111_fu_168_p2 add_ln108_fu_174_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>row_outbuf_U col_outbuf_U col_inbuf_U buf_2d_in_U buf_2d_out_U icmp_ln59_fu_153_p2 add_ln59_fu_159_p2 icmp_ln73_fu_184_p2 add_ln73_fu_190_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>dct_Pipeline_RD_Loop_Row_RD_Loop_Col</Name>
+            <Loops>
+                <RD_Loop_Row_RD_Loop_Col/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>68</Best-caseLatency>
+                    <Average-caseLatency>68</Average-caseLatency>
+                    <Worst-caseLatency>68</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.680 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.680 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.680 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <RD_Loop_Row_RD_Loop_Col>
+                        <Name>RD_Loop_Row_RD_Loop_Col</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>66</Latency>
+                        <AbsoluteTimeLatency>0.660 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </RD_Loop_Row_RD_Loop_Col>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:89~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:122</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <RD_Loop_Row_RD_Loop_Col>
+                            <Name>RD_Loop_Row_RD_Loop_Col</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:92~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:122</SourceLocation>
+                        </RD_Loop_Row_RD_Loop_Col>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>34</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>146</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln92_fu_101_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln92" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln92_1_fu_107_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln92_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln92_fu_124_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln92" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln94_fu_130_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln94" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="select" PRAGMA="" RTLNAME="select_ln89_fu_136_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:89" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln89" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="select" PRAGMA="" RTLNAME="select_ln92_fu_144_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:92" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln92" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_fu_168_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:97" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln97" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RD_Loop_Row_RD_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln94_fu_174_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:94" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln94" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_1d_Pipeline_DCT_Outer_Loop</Name>
+            <Loops>
+                <DCT_Outer_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.580</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>16</Best-caseLatency>
+                    <Average-caseLatency>16</Average-caseLatency>
+                    <Worst-caseLatency>16</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.160 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.160 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.160 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <DCT_Outer_Loop>
+                        <Name>DCT_Outer_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>14</Latency>
+                        <AbsoluteTimeLatency>0.140 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>8</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </DCT_Outer_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:32</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <DCT_Outer_Loop>
+                            <Name>DCT_Outer_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39</SourceLocation>
+                        </DCT_Outer_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>3</UTIL_DSP>
+                    <FF>676</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>238</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln39_fu_289_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln39" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_295_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:39" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln39" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_8_fu_381_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_8" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U7" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U6" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_14ns_16s_29_1_1_U3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U8" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U4" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U9" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mul_15s_16s_29_1_1_U5" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U10" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln46_7" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U7" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U9" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29s_29_4_1_U10" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_13ns_29_4_1_U6" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_15s_29ns_29_4_1_U8" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="DCT_Outer_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_6_fu_355_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_0_U" SOURCE="" STORAGESIZE="14 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_0" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_1_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_2_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_3_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_4_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_4" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_5_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_6_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_6" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="dct_1d_dct_coeff_table_7_U" SOURCE="" STORAGESIZE="15 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="dct_1d_dct_coeff_table_7" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_1d</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.580</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:46</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>3</UTIL_DSP>
+                    <FF>814</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>325</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</Name>
+            <Loops>
+                <Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>68</Best-caseLatency>
+                    <Average-caseLatency>68</Average-caseLatency>
+                    <Worst-caseLatency>68</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.680 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.680 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.680 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop>
+                        <Name>Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>66</Latency>
+                        <AbsoluteTimeLatency>0.660 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop>
+                            <Name>Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:64~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                        </Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>40</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>160</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln64_fu_97_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:64" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln64" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_1_fu_103_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:64" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln64_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln64_fu_120_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:64" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln64" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln67_fu_126_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:67" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln67" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln55_fu_132_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln55" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln64_fu_144_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:64" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln64" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_fu_180_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:70" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln70" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln70_1_fu_186_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:70" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln70_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_192_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln67" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</Name>
+            <Loops>
+                <Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>68</Best-caseLatency>
+                    <Average-caseLatency>68</Average-caseLatency>
+                    <Worst-caseLatency>68</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.680 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.680 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.680 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop>
+                        <Name>Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>66</Latency>
+                        <AbsoluteTimeLatency>0.660 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop>
+                            <Name>Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:78~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                        </Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>40</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>160</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln78_fu_97_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:78" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln78" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln78_1_fu_103_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:78" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln78_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln78_fu_120_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:78" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln81_fu_126_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:81" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln81" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln55_fu_132_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln55" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln78_fu_144_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:78" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln78" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln84_fu_180_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:84" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln84" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln84_1_fu_186_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:84" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln84_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln81_fu_192_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct_Pipeline_WR_Loop_Row_WR_Loop_Col</Name>
+            <Loops>
+                <WR_Loop_Row_WR_Loop_Col/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>68</Best-caseLatency>
+                    <Average-caseLatency>68</Average-caseLatency>
+                    <Worst-caseLatency>68</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.680 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.680 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.680 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <WR_Loop_Row_WR_Loop_Col>
+                        <Name>WR_Loop_Row_WR_Loop_Col</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>66</Latency>
+                        <AbsoluteTimeLatency>0.660 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </WR_Loop_Row_WR_Loop_Col>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:103~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:127</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <WR_Loop_Row_WR_Loop_Col>
+                            <Name>WR_Loop_Row_WR_Loop_Col</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:106~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:127</SourceLocation>
+                        </WR_Loop_Row_WR_Loop_Col>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>34</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>146</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln106_fu_101_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:106" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln106" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_1_fu_107_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:106" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln106_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln106_fu_124_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:106" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln106" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln108_fu_130_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:108" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln108" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="select" PRAGMA="" RTLNAME="select_ln103_fu_136_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:103" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln103" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="select" PRAGMA="" RTLNAME="select_ln106_fu_144_p3" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:106" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln106" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln111_fu_168_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:111" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln111" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="WR_Loop_Row_WR_Loop_Col" OPTYPE="add" PRAGMA="" RTLNAME="add_ln108_fu_174_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:108" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln108" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dct</Name>
+            <Loops>
+                <Row_DCT_Loop/>
+                <Col_DCT_Loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.508</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>647</Best-caseLatency>
+                    <Average-caseLatency>647</Average-caseLatency>
+                    <Worst-caseLatency>647</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.470 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>6.470 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>6.470 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>648</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Row_DCT_Loop>
+                        <Name>Row_DCT_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>184</Latency>
+                        <AbsoluteTimeLatency>1.840 us</AbsoluteTimeLatency>
+                        <IterationLatency>23</IterationLatency>
+                        <PipelineDepth>23</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_dct_1d_fu_102</Instance>
+                        </InstanceList>
+                    </Row_DCT_Loop>
+                    <Col_DCT_Loop>
+                        <Name>Col_DCT_Loop</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>184</Latency>
+                        <AbsoluteTimeLatency>1.840 us</AbsoluteTimeLatency>
+                        <IterationLatency>23</IterationLatency>
+                        <PipelineDepth>23</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList/>
+                    </Col_DCT_Loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:55~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Row_DCT_Loop>
+                            <Name>Row_DCT_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:59~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                        </Row_DCT_Loop>
+                        <Col_DCT_Loop>
+                            <Name>Col_DCT_Loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73~E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124</SourceLocation>
+                        </Col_DCT_Loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>5</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>1</UTIL_BRAM>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>3</UTIL_DSP>
+                    <FF>991</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1325</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="row_outbuf_U" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:53" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="row_outbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="col_outbuf_U" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:54" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="col_outbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="col_inbuf_U" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:54" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="col_inbuf" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="" RTLNAME="buf_2d_in_U" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:118" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2d_in" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="buf_2d_out_U" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:119" STORAGESIZE="16 64 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="buf_2d_out" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Row_DCT_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln59_fu_153_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:59" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln59" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Row_DCT_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln59_fu_159_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln59" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Col_DCT_Loop" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln73_fu_184_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln73" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Col_DCT_Loop" OPTYPE="add" PRAGMA="" RTLNAME="add_ln73_fu_190_p2" SOURCE="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:73" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln73" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="input" index="0" direction="in" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="input_r_address0" name="input_r_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="input_r_ce0" name="input_r_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="input_r_q0" name="input_r_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output" index="1" direction="out" srcType="short*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="output_r_address0" name="output_r_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="output_r_ce0" name="output_r_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_we0" name="output_r_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_r_d0" name="output_r_d0" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="input_r_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="input_r_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="input_r_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="input_r_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>input_r_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="input"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="6">
+            <portMaps>
+                <portMap portMapName="output_r_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_r_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="output_r_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_r_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="output"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="input_r_address0">out, 6</column>
+                    <column name="input_r_q0">in, 16</column>
+                    <column name="output_r_address0">out, 6</column>
+                    <column name="output_r_d0">out, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input">in, short*</column>
+                    <column name="output">out, short*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="input">input_r_address0, port, offset</column>
+                    <column name="input">input_r_ce0, port, </column>
+                    <column name="input">input_r_q0, port, </column>
+                    <column name="output">output_r_address0, port, offset</column>
+                    <column name="output">output_r_ce0, port, </column>
+                    <column name="output">output_r_we0, port, </column>
+                    <column name="output">output_r_d0, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="pipeline" location="../../dct.c:40" status="valid" parentFunction="dct_1d" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../dct.c:68" status="valid" parentFunction="dct_2d" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../dct.c:82" status="valid" parentFunction="dct_2d" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../dct.c:95" status="valid" parentFunction="read_data" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../../dct.c:109" status="valid" parentFunction="write_data" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="array_partition" parentFunction="dct" options="dim=2 type=complete  variable=dct_1d.dct_coeff_table" pragmaLocId="../../dct.c:34:0" srcPragmaType="pipeline" srcPragmaLoc="../../dct.c:40:0" srcPragmaSource="pragma" srcIsDirective="0" srcIsSlxDirective="0" variable="dct_1d.dct_coeff_table" varLoc=""/>
+    </AutoPragmaReport>
+</profile>
+

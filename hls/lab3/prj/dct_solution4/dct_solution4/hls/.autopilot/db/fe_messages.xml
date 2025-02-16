@@ -1,0 +1,48 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:31:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42:7) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:42:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'read_data' into 'dct'">
+        <args Callee="read_data" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 88 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'dct_2d' into 'dct'">
+        <args Callee="dct_2d" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 52 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:116:0" msg_body="Inlining function 'write_data' into 'dct'">
+        <args Callee="write_data" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 102 Column 0" Caller="dct" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 116 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0" msg_body="Automatically partitioning array 'dct_1d.dct_coeff_table' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="dct_1d.dct_coeff_table"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0" msg_body="array_partition dim=2 type=complete  variable=dct_1d.dct_coeff_table 1 dct E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0 E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:40:9dct_1d.dct_coeff_table">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=dct_1d.dct_coeff_table" PragmaSrcLoc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:40:9" PragmaSrcLoc-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c Line 40 Column 9" PragmaType="array_partition" VarName="dct_1d.dct_coeff_table" varLoc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:40:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'dct_1d.dct_coeff_table' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="dct_1d.dct_coeff_table" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:34:0" msg_body="Applying array_partition to 'dct_1d.dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="dct_1d.dct_coeff_table"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

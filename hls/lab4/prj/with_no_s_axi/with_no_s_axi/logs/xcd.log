@@ -1,0 +1,25 @@
+02/16/25 14:40:36: Running xcd server. This server was built by gradle.
+02/16/25 14:40:36: Server was asked to start on port: '64102'
+02/16/25 14:40:36: Server is using token UUID: '08a59ec2-76cf-492e-a181-41f5098fb468'
+02/16/25 14:40:36: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/16/25 14:40:36: Attempting to start server on port '64102'
+02/16/25 14:40:36: Running Dispatch Server
+02/16/25 14:40:36: Version 2.2.0
+02/16/25 14:40:38: Dispatch Server: Accepted socket connection from client
+02/16/25 14:40:38: Starting Socket connection
+02/16/25 14:40:38: EXCHANGE_TOKEN received, server token: 08a59ec2-76cf-492e-a181-41f5098fb468, passed token: 08a59ec2-76cf-492e-a181-41f5098fb468
+02/16/25 14:40:38: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+02/16/25 14:40:38: SESSION_MGR: creating session with session uuid: 'b296d1cf-9bdc-4705-bcbb-ecb895491641' and name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:38: KERNEL_SVC: creating session with uuid: 'b296d1cf-9bdc-4705-bcbb-ecb895491641' and name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:38: GUIDANCE_SMGR: creating guidance session with uuid: 'b296d1cf-9bdc-4705-bcbb-ecb895491641' and name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:38: SYSTEM_DIAGRAM: creating session with uuid: 'b296d1cf-9bdc-4705-bcbb-ecb895491641' and name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:42: Dispatch Server: Accepted socket connection from client
+02/16/25 14:40:42: Starting Socket connection
+02/16/25 14:40:56: SESSION_MGR: closing session for UUID 'b296d1cf-9bdc-4705-bcbb-ecb895491641' with name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:56: KERNEL_SVC: closing session for UUID 'b296d1cf-9bdc-4705-bcbb-ecb895491641' with name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:56: GUIDANCE_SMGR: closing session for UUID 'b296d1cf-9bdc-4705-bcbb-ecb895491641' with name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:56: SYSTEM_DIAGRAM: closing session for UUID 'b296d1cf-9bdc-4705-bcbb-ecb895491641' with name 'v++_compile_with_no_s_axi'
+02/16/25 14:40:56: STOP_SERVER received, server token: 08a59ec2-76cf-492e-a181-41f5098fb468, passed token: 08a59ec2-76cf-492e-a181-41f5098fb468
+02/16/25 14:40:56: Socket received request to stop server.
+02/16/25 14:40:56: Dispatch Server: do_await_stop
+02/16/25 14:40:56: SERVER: destructor for server bound to port 64102

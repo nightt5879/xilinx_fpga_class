@@ -1,0 +1,123 @@
+{
+    "1": {
+        "name": "Loop_Xpose_Row_Outer_Loop_proc",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab3\/dct.c",
+        "fileloc": "57",
+        "instructions": "59",
+        "total_instructions": "59",
+        "calls": "",
+        "basicblocks": "12",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "Loop_Row_DCT_Loop_proc",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab3\/dct.c",
+        "fileloc": "57",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "8",
+            "L": "11"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "Loop_Xpose_Col_Outer_Loop_proc",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab3\/dct.c",
+        "fileloc": "57",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "dct",
+        "file": "dct.c",
+        "fileloc": "117",
+        "instructions": "32",
+        "total_instructions": "428",
+        "calls": "4 2 1 6 3 5",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "read_data",
+        "file": "dct.c",
+        "fileloc": "89",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "12",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "write_data",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab3\/dct.c",
+        "fileloc": "103",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "Loop_Col_DCT_Loop_proc",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab3\/dct.c",
+        "fileloc": "57",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "8",
+            "L": "11"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

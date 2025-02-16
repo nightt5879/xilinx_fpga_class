@@ -32,6 +32,9 @@ void fir (
   data_t *y,
   data_t x
   ) {
+#pragma HLS INTERFACE mode=s_axilite port=return bundle=fir_io
+#pragma HLS INTERFACE mode=s_axilite port=y bundle=fir_io
+#pragma HLS INTERFACE mode=s_axilite port=x bundle=fir_io
   const coef_t c[N+1]={
  #include "fir_coef.dat"
     };

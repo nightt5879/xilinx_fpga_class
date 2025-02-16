@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\dct_solution6.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/14/25 14:37:35",
+ "timestampMillis": "1739515055255",
+ "buildStep": {
+  "cmdId": "543d7ee1-0884-4451-965c-54aa84ecda28",
+  "name": "v++",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\logs\\dct_solution6.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\hls_config.cfg --work_dir dct_solution6 ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\hls_config.cfg",
+   "--work_dir",
+   "dct_solution6"
+  ],
+  "iniFiles": [
+   {
+    "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=dct\nsyn.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c\ntb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/dct_test.c\ntb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/in.dat\ntb.file=E:/robot/project/xilinx_fpga_class/hls/lab3/out.golden.dat\nclock=10ns"
+   }
+  ],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/25 14:37:35",
+ "timestampMillis": "1739515055255",
+ "status": {
+  "cmdId": "543d7ee1-0884-4451-965c-54aa84ecda28",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060497",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\dct.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060499",
+ "buildStep": {
+  "cmdId": "bcad0563-e72c-4519-80b8-9dc8db2de1e5",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060499",
+ "status": {
+  "cmdId": "bcad0563-e72c-4519-80b8-9dc8db2de1e5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060500",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060500",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:37:40",
+ "timestampMillis": "1739515060500",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083168",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083168",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083168",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083169",
+ "status": {
+  "cmdId": "bcad0563-e72c-4519-80b8-9dc8db2de1e5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083359",
+ "status": {
+  "cmdId": "543d7ee1-0884-4451-965c-54aa84ecda28",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083393",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\reports\\v++_compile_dct_solution6_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/14/25 14:38:03",
+ "timestampMillis": "1739515083393",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab3\\prj\\dct_solution6\\dct_solution6\\reports\\.db\\v++_compile_dct_solution6_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

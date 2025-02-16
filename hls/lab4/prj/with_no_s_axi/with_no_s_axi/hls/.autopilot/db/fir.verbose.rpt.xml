@@ -1,0 +1,125 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fir'" level="0">
+<item name = "Date">Sun Feb 16 14:40:55 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">with_no_s_axi</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 3.700 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">67, 67, 0.670 us, 0.670 us, 68, 68, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fir_Pipeline_loop_fu_70">fir_Pipeline_loop, 62, 62, 0.620 us, 0.620 us, 57, 57, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 1, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 2, 140, 134, -</column>
+<column name="Memory">0, -, 32, 15, 0</column>
+<column name="Multiplexer">-, -, 0, 87, -</column>
+<column name="Register">-, -, 79, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_fir_Pipeline_loop_fu_70">fir_Pipeline_loop, 0, 1, 140, 129, 0</column>
+<column name="mul_16s_10s_25_1_1_U7">mul_16s_10s_25_1_1, 0, 1, 0, 5, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="mac_muladd_16s_10s_31s_31_4_1_U8">mac_muladd_16s_10s_31s_31_4_1, i0 + i1 * i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="shift_reg_U">shift_reg_RAM_AUTO_1R1W, 0, 32, 15, 0, 58, 16, 1, 928</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">37, 7, 1, 7</column>
+<column name="shift_reg_address0">9, 2, 6, 12</column>
+<column name="shift_reg_address0_local">14, 3, 6, 18</column>
+<column name="shift_reg_ce0">9, 2, 1, 2</column>
+<column name="shift_reg_d0">9, 2, 16, 32</column>
+<column name="shift_reg_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="acc_2_loc_fu_46">31, 0, 31, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="grp_fir_Pipeline_loop_fu_70_ap_start_reg">1, 0, 1, 0</column>
+<column name="mul_ln44_reg_122">25, 0, 25, 0</column>
+<column name="x_read_reg_127">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fir, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, fir, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, fir, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, fir, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, fir, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fir, return value</column>
+<column name="y">out, 16, ap_vld, y, pointer</column>
+<column name="y_ap_vld">out, 1, ap_vld, y, pointer</column>
+<column name="x">in, 16, ap_none, x, scalar</column>
+</table>
+</item>
+</section>
+</profile>

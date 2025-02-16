@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct'
+================================================================
+* Date:           Fri Feb 14 09:59:23 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        dct_solution3
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.286 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1323|     1323|  13.230 us|  13.230 us|  1324|  1324|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%row_outbuf = alloca i64 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:53->E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124]   --->   Operation 13 'alloca' 'row_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%col_outbuf = alloca i64 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:54->E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124]   --->   Operation 14 'alloca' 'col_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%col_inbuf = alloca i64 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:54->E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:124]   --->   Operation 15 'alloca' 'col_inbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%buf_2d_in = alloca i64 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:118]   --->   Operation 16 'alloca' 'buf_2d_in' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%buf_2d_out = alloca i64 1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:119]   --->   Operation 17 'alloca' 'buf_2d_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_RD_Loop_Row_RD_Loop_Col, i16 %buf_2d_in, i16 %input_r"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_RD_Loop_Row_RD_Loop_Col, i16 %buf_2d_in, i16 %input_r"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop, i16 %row_outbuf, i16 %buf_2d_in, i15 %dct_coeff_table"   --->   Operation 20 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop, i16 %row_outbuf, i16 %buf_2d_in, i15 %dct_coeff_table"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 22 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 24 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop, i16 %col_outbuf, i16 %col_inbuf, i15 %dct_coeff_table"   --->   Operation 24 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 25 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop_DCT_Inner_Loop, i16 %col_outbuf, i16 %col_inbuf, i15 %dct_coeff_table"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 26 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %col_outbuf, i16 %buf_2d_out"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %col_outbuf, i16 %buf_2d_out"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_WR_Loop_Row_WR_Loop_Col, i16 %buf_2d_out, i16 %output_r"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 29 [1/1] (0.00ns)   --->   "%spectopmodule_ln115 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:115]   --->   Operation 29 'spectopmodule' 'spectopmodule_ln115' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_Pipeline_WR_Loop_Row_WR_Loop_Col, i16 %buf_2d_out, i16 %output_r"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 35 [1/1] (0.00ns)   --->   "%ret_ln128 = ret" [E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c:128]   --->   Operation 35 'ret' 'ret_ln128' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

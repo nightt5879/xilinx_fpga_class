@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1739498363945">
+  <ports id="1" name="row_outbuf" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="col_inbuf" type="PortType" coreName="RAM" coreId="4294967295" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="59" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="99" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@ports.1"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="145" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="146" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="147" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="148" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="149" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="150" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="151" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="152" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="153" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <blocks id="10" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc18.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="i" lineNumber="55" originalName="i" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="j" lineNumber="55" originalName="j" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="indvar_flatten29" coreId="4294967295" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten29_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="j_write_ln55" lineNumber="55" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i_write_ln55" lineNumber="55" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+      <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="br_ln0" coreId="4294967295" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc18.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c">
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="46" name="for.inc.i42.i.preheader.exitStub" type="BlockType">
+    <controlInputObjs>for.inc18.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="_ln0" coreId="4294967295" opcode="ret" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="33" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="182" pipe_depth="4" RegionName="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop">
+    <basic_blocks id="15" name="for.inc18.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc21.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc.i42.i.preheader.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc21.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="indvar_flatten29_load" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="7" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="icmp_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="icmp_ln64_fu_97_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.87" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="add_ln64_1" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="add_ln64_1_fu_103_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="7" opcode="add" m_display="0" m_delay="1.87" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="br_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc21.i</controlInputObjs>
+        <controlInputObjs>for.inc.i42.i.preheader.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c">
+        <validLinenumbers>64</validLinenumbers>
+        <validLinenumbers>124</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="44" name="for.inc21.i" type="BlockType">
+      <controlInputObjs>for.inc18.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc18.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i_load" lineNumber="67" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="4" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="67" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="j_load" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="4" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="add_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="add_ln64_fu_120_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln67" lineNumber="67" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="icmp_ln67_fu_126_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="67" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="select_ln55" lineNumber="55" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="select_ln55_fu_132_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="1.0" m_display="0" m_delay="1.02" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="trunc_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="trunc_ln64_fu_140_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="3" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="select_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="select_ln64_fu_144_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="1.0" m_display="0" m_delay="1.02" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln64_1" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="trunc_ln64_1_fu_152_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="3" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln70" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="zext_ln70_fu_156_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_s" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="tmp_s_fu_160_p3" coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="zext_ln70_1" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="zext_ln70_1_fu_168_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp_1" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="tmp_1_fu_172_p3" coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="add_ln70" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="add_ln70_fu_180_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="zext_ln70_2" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="zext_ln70_2_fu_208_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="row_outbuf_addr" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>row_outbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="add_ln70_1" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="add_ln70_1_fu_186_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="zext_ln70_3" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="zext_ln70_3_fu_212_p1" coreId="4294967295" contextFuncName="dct_2d" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="col_inbuf_addr" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" bitwidth="6" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>col_inbuf</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="row_outbuf_load" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="col_inbuf_addr_write_ln70" lineNumber="70" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="81" contextFuncName="dct_2d" opcode="store" nodeLabel="3.0" m_display="0" m_delay="3.25" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="70" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln67" lineNumber="67" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." rtlName="add_ln67_fu_192_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="67" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="indvar_flatten29_write_ln64" lineNumber="64" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="64" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="j_write_ln55" lineNumber="55" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="i_write_ln55" lineNumber="55" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="55" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln67" lineNumber="67" fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" fileDirectory="../." coreId="4294967295" contextFuncName="dct_2d" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="124" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct"/>
+        <inlineStackInfo fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c" linenumber="67" fileDirectory="E:\robot\project\xilinx_fpga_class\hls\lab3\prj\dct_solution3" functionName="dct_2d"/>
+        <controlInputObjs>for.inc18.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="E:/robot/project/xilinx_fpga_class/hls/lab3/dct.c">
+        <validLinenumbers>67</validLinenumbers>
+        <validLinenumbers>64</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>70</validLinenumbers>
+        <validLinenumbers>124</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="icmp_ln64_reg_237">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln70_1_reg_246">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln70_reg_241">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="row_outbuf_addr_reg_251">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_216">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten29_reg_230">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_223">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <expressionNodes realName="col_inbuf_addr_gep_fu_65">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln70_2_fu_208">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln64_fu_140">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_outbuf_addr_gep_fu_52">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_40">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_172">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_160">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln70_fu_156">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_1_fu_103">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_fu_97">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln70_1_fu_186">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln67_fu_192">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln70_fu_180">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln67_fu_126">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln64_fu_120">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln64_fu_144">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln64_1_fu_152">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln70_3_fu_212">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten29_fu_48">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln55_fu_132">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln70_1_fu_168">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_44">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="indvar_flatten29_load_load_fu_94">
+    <nodeIds>11</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln55_store_fu_198">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_109">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln55_store_fu_84">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_load_fu_114">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_load_load_fu_117">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_79">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln55_store_fu_203">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln55_store_fu_89">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="col_inbuf">
+    <nodeIds>38</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="row_outbuf">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="col_inbuf(p0)">
+    <contents name="store">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="row_outbuf(p0)">
+    <contents name="load">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="68" mMaxLatency="68">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" mII="1" mDepth="4" mMinTripCount="64" mMaxTripCount="64" mMinLatency="66" mMaxLatency="66" mType="1">
+      <basicBlocks>15</basicBlocks>
+      <basicBlocks>44</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>46</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
