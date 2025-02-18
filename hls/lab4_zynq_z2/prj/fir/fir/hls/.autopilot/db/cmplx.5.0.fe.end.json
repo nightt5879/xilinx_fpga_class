@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "fir_Pipeline_loop",
+        "file": "E:\/robot\/project\/xilinx_fpga_class\/hls\/lab4_zynq_z2\/fir.c",
+        "fileloc": "44",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "G": "2",
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "fir",
+        "file": "fir.c",
+        "fileloc": "31",
+        "instructions": "23",
+        "total_instructions": "56",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    }
+}

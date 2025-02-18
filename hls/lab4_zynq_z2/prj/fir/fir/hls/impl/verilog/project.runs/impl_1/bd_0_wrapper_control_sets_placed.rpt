@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Feb 18 09:39:49 2025
+| Host         : nightt_insider running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |              32 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              58 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+| Clock Signal |                         Enable Signal                         |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+---------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+|  ap_clk      | bd_0_i/hls_inst/inst/fir_io_s_axi_U/waddr                     |                                                       |                1 |              4 |         4.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/grp_fir_Pipeline_loop_fu_80_ap_start_reg |                                                       |                2 |              6 |         3.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/fir_io_s_axi_U/ar_hs                     |                                                       |                3 |              6 |         2.00 |
+|  ap_clk      | bd_0_i/hls_inst/inst/fir_io_s_axi_U/ar_hs                     | bd_0_i/hls_inst/inst/fir_io_s_axi_U/rdata[15]_i_1_n_0 |                5 |             10 |         2.00 |
+|  ap_clk      |                                                               |                                                       |                5 |             11 |         2.20 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state4                         |                                                       |                3 |             16 |         5.33 |
+|  ap_clk      | bd_0_i/hls_inst/inst/ap_CS_fsm_state7                         | bd_0_i/hls_inst/inst/fir_io_s_axi_U/SR[0]             |                3 |             16 |         5.33 |
+|  ap_clk      |                                                               | bd_0_i/hls_inst/inst/fir_io_s_axi_U/SR[0]             |                8 |             31 |         3.88 |
+|  ap_clk      | bd_0_i/hls_inst/inst/fir_io_s_axi_U/E[0]                      | bd_0_i/hls_inst/inst/fir_io_s_axi_U/SR[0]             |                8 |             32 |         4.00 |
++--------------+---------------------------------------------------------------+-------------------------------------------------------+------------------+----------------+--------------+
+
+

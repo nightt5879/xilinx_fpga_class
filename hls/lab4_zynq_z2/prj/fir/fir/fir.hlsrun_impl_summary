@@ -1,0 +1,269 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\fir.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/25 09:36:38",
+ "timestampMillis": "1739842598963",
+ "buildStep": {
+  "cmdId": "feef24e0-c40c-40e6-9766-3e478f34ca15",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\logs\\fir.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --impl --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\hls_config.cfg --work_dir fir ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\hls_config.cfg",
+   "--work_dir",
+   "fir"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:36:38",
+ "timestampMillis": "1739842598963",
+ "status": {
+  "cmdId": "feef24e0-c40c-40e6-9766-3e478f34ca15",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603553",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\fir.c",
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\fir_coef.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603554",
+ "buildStep": {
+  "cmdId": "a73f225e-5657-47ad-ac32-6f751fd496e6",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603555",
+ "status": {
+  "cmdId": "a73f225e-5657-47ad-ac32-6f751fd496e6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603556",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603556",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\report\\verilog\\export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603557",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\report\\verilog\\export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603557",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603557",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\report\\verilog\\export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:36:43",
+ "timestampMillis": "1739842603558",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\impl\\report\\verilog\\export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831315",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831323",
+ "report": {
+  "path": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831324",
+ "status": {
+  "cmdId": "a73f225e-5657-47ad-ac32-6f751fd496e6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831535",
+ "status": {
+  "cmdId": "feef24e0-c40c-40e6-9766-3e478f34ca15",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831538",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:40:31",
+ "timestampMillis": "1739842831538",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

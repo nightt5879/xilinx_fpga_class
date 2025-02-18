@@ -1,0 +1,58 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fir_top glbl -Oenable_linking_all_libraries -prj fir.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s fir 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/AESL_axi_slave_fir_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_fir_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_fir_io_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_io_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_fir_Pipeline_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_fir_Pipeline_loop_c_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_fir_Pipeline_loop_c_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_mac_muladd_16s_10s_31s_31_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_10s_31s_31_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_10s_31s_31_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_mac_muladd_16s_16s_37s_37_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module fir_mac_muladd_16s_16s_37s_37_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_mul_16s_10s_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mul_16s_10s_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir_shift_reg_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_shift_reg_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fir_shift_reg_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop_c_ROM_AUTO...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_16s_37s_37_4_...
+Compiling module xil_defaultlib.fir_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.fir_fir_Pipeline_loop
+Compiling module xil_defaultlib.fir_fir_io_s_axi
+Compiling module xil_defaultlib.fir_mul_16s_10s_25_1_1(NUM_STAGE...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_10s_31s_31_4_...
+Compiling module xil_defaultlib.fir_mac_muladd_16s_10s_31s_31_4_...
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.AESL_axi_slave_fir_io
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fir_top
+Compiling module work.glbl
+Built simulation snapshot fir

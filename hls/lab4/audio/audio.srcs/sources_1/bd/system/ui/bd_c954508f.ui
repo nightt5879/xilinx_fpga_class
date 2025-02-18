@@ -1,46 +1,54 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.746988",
-   "Default View_TopLeft":"-238,-17",
+   "Default View_ScaleFactor":"0.568966",
+   "Default View_TopLeft":"-645,-79",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 5 -x 1430 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 5 -x 1430 -y 80 -defaultsOSRD
-preplace port GPIO -pg 1 -lvl 5 -x 1430 -y 400 -defaultsOSRD
-preplace port GPIO2 -pg 1 -lvl 5 -x 1430 -y 420 -defaultsOSRD
-preplace port IIC_1 -pg 1 -lvl 5 -x 1430 -y 100 -defaultsOSRD
-preplace port port-id_BCLK -pg 1 -lvl 5 -x 1430 -y 530 -defaultsOSRD
-preplace port port-id_LRCLK -pg 1 -lvl 5 -x 1430 -y 550 -defaultsOSRD
-preplace port port-id_SDATA_O -pg 1 -lvl 5 -x 1430 -y 570 -defaultsOSRD
-preplace port port-id_SDATA_I -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
-preplace port port-id_FCLK_CLK1 -pg 1 -lvl 5 -x 1430 -y 160 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1200 -y 120 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1200 -y 410 -defaultsOSRD
-preplace inst audio_codec_ctrl_0 -pg 1 -lvl 4 -x 1200 -y 560 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 830 -y 400 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -x 500 -y 360 -defaultsOSRD
-preplace netloc SDATA_I_1 1 0 4 NJ 550 N 550 NJ 550 NJ
-preplace netloc audio_codec_ctrl_0_bclk 1 4 1 NJ 530
-preplace netloc audio_codec_ctrl_0_lrclk 1 4 1 NJ 550
-preplace netloc audio_codec_ctrl_0_sdata_o 1 4 1 NJ 570
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 4 330 460 670 540 990 0 1400
-preplace netloc processing_system7_0_FCLK_CLK1 1 4 1 NJ 160
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 4 320 240 NJ 240 NJ 240 1400
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 2 680 560 1000
-preplace netloc axi_gpio_0_GPIO 1 4 1 NJ 400
-preplace netloc axi_gpio_0_GPIO2 1 4 1 NJ 420
-preplace netloc processing_system7_0_DDR 1 4 1 NJ 60
-preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ 80
-preplace netloc processing_system7_0_IIC_1 1 4 1 NJ 100
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 3 680 250 NJ 250 1410
-preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 390
-preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 980 410n
-levelinfo -pg 1 0 170 500 830 1200 1430
-pagesize -pg 1 -db -bbox -sgen -110 -20 1560 650
+preplace port DDR -pg 1 -lvl 4 -x 1550 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1550 -y 80 -defaultsOSRD
+preplace port GPIO -pg 1 -lvl 4 -x 1550 -y 400 -defaultsOSRD
+preplace port GPIO2 -pg 1 -lvl 4 -x 1550 -y 420 -defaultsOSRD
+preplace port IIC_1 -pg 1 -lvl 4 -x 1550 -y 100 -defaultsOSRD
+preplace port port-id_BCLK -pg 1 -lvl 4 -x 1550 -y 530 -defaultsOSRD
+preplace port port-id_LRCLK -pg 1 -lvl 4 -x 1550 -y 550 -defaultsOSRD
+preplace port port-id_SDATA_O -pg 1 -lvl 4 -x 1550 -y 570 -defaultsOSRD
+preplace port port-id_SDATA_I -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_FCLK_CLK1 -pg 1 -lvl 4 -x 1550 -y 160 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 1270 -y 70 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1270 -y 530 -defaultsOSRD
+preplace inst audio_codec_ctrl_0 -pg 1 -lvl 3 -x 1270 -y 680 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 850 -y 380 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 500 -y 360 -defaultsOSRD
+preplace inst fir_0 -pg 1 -lvl 3 -x 1270 -y 250 -defaultsOSRD
+preplace inst fir_1 -pg 1 -lvl 3 -x 1270 -y 390 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 850 -y 610 -defaultsOSRD
+preplace netloc SDATA_I_1 1 0 3 NJ 540 670J 680 1070J
+preplace netloc audio_codec_ctrl_0_bclk 1 3 1 1510J 530n
+preplace netloc audio_codec_ctrl_0_lrclk 1 3 1 1520J 550n
+preplace netloc audio_codec_ctrl_0_sdata_o 1 3 1 1530J 570n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 330 260 690 190 1060 -60 1480
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 1 1530J 110n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 320 -70 NJ -70 NJ -70 1490
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 680 200 1030
+preplace netloc fir_1_interrupt 1 1 3 700 770 NJ 770 1470
+preplace netloc fir_0_interrupt 1 1 3 690 780 NJ 780 1480
+preplace netloc xlconcat_0_dout 1 2 1 1040 80n
+preplace netloc axi_gpio_0_GPIO 1 3 1 1490J 400n
+preplace netloc axi_gpio_0_GPIO2 1 3 1 1500J 420n
+preplace netloc processing_system7_0_DDR 1 3 1 1530J 10n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 1510J 30n
+preplace netloc processing_system7_0_IIC_1 1 3 1 1500J 50n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 700 -50 NJ -50 1470
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 1050 350n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 1010 370n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 1000 230n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 1020 370n
+levelinfo -pg 1 0 500 850 1270 1550
+pagesize -pg 1 -db -bbox -sgen -110 -110 1680 930
 "
 }
 {
-   "da_axi4_cnt":"2",
+   "da_axi4_cnt":"4",
    "da_ps7_cnt":"1"
 }

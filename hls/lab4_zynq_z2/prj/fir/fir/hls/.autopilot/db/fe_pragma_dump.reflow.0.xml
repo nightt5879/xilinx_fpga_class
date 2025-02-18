@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/fir.c" line="35" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/fir.c" line="36" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="y" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/fir.c" line="37" pragmaType="interface" parentfunction="fir" mode="s_axilite" port="x" bundle="fir_io" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

@@ -576,7 +576,7 @@
       bit  IRQ_P2F_SPI1;
       bit  IRQ_P2F_UART1;
       bit  IRQ_P2F_CAN1;
-      bit  [0 : 0] IRQ_F2P;
+      bit  [1 : 0] IRQ_F2P;
       bit  Core0_nFIQ;
       bit  Core0_nIRQ;
       bit  Core1_nFIQ;
@@ -722,6 +722,7 @@
   M_AXI_GP0_BRESP,
   M_AXI_GP0_RRESP,
   M_AXI_GP0_RDATA,
+  IRQ_F2P,
   FCLK_CLK0,
   FCLK_CLK1,
   FCLK_RESET0_N,
@@ -781,7 +782,7 @@
       parameter C_S_AXI_HP3_DATA_WIDTH = 64;
       parameter C_M_AXI_GP0_THREAD_ID_WIDTH = 12;
       parameter C_M_AXI_GP1_THREAD_ID_WIDTH = 12;
-      parameter C_NUM_F2P_INTR_INPUTS = 1;
+      parameter C_NUM_F2P_INTR_INPUTS = 2;
       parameter C_IRQ_F2P_MODE = "DIRECT";
       parameter C_DQ_WIDTH = 32;
       parameter C_DQS_WIDTH = 4;
@@ -854,6 +855,7 @@
       input  [1 : 0] M_AXI_GP0_BRESP;
       input  [1 : 0] M_AXI_GP0_RRESP;
       input  [31 : 0] M_AXI_GP0_RDATA;
+      input  [1 : 0] IRQ_F2P;
       output  FCLK_CLK0;
       output  FCLK_CLK1;
       output  FCLK_RESET0_N;
@@ -923,6 +925,7 @@ import "DPI-C" function void ps7_set_ip_context(input string ip_name);
 import "DPI-C" function void ps7_set_str_param(input string name,input string val);
 import "DPI-C" function void ps7_set_int_param(input string name,input longint val);
 import "DPI-C" function void ps7_init_c_model();
+import "DPI-C" function void ps7_set_input_IRQ_F2P(input int pinIdex, input int pinValue);
 import "DPI-C" function void ps7_init_m_axi_gp0(input int M_AXI_GP0_AWID_size,input int M_AXI_GP0_AWADDR_size,input int M_AXI_GP0_AWLEN_size,input int M_AXI_GP0_AWSIZE_size,input int M_AXI_GP0_AWBURST_size,input int M_AXI_GP0_AWLOCK_size,input int M_AXI_GP0_AWCACHE_size,input int M_AXI_GP0_AWPROT_size,input int M_AXI_GP0_AWQOS_size,input int M_AXI_GP0_AWVALID_size,input int M_AXI_GP0_AWREADY_size,input int M_AXI_GP0_WID_size,input int M_AXI_GP0_WDATA_size,input int M_AXI_GP0_WSTRB_size,input int M_AXI_GP0_WLAST_size,input int M_AXI_GP0_WVALID_size,input int M_AXI_GP0_WREADY_size,input int M_AXI_GP0_BID_size,input int M_AXI_GP0_BRESP_size,input int M_AXI_GP0_BVALID_size,input int M_AXI_GP0_BREADY_size,input int M_AXI_GP0_ARID_size,input int M_AXI_GP0_ARADDR_size,input int M_AXI_GP0_ARLEN_size,input int M_AXI_GP0_ARSIZE_size,input int M_AXI_GP0_ARBURST_size,input int M_AXI_GP0_ARLOCK_size,input int M_AXI_GP0_ARCACHE_size,input int M_AXI_GP0_ARPROT_size,input int M_AXI_GP0_ARQOS_size,input int M_AXI_GP0_ARVALID_size,input int M_AXI_GP0_ARREADY_size,input int M_AXI_GP0_RID_size,input int M_AXI_GP0_RDATA_size,input int M_AXI_GP0_RRESP_size,input int M_AXI_GP0_RLAST_size,input int M_AXI_GP0_RVALID_size,input int M_AXI_GP0_RREADY_size);
 import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK0();
 import "DPI-C" function void ps7_simulate_single_cycle_FCLK_CLK1();
@@ -1093,6 +1096,22 @@ output bit M_AXI_GP0_RREADY
    ps7_simulate_single_cycle_FCLK_CLK1();
   end
 
+always@(posedge IRQ_F2P[0])
+begin
+    ps7_set_input_IRQ_F2P(0,1);
+end
+always@(negedge IRQ_F2P[0])
+begin
+    ps7_set_input_IRQ_F2P(0,0);
+end
+always@(posedge IRQ_F2P[1])
+begin
+    ps7_set_input_IRQ_F2P(1,1);
+end
+always@(negedge IRQ_F2P[1])
+begin
+    ps7_set_input_IRQ_F2P(1,0);
+end
 
 always@(posedge M_AXI_GP0_ACLK)
   begin

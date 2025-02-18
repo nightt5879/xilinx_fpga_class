@@ -151,6 +151,7 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         ,I2C1_SCL_O("I2C1_SCL_O")
         ,I2C1_SCL_T("I2C1_SCL_T")
         ,M_AXI_GP0_ACLK("M_AXI_GP0_ACLK")
+        ,IRQ_F2P("IRQ_F2P")
         ,FCLK_CLK0("FCLK_CLK0")
         ,FCLK_CLK1("FCLK_CLK1")
         ,FCLK_RESET0_N("FCLK_RESET0_N")
@@ -220,6 +221,11 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
 
         m_zynq_tlm_model->tie_off();
         
+ 
+        SC_METHOD(IRQ_F2P_method);
+        sensitive << IRQ_F2P ;
+        dont_initialize();
+
         SC_METHOD(trigger_FCLK_CLK0_pin);
         sensitive << FCLK_CLK0_clk;
         dont_initialize();
@@ -244,6 +250,17 @@ processing_system7_v5_5_tlm :: ~processing_system7_v5_5_tlm() {
     //FCLK_CLK1 pin written based on FCLK_CLK1_clk clock value 
     void processing_system7_v5_5_tlm ::trigger_FCLK_CLK1_pin()    {
         FCLK_CLK1.write(FCLK_CLK1_clk.read());
+    }
+    void processing_system7_v5_5_tlm ::IRQ_F2P_method()    {
+        int irq = ((IRQ_F2P.read().to_uint()) & 0xFFFF);
+        for(int i = 0; i < prop.getLongLong("C_NUM_F2P_INTR_INPUTS"); i++)   {
+            if(irq & (0x1<<i))  {
+                m_zynq_tlm_model->pl2ps_irq[i].write(true);
+            }
+            else{
+                m_zynq_tlm_model->pl2ps_irq[i].write(false);
+            }
+        }
     }
     //ps2pl_rst[0] output reset pin
     void processing_system7_v5_5_tlm :: FCLK_RESET0_N_trigger()   {

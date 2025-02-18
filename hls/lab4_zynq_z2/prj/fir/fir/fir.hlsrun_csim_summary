@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\fir.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/25 09:33:34",
+ "timestampMillis": "1739842414029",
+ "buildStep": {
+  "cmdId": "559c9310-e53a-4f24-8ac9-2d217b71f0df",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\logs\\fir.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\hls_config.cfg --work_dir fir ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\hls_config.cfg",
+   "--work_dir",
+   "fir"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:33:34",
+ "timestampMillis": "1739842414030",
+ "status": {
+  "cmdId": "559c9310-e53a-4f24-8ac9-2d217b71f0df",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/25 09:33:38",
+ "timestampMillis": "1739842418566",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\fir.c",
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\fir_coef.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/25 09:33:38",
+ "timestampMillis": "1739842418567",
+ "buildStep": {
+  "cmdId": "024df23c-9f65-425f-b6b4-10bb3a20a29b",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir\\fir\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4_zynq_z2\\prj\\fir"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:33:38",
+ "timestampMillis": "1739842418567",
+ "status": {
+  "cmdId": "024df23c-9f65-425f-b6b4-10bb3a20a29b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:33:45",
+ "timestampMillis": "1739842425054",
+ "status": {
+  "cmdId": "024df23c-9f65-425f-b6b4-10bb3a20a29b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/25 09:33:45",
+ "timestampMillis": "1739842425199",
+ "status": {
+  "cmdId": "559c9310-e53a-4f24-8ac9-2d217b71f0df",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:33:45",
+ "timestampMillis": "1739842425200",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/25 09:33:45",
+ "timestampMillis": "1739842425200",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

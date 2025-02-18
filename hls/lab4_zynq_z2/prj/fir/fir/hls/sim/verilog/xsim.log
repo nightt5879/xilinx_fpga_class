@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Feb 18 09:35:47 2025
+# Process ID         : 41120
+# Current directory  : E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/fir/xsim_script.tcl}
+# Log file           : E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/xsim.log
+# Journal file       : E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog\xsim.jou
+# Running On         : nightt_insider
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 5800U with Radeon Graphics         
+# CPU Frequency      : 1896 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16487 MB
+# Swap memory        : 22548 MB
+# Total Virtual      : 39036 MB
+# Available Virtual  : 6990 MB
+#-----------------------------------------------------------
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -autoloadwcfg -tclbatch {fir.tcl}
+Time resolution is 1 ps
+source fir.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 68 [0.00%] @ "125000"
+// RTL Simulation : 1 / 68 [14.71%] @ "1165000"
+// RTL Simulation : 2 / 68 [14.71%] @ "2195000"
+// RTL Simulation : 3 / 68 [14.71%] @ "3105000"
+// RTL Simulation : 4 / 68 [14.71%] @ "4015000"
+// RTL Simulation : 5 / 68 [14.71%] @ "4925000"
+// RTL Simulation : 6 / 68 [14.71%] @ "5835000"
+// RTL Simulation : 7 / 68 [14.71%] @ "6745000"
+// RTL Simulation : 8 / 68 [14.71%] @ "7655000"
+// RTL Simulation : 9 / 68 [14.71%] @ "8565000"
+// RTL Simulation : 10 / 68 [14.71%] @ "9475000"
+// RTL Simulation : 11 / 68 [14.71%] @ "10385000"
+// RTL Simulation : 12 / 68 [14.71%] @ "11295000"
+// RTL Simulation : 13 / 68 [14.71%] @ "12205000"
+// RTL Simulation : 14 / 68 [14.71%] @ "13115000"
+// RTL Simulation : 15 / 68 [14.71%] @ "14025000"
+// RTL Simulation : 16 / 68 [14.71%] @ "14935000"
+// RTL Simulation : 17 / 68 [14.71%] @ "15845000"
+// RTL Simulation : 18 / 68 [14.71%] @ "16755000"
+// RTL Simulation : 19 / 68 [14.71%] @ "17665000"
+// RTL Simulation : 20 / 68 [14.71%] @ "18575000"
+// RTL Simulation : 21 / 68 [14.71%] @ "19485000"
+// RTL Simulation : 22 / 68 [14.71%] @ "20395000"
+// RTL Simulation : 23 / 68 [14.71%] @ "21305000"
+// RTL Simulation : 24 / 68 [14.71%] @ "22215000"
+// RTL Simulation : 25 / 68 [14.71%] @ "23125000"
+// RTL Simulation : 26 / 68 [14.71%] @ "24035000"
+// RTL Simulation : 27 / 68 [14.71%] @ "24945000"
+// RTL Simulation : 28 / 68 [14.71%] @ "25855000"
+// RTL Simulation : 29 / 68 [14.71%] @ "26765000"
+// RTL Simulation : 30 / 68 [14.71%] @ "27675000"
+// RTL Simulation : 31 / 68 [14.71%] @ "28585000"
+// RTL Simulation : 32 / 68 [14.71%] @ "29495000"
+// RTL Simulation : 33 / 68 [14.71%] @ "30405000"
+// RTL Simulation : 34 / 68 [14.71%] @ "31315000"
+// RTL Simulation : 35 / 68 [14.71%] @ "32225000"
+// RTL Simulation : 36 / 68 [14.71%] @ "33135000"
+// RTL Simulation : 37 / 68 [14.71%] @ "34045000"
+// RTL Simulation : 38 / 68 [14.71%] @ "34955000"
+// RTL Simulation : 39 / 68 [14.71%] @ "35865000"
+// RTL Simulation : 40 / 68 [14.71%] @ "36775000"
+// RTL Simulation : 41 / 68 [14.71%] @ "37685000"
+// RTL Simulation : 42 / 68 [14.71%] @ "38595000"
+// RTL Simulation : 43 / 68 [14.71%] @ "39505000"
+// RTL Simulation : 44 / 68 [14.71%] @ "40415000"
+// RTL Simulation : 45 / 68 [14.71%] @ "41325000"
+// RTL Simulation : 46 / 68 [14.71%] @ "42235000"
+// RTL Simulation : 47 / 68 [14.71%] @ "43145000"
+// RTL Simulation : 48 / 68 [14.71%] @ "44055000"
+// RTL Simulation : 49 / 68 [14.71%] @ "44965000"
+// RTL Simulation : 50 / 68 [14.71%] @ "45875000"
+// RTL Simulation : 51 / 68 [14.71%] @ "46785000"
+// RTL Simulation : 52 / 68 [14.71%] @ "47695000"
+// RTL Simulation : 53 / 68 [14.71%] @ "48605000"
+// RTL Simulation : 54 / 68 [14.71%] @ "49515000"
+// RTL Simulation : 55 / 68 [14.71%] @ "50425000"
+// RTL Simulation : 56 / 68 [14.71%] @ "51335000"
+// RTL Simulation : 57 / 68 [14.71%] @ "52245000"
+// RTL Simulation : 58 / 68 [14.71%] @ "53155000"
+// RTL Simulation : 59 / 68 [14.71%] @ "54065000"
+// RTL Simulation : 60 / 68 [14.71%] @ "54975000"
+// RTL Simulation : 61 / 68 [14.71%] @ "55885000"
+// RTL Simulation : 62 / 68 [14.71%] @ "56795000"
+// RTL Simulation : 63 / 68 [14.71%] @ "57705000"
+// RTL Simulation : 64 / 68 [14.71%] @ "58615000"
+// RTL Simulation : 65 / 68 [14.71%] @ "59525000"
+// RTL Simulation : 66 / 68 [14.71%] @ "60435000"
+// RTL Simulation : 67 / 68 [14.71%] @ "61345000"
+// RTL Simulation : 68 / 68 [100.00%] @ "62255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 62315 ns : File "E:/robot/project/xilinx_fpga_class/hls/lab4_zynq_z2/prj/fir/fir/hls/sim/verilog/fir.autotb.v" Line 279
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Feb 18 09:35:51 2025...

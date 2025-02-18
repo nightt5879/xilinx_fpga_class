@@ -141,6 +141,7 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_out<bool> I2C1_SCL_O;
     sc_core::sc_out<bool> I2C1_SCL_T;
     sc_core::sc_in<bool> M_AXI_GP0_ACLK;
+    sc_core::sc_in<sc_dt::sc_bv<2> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
     sc_core::sc_out<bool> FCLK_CLK1;
     sc_core::sc_out<bool> FCLK_RESET0_N;
@@ -214,6 +215,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     //FCLK_CLK1 pin written based on FCLK_CLK1_clk clock value 
     void trigger_FCLK_CLK1_pin();
     
+    void IRQ_F2P_method();
     //FCLK_RESET0 output reset pin get toggle when emio bank 2's 31th signal gets toggled
     //EMIO[2] bank 31th(GPIO[95] signal)acts as reset signal to the PL(refer Zynq UltraScale+ TRM, page no:761)
     void FCLK_RESET0_N_trigger();
