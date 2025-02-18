@@ -33,9 +33,9 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="yuv_filter" col1="yuv_filter.c:30" col2="455" col3="183" col4="181" col5="174" col6="215">
-                    <row id="1" col0="rgb2yuv" col1="yuv_filter.c:55" col2="125" col3="" col4="" col5="" col6=""/>
+                    <row id="3" col0="rgb2yuv" col1="yuv_filter.c:55" col2="125" col3="" col4="" col5="" col6=""/>
                     <row id="2" col0="yuv_scale" col1="yuv_filter.c:136" col2="89" col3="" col4="" col5="" col6=""/>
-                    <row id="3" col0="yuv2rgb" col1="yuv_filter.c:93" col2="227" col3="" col4="" col5="" col6=""/>
+                    <row id="1" col0="yuv2rgb" col1="yuv_filter.c:93" col2="227" col3="" col4="" col5="" col6=""/>
                 </row>
             </rows>
             <notes/>

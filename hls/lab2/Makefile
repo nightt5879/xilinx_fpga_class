@@ -39,15 +39,33 @@ USE_SYSTEMC 				= false
 
 # ######################################################
 # Automatically setup the software paths
+# SHELL           := sh
+# KERNEL          := $(shell if [[ $$(uname -s) == Linux ]];then echo Linux; else echo Win; fi)
+# ARCH            := $(shell if [[ $$(uname -m) =~ 64$$ ]];then echo x86_64; else echo x86; fi)
+# OS              := $(KERNEL)_$(ARCH)
+# Detect shell environment
 SHELL           := sh
-KERNEL          := $(shell if [[ $$(uname -s) == Linux ]];then echo Linux; else echo Win; fi)
-ARCH            := $(shell if [[ $$(uname -m) =~ 64$$ ]];then echo x86_64; else echo x86; fi)
+
+# Check if running on Windows or Linux
+ifeq ($(OS),Windows_NT)
+    KERNEL      := Win
+    ARCH        := x86_64  # 默认 Windows 运行 64-bit
+else
+    KERNEL      := $(shell uname -s)
+    ARCH        := $(shell uname -m)
+endif
+
 OS              := $(KERNEL)_$(ARCH)
+
+# Debugging output
+$(info OS detected: $(OS))
+
 # KERNEL := $(shell uname -s 2>/dev/null || echo Windows)
 # ARCH := $(shell uname -m 2>/dev/null || echo x86_64)
 # OS := $(KERNEL)_$(ARCH)
 ifeq ($(KERNEL), Win)
-VIVADO_HLS_EXE_FILENAME := vivado_hls.bat
+# VIVADO_HLS_EXE_FILENAME := vivado_hls.bat
+VIVADO_HLS_EXE_FILENAME := vitis_hls.bat
 
 elseVIVADO_HLS_EXE_FILENAME := vivado_hls
 APCC:= apcc

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y'
 ================================================================
-* Date:           Thu Feb 13 15:33:07 2025
+* Date:           Tue Feb 18 10:35:20 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        yuv_filter.prj
@@ -240,14 +240,15 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten13' [17]  (1.588 ns)
 	'load' operation 32 bit ('indvar_flatten13_load', yuv_filter.c:115->yuv_filter.c:51) on local variable 'indvar_flatten13' [22]  (0.000 ns)
-	'add' operation 32 bit ('add_ln115_1', yuv_filter.c:115->yuv_filter.c:51) [24]  (2.552 ns)
+	'icmp' operation 1 bit ('icmp_ln115', yuv_filter.c:115->yuv_filter.c:51) [23]  (2.552 ns)
 	'store' operation 0 bit ('store_ln115', yuv_filter.c:115->yuv_filter.c:51) of variable 'add_ln115_1', yuv_filter.c:115->yuv_filter.c:51 on local variable 'indvar_flatten13' [109]  (1.588 ns)
 
  <State 2>: 6.960ns
 The critical path consists of the following:
 	'load' operation 16 bit ('y_load', yuv_filter.c:118->yuv_filter.c:51) on local variable 'y', yuv_filter.c:98->yuv_filter.c:51 [27]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln118', yuv_filter.c:118->yuv_filter.c:51) [32]  (2.077 ns)
-	'select' operation 16 bit ('select_ln98', yuv_filter.c:98->yuv_filter.c:51) [33]  (0.805 ns)
+	'select' operation 16 bit ('select_ln115', yuv_filter.c:115->yuv_filter.c:51) [34]  (0.805 ns)
+	'add' operation 22 bit ('add_ln118_1', yuv_filter.c:118->yuv_filter.c:51) [39]  (0.000 ns)
 	'add' operation 22 bit ('add_ln129', yuv_filter.c:129->yuv_filter.c:51) [41]  (4.079 ns)
 
  <State 3>: 3.254ns

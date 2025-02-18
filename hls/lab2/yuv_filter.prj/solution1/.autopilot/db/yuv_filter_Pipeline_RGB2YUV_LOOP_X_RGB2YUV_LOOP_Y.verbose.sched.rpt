@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y'
 ================================================================
-* Date:           Thu Feb 13 15:33:07 2025
+* Date:           Tue Feb 18 10:35:20 2025
 
 * Version:        2024.2 (Build 5238294 on Nov  8 2024)
 * Project:        yuv_filter.prj
@@ -236,7 +236,8 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'load' operation 16 bit ('y_load', yuv_filter.c:78->yuv_filter.c:49) on local variable 'y', yuv_filter.c:60->yuv_filter.c:49 [27]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln78', yuv_filter.c:78->yuv_filter.c:49) [32]  (2.077 ns)
-	'select' operation 16 bit ('select_ln60', yuv_filter.c:60->yuv_filter.c:49) [33]  (0.805 ns)
+	'select' operation 16 bit ('select_ln75', yuv_filter.c:75->yuv_filter.c:49) [34]  (0.805 ns)
+	'add' operation 22 bit ('add_ln78_1', yuv_filter.c:78->yuv_filter.c:49) [39]  (0.000 ns)
 	'add' operation 22 bit ('add_ln80', yuv_filter.c:80->yuv_filter.c:49) [41]  (4.079 ns)
 
  <State 3>: 3.254ns
