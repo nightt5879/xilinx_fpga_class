@@ -1,0 +1,102 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/fir 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1921] Skipping unknown ini [hls] entry 'csim.flags=-I"E:/xilinx/Vitis/2024.2/include/legacy"' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_coef.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=fir' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu5eg-sfvc784-1-e' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+0 -32768 378
+1 0 73
+2 0 -27
+3 0 -170
+4 0 -298
+5 0 -352
+6 0 -302
+7 0 -168
+8 0 -14
+9 0 80
+10 0 64
+11 0 -53
+12 0 -186
+13 0 -216
+14 0 -40
+15 0 356
+16 0 867
+17 0 1283
+18 0 1366
+19 0 954
+20 0 51
+21 0 -1132
+22 0 -2227
+23 0 -2829
+24 0 -2647
+25 0 -1633
+26 0 -25
+27 0 1712
+28 0 3042
+29 0 -29229
+30 0 3042
+31 0 1712
+32 0 -25
+33 0 -1633
+34 0 -2647
+35 0 -2829
+36 0 -2227
+37 0 -1132
+38 0 51
+39 0 954
+40 0 1366
+41 0 1283
+42 0 867
+43 0 356
+44 0 -40
+45 0 -216
+46 0 -186
+47 0 -53
+48 0 64
+49 0 80
+50 0 -14
+51 0 -168
+52 0 -302
+53 0 -352
+54 0 -298
+55 0 -170
+56 0 -27
+57 0 73
+58 0 378
+59 0 0
+60 0 0
+61 0 0
+62 0 0
+63 0 0
+64 0 0
+65 0 0
+66 0 0
+67 0 0
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 8.169 seconds; peak allocated memory: 162.500 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 13s

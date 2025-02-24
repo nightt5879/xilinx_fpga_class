@@ -1,3 +1,3 @@
 relativeroot=E:/robot/project/xilinx_fpga_class/hls/lab4/prj/fir
-original_argv=--mode hls --impl --config E:\robot\project\xilinx_fpga_class\hls\lab4\prj\fir\hls_config.cfg --work_dir fir 
+original_argv=--mode hls --csim --config E:\robot\project\xilinx_fpga_class\hls\lab4\prj\fir\hls_config.cfg --work_dir fir 
 

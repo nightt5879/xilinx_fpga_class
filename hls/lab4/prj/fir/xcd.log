@@ -284,3 +284,25 @@
 02/16/25 11:00:26: SERVER: destructor for server bound to port 62558
 02/16/25 11:00:26: Server exiting with status 0.
 02/16/25 11:00:26: Closing log file.
+02/21/25 10:43:04: Running xcd server. This server was built by gradle.
+02/21/25 10:43:04: Server was asked to start on port: '49736'
+02/21/25 10:43:04: Server is using token UUID: '910ef52e-effd-11ef-b167-744ca175a020'
+02/21/25 10:43:04: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/21/25 10:43:04: Attempting to start server on port '49736'
+02/21/25 10:43:04: Running Dispatch Server
+02/21/25 10:43:04: Version 2.2.0
+02/21/25 10:43:04: Dispatch Server: Accepted socket connection from client
+02/21/25 10:43:04: Starting Socket connection
+02/21/25 10:43:04: EXCHANGE_TOKEN received, server token: 910ef52e-effd-11ef-b167-744ca175a020, passed token: 910ef52e-effd-11ef-b167-744ca175a020
+02/21/25 10:43:04: SESSION_MGR: creating session with session uuid: 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' and name 'Code Analyzer'
+02/21/25 10:43:04: KERNEL_SVC: creating session with uuid: 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' and name 'Code Analyzer'
+02/21/25 10:43:04: GUIDANCE_SMGR: creating guidance session with uuid: 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' and name 'Code Analyzer'
+02/21/25 10:43:04: SESSION_MGR: closing session for UUID 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' with name ''
+02/21/25 10:43:04: KERNEL_SVC: closing session for UUID 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' with name ''
+02/21/25 10:43:04: GUIDANCE_SMGR: closing session for UUID 'c1a286ce-1fca-4bd4-8485-7c76fba01f10' with name ''
+02/21/25 10:43:04: STOP_SERVER received, server token: 910ef52e-effd-11ef-b167-744ca175a020, passed token: 910ef52e-effd-11ef-b167-744ca175a020
+02/21/25 10:43:04: Socket received request to stop server.
+02/21/25 10:43:04: Dispatch Server: do_await_stop
+02/21/25 10:43:04: SERVER: destructor for server bound to port 49736
+02/21/25 10:43:04: Server exiting with status 0.
+02/21/25 10:43:04: Closing log file.
