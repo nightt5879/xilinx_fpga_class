@@ -7,7 +7,7 @@ parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that ap
 parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location E:\robot\project\xilinx_fpga_class\hls\lab4\prj\fir\fir\hls\csim\code_analyzer\.internal\instrument\app_0\annotated.bc
 parallelismSelector::VERBO: FPGA frequency: 100000000 Hz
 parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 100000000 Hz
-parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: E:\xilinx\Vitis\2024.2\vcxx\data\platform\logic\zynquplus.logic
+parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: E:\vitis\Vitis\2024.2\vcxx\data\platform\logic\zynquplus.logic
 parallelismSelector::VERBO: Device characteristics: Area -- (LUTs: 117120, FFs: 234240, DSPs: 1248, BRAMs: 288, URAMs: 64)
 parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstraint -- (LUTs: 117120, FFs: 234240, DSPs: 1248, BRAMs: 288, URAMs: 64)
 parallelismSelector::VERBO: Code Analyzer Id: 0
@@ -30,7 +30,7 @@ parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
                             
 parallelismSelector::VERBO: No optimization objective set
 parallelismSelector::VERBO: Variable Infos:
-parallelismSelector::VERBO:     'shift_reg' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:40:0 VariableId 1
+parallelismSelector::VERBO:     'shift_reg' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:43:0 VariableId 1
                                   ElementBitsize=16
                                   IsHlsStream=no
                                   FunctionId= 206
@@ -60,7 +60,7 @@ parallelismSelector::VERBO:     'x' E:/robot/project/xilinx_fpga_class/hls/lab4\
                                   Elements=[ ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:35:0 VariableId 12
+parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:38:0 VariableId 12
                                   ElementBitsize=16
                                   IsHlsStream=no
                                   FunctionId= 206
@@ -70,7 +70,7 @@ parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\
                                   Elements=[ 59 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:35:0 VariableId 13
+parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:38:0 VariableId 13
                                   ElementBitsize=16
                                   IsHlsStream=no
                                   FunctionId= 207
@@ -80,7 +80,7 @@ parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\
                                   Elements=[--,  59 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:41:0 VariableId 14
+parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:44:0 VariableId 14
                                   ElementBitsize=38
                                   IsHlsStream=no
                                   FunctionId= 207
@@ -90,7 +90,7 @@ parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:41:0 VariableId 15
+parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:44:0 VariableId 15
                                   ElementBitsize=38
                                   IsHlsStream=no
                                   FunctionId= 206
@@ -100,7 +100,7 @@ parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab
                                   Elements=[ ]
                                   HasInsertionLoc=no
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:35:0 VariableId 17
+parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:38:0 VariableId 17
                                   ElementBitsize=16
                                   IsHlsStream=no
                                   FunctionId= 208
@@ -110,7 +110,7 @@ parallelismSelector::VERBO:     'c' E:/robot/project/xilinx_fpga_class/hls/lab4\
                                   Elements=[--,  59 ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:41:0 VariableId 18
+parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:44:0 VariableId 18
                                   ElementBitsize=38
                                   IsHlsStream=no
                                   FunctionId= 208
@@ -120,7 +120,7 @@ parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:41:0 VariableId 19
+parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:44:0 VariableId 19
                                   ElementBitsize=38
                                   IsHlsStream=no
                                   FunctionId= 206
@@ -150,7 +150,7 @@ parallelismSelector::VERBO:     'y' E:/robot/project/xilinx_fpga_class/hls/lab4\
                                   Elements=[-- ]
                                   HasInsertionLoc=yes
                                   IsFromSystemFunction=no
-parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:41:0 VariableId 34
+parallelismSelector::VERBO:     'acc' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:44:0 VariableId 34
                                   ElementBitsize=38
                                   IsHlsStream=no
                                   FunctionId= 208
@@ -169,22 +169,22 @@ parallelismSelector::VERBO: Equivalence table
                              Object with value: 18 is mapped to the object with value: 19
                             
 parallelismSelector::VERBO: Nesting structure:
-                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:45:9, Vars=1,12,
+                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:48:9, Vars=1,12,
                             
 parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
-                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:45:9, Vars=1,12,
+                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:48:9, Vars=1,12,
                             
 parallelismSelector::VERBO: Function 'fir' not inlined as per top-levels
 parallelismSelector::VERBO: Function 'Outline_T3_F206_R2_Atomic' not inlined as per dataflow task
 parallelismSelector::VERBO: Function 'Outline_T4_F206_R3_Loop' not inlined as per dataflow task
 parallelismSelector::VERBO: Function 'Outline_T5_F206_R15_Atomic' not inlined as per dataflow task
 parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
-                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:45:9, Vars=1,12,
+                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:48:9, Vars=1,12,
                             
 parallelismSelector::VERBO: Max iterations for loop 2 are 57
-parallelismSelector::VERBO:  - loop 2 is "E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c":45:9
-parallelismSelector::VERBO: Partitioning variable 'shift_reg' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:40:0 VariableId 1
-parallelismSelector::VERBO: Partitioning variable 'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:35:0 VariableId 12
+parallelismSelector::VERBO:  - loop 2 is "E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c":48:9
+parallelismSelector::VERBO: Partitioning variable 'shift_reg' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:43:0 VariableId 1
+parallelismSelector::VERBO: Partitioning variable 'c' E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:38:0 VariableId 12
 parallelismSelector::VERBO: Initial branch:
                             FunctionPipelineTopLevel: Maybe
                             Partition {dim 0: cyclic 1, 2, 29 complete} (VariableName shift_reg) (VariableId 1)
@@ -198,7 +198,7 @@ parallelismSelector::VERBO: Initial branch after first round of constraints:
                             +- pipeline, unroll with factors 1, 3, 19, 57, unroll/pipeline with factors 3, 19 (Label loop) (LoopId 2)
                             
 parallelismSelector::VERBO: Nesting structure after user pragma constraints:
-                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:45:9, Vars=1,12,
+                            +- Loop with id 2, Label=loop, Trip Count: (Static=57, Dynamic [x68]), Loc=E:/robot/project/xilinx_fpga_class/hls/lab4\fir.c:48:9, Vars=1,12,
                             
 parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
                             FunctionPipelineTopLevel: Maybe
@@ -274,11 +274,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F206_R2_Atomic" (FunctionId 207):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F206_R2_Atomic
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0, newFuncRoot_iso1
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot_iso1, newFuncRoot
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=208) (17->12)(18->19)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -324,13 +324,13 @@ parallelismSelector::VERBO:
 parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 206):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: fir
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
 parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
-parallelismSelector::VERBO:        - Critical path: entry, codeRepl, codeRepl1, codeRepl2, for.end_iso4
+parallelismSelector::VERBO:        - Critical path: codeRepl1, for.end_iso4, codeRepl, codeRepl2, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:
@@ -409,11 +409,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F206_R2_Atomic" (FunctionId 207):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F206_R2_Atomic
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0, newFuncRoot_iso1
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot_iso1, newFuncRoot
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=208) (17->12)(18->19)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -459,13 +459,13 @@ parallelismSelector::VERBO:
 parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 206):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: fir
-parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
 parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
-parallelismSelector::VERBO:        - Critical path: entry, codeRepl, codeRepl1, codeRepl2, for.end_iso4
+parallelismSelector::VERBO:        - Critical path: codeRepl1, for.end_iso4, codeRepl, codeRepl2, entry
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:

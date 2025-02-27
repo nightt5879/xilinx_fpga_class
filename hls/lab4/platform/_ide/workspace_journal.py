@@ -17,3 +17,5 @@ status = client.delete_platform_repos(platform=["e:\robot\project\xilinx_fpga_cl
 
 status = client.add_platform_repos(platform=["e:\robot\project\xilinx_fpga_class\hls\lab4\platform\audio\export\audio"])
 
+vitis.dispose()
+

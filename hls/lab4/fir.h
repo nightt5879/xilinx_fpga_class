@@ -45,8 +45,8 @@
 
 #ifndef _FIR_H_ 
 #define _FIR_H_
-// #include "ap_cint.h"
-#include "E:/xilinx/Vitis/2024.2/include/legacy/ap_cint.h"
+#include "ap_int.h"
+// #include "E:/vitis/Vitis/2024.2/include/legacy/ap_cint.h"
 #define N	58
 #define SAMPLES N+10 // just few more samples then number of taps
 typedef short	coef_t;

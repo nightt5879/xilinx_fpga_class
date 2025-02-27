@@ -2,16 +2,16 @@
     "rules": {
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.bc', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.bc.d']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
                 "-c",
                 "-emit-llvm",
                 "-MD",
                 "-MF",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.bc.d",
                 "-fhls",
-                "-hls-syn-headers-dir=e:\\xilinx\\vitis\\2024.2\\vcxx\\data\\autopilot",
-                "-vitis-hls=E:\\xilinx\\Vitis\\2024.2",
-                "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-hls-syn-headers-dir=e:\\vitis\\vitis\\2024.2\\vcxx\\data\\autopilot",
+                "-vitis-hls=E:\\vitis\\Vitis\\2024.2",
+                "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
                 "-hls-clock-period=10.0",
                 "-fslxtrace",
                 "-fslx-compile-mode",
@@ -20,20 +20,20 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.bc"
             ],
-            "exectime": 0.13083171844482422,
+            "exectime": 0.23575043678283691,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir_test.c.0.o', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir_test.c.0.o.d']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
                 "-c",
                 "-MD",
                 "-MF",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir_test.c.0.o.d",
                 "-fhls-tb",
-                "-hls-sim-headers-dir=e:\\xilinx\\vitis\\2024.2\\vcxx\\data\\include",
-                "-vitis-hls=E:\\xilinx\\Vitis\\2024.2",
-                "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-hls-sim-headers-dir=e:\\vitis\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=E:\\vitis\\Vitis\\2024.2",
+                "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
                 "-fslxtrace",
                 "-fslx-compile-mode",
                 "-fslxskipfunctionbody",
@@ -42,20 +42,20 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir_test.c.0.o"
             ],
-            "exectime": 0.11401724815368652,
+            "exectime": 0.18256354331970215,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.o', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.o.d']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
                 "-c",
                 "-MD",
                 "-MF",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.o.d",
                 "-fhls-tb",
-                "-hls-sim-headers-dir=e:\\xilinx\\vitis\\2024.2\\vcxx\\data\\include",
-                "-vitis-hls=E:\\xilinx\\Vitis\\2024.2",
-                "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-hls-sim-headers-dir=e:\\vitis\\vitis\\2024.2\\vcxx\\data\\include",
+                "-vitis-hls=E:\\vitis\\Vitis\\2024.2",
+                "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
                 "-fslxtrace",
                 "-fslx-compile-mode",
                 "-fslxskipfunctionbody",
@@ -64,34 +64,34 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.o"
             ],
-            "exectime": 0.10529804229736328,
+            "exectime": 0.1299452781677246,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/llvm-link.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/llvm-link.exe",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.bc",
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
             ],
-            "exectime": 0.25847601890563965,
+            "exectime": 0.3233621120452881,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/opt.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/opt.exe",
                 "-check-single-toplevel",
                 "-make-non-toplevel-internal",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
             ],
-            "exectime": 0.22521615028381348,
+            "exectime": 0.251420259475708,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/clang.exe",
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir_test.c.0.o",
@@ -99,38 +99,38 @@
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
                 "-fhls",
                 "-fhlstoplevel=fir",
-                "-LE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\dds_v6_0",
+                "-LE:\\vitis\\Vitis\\2024.2\\win64\\tools\\dds_v6_0",
                 "-lIp_dds_compiler_v6_0_bitacc_cmodel",
-                "-LE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\fft_v9_1",
+                "-LE:\\vitis\\Vitis\\2024.2\\win64\\tools\\fft_v9_1",
                 "-lIp_xfft_v9_1_bitacc_cmodel",
-                "-LE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\fir_v7_0",
+                "-LE:\\vitis\\Vitis\\2024.2\\win64\\tools\\fir_v7_0",
                 "-lIp_fir_compiler_v7_2_bitacc_cmodel",
-                "-LE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\fpo_v7_1",
+                "-LE:\\vitis\\Vitis\\2024.2\\win64\\tools\\fpo_v7_1",
                 "-lIp_floating_point_v7_1_bitacc_cmodel",
                 "-lm",
-                "-LE:\\xilinx\\Vitis\\2024.2\\win64\\lib\\csim",
+                "-LE:\\vitis\\Vitis\\2024.2\\win64\\lib\\csim",
                 "-lhlsm-GCC95-x64",
                 "-lhlsmc++-GCC95-x64",
                 "-lgmp",
                 "-lmpfr",
-                "--sysroot=E:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
-                "-LE:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\x86_64-w64-mingw32\\lib",
-                "-LE:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib",
-                "-LE:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc",
-                "-LE:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc\\x86_64-w64-mingw32\\9.5.0",
-                "-LE:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\libexec\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-LE:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\x86_64-w64-mingw32\\lib",
+                "-LE:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib",
+                "-LE:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc",
+                "-LE:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\lib\\gcc\\x86_64-w64-mingw32\\9.5.0",
+                "-LE:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\libexec\\gcc\\x86_64-w64-mingw32\\9.5.0",
                 "-fslxtrace",
                 "-fslx-compile-mode",
                 "-Wl,-mllvm,-profilerOutputDirectory=E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
                 "-fslxpthreads",
                 "-lpthread"
             ],
-            "exectime": 0.719893217086792,
+            "exectime": 1.1027593612670898,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\hls_ir_info.json']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/irInfoDump.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/irInfoDump.exe",
                 "--ir-module",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
                 "--json-output",
@@ -138,30 +138,30 @@
                 "--hw-function",
                 "fir"
             ],
-            "exectime": 0.20096087455749512,
+            "exectime": 0.21873688697814941,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\libexec\\clang-scan-deps.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\libexec\\clang-scan-deps.exe",
                 "--compilation-database=E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
                 "--format=vitiscxx",
                 "--reuse-filemanager=false",
                 "--output=E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
             ],
-            "exectime": 0.2607729434967041,
+            "exectime": 0.29425597190856934,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
             "command": [
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
             ],
-            "exectime": 0.2506096363067627,
+            "exectime": 0.30243945121765137,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\annotated.bc']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/optimizer.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/optimizer.exe",
                 "-DFGPass",
                 "-outputDir",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\output",
@@ -171,22 +171,22 @@
                 "-staticFile",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
                 "-traceFile",
-                "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_0\\thread0000-trace.txt",
+                "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_1\\thread0000-trace.txt",
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc"
             ],
-            "exectime": 0.28834962844848633,
+            "exectime": 0.3361365795135498,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
             "command": [
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\/libexec/parallelismSelector.exe",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\/libexec/parallelismSelector.exe",
                 "--basepath",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir",
                 "--fpga-part",
                 "xczu5eg-sfvc784-1-e",
                 "--device-totals",
-                "e:\\xilinx\\vitis\\2024.2\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "e:\\vitis\\vitis\\2024.2\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
                 "--clock-frequency",
                 "100.0",
                 "--out-dir",
@@ -222,7 +222,7 @@
                 "--df-target",
                 "%F206"
             ],
-            "exectime": 0.9913592338562012,
+            "exectime": 1.7694005966186523,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         }
     }

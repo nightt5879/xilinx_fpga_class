@@ -30,6 +30,7 @@ instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: __acrt_iob_
 instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: __mingw_vfprintf
 instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: llvm.va_end
 instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: fir
+instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: llvm.sideeffect
 instrumenter::VERBO: [Instrumenter - BB] Instrumenting the function: llvm.memcpy.p0i8.p0i8.i64
 instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.dbg.label
 instrumenter::VERBO: [Instrumenter - BB] Skipping Function llvm.dbg.value
