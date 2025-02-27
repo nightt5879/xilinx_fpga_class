@@ -1,0 +1,4 @@
+domain_path: E:\robot\project\xilinx_fpga_class\hls\lab4\platform\audio\zynq_fsbl\zynq_fsbl_bsp
+app_src_dir: E:\vitis\Vitis\2024.2\data\embeddedsw\lib\sw_apps\zynq_fsbl
+template: zynq_fsbl
+lang: c
