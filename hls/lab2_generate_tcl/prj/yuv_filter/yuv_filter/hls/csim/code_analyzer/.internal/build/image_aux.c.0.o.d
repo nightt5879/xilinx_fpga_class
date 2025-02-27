@@ -1,0 +1,15 @@
+E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter\yuv_filter\hls\csim\code_analyzer\.internal\build\image_aux.c.0.o: \
+  E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/image_aux.c \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/stdio.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/corecrt.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/_mingw.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/_mingw_mac.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  e:/xilinx/vitis/2024.2/vcxx/lib/clang/14.0.6/include/vadefs.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/vadefs.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/swprintf.inl \
+  E:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/image_aux.h

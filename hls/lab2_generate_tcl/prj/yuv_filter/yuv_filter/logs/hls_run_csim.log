@@ -1,0 +1,48 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/yuv_filter 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/image_aux.c' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/image_aux.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/test_data' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/test_data' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=yuv_filter' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from E:/robot/project/xilinx_fpga_class/hls/lab2_generate_tcl/prj/yuv_filter/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/image_aux.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter_test.c as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c as test bench code with instrumentation
+E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:40:30: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long long)' [-Wimplicit-function-declaration]
+   image_t *yuv = (image_t *)malloc(sizeof(image_t));
+                             ^
+E:/robot/project/xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:40:30: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+1 warning generated.
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Test passed!
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.314 seconds; peak allocated memory: 162.598 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 17s

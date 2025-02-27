@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\yuv_filter\\yuv_filter.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/24/25 16:56:23",
+ "timestampMillis": "1740387383758",
+ "buildStep": {
+  "cmdId": "2d32b8ef-7347-49ab-9ad3-612829be02d4",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\yuv_filter\\logs\\yuv_filter.steps.log",
+  "commandLine": "E:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\hls_config.cfg --work_dir yuv_filter ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\hls_config.cfg",
+   "--work_dir",
+   "yuv_filter"
+  ],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/24/25 16:56:23",
+ "timestampMillis": "1740387383758",
+ "status": {
+  "cmdId": "2d32b8ef-7347-49ab-9ad3-612829be02d4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/24/25 16:56:28",
+ "timestampMillis": "1740387388980",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yuv_filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/24/25 16:56:28",
+ "timestampMillis": "1740387388982",
+ "buildStep": {
+  "cmdId": "ebed58ba-f267-4c4d-9353-709e94040aa9",
+  "name": "",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\yuv_filter\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/24/25 16:56:28",
+ "timestampMillis": "1740387388983",
+ "status": {
+  "cmdId": "ebed58ba-f267-4c4d-9353-709e94040aa9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/24/25 16:56:38",
+ "timestampMillis": "1740387398865",
+ "status": {
+  "cmdId": "ebed58ba-f267-4c4d-9353-709e94040aa9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/24/25 16:56:39",
+ "timestampMillis": "1740387399033",
+ "status": {
+  "cmdId": "2d32b8ef-7347-49ab-9ad3-612829be02d4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/24/25 16:56:39",
+ "timestampMillis": "1740387399034",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/24/25 16:56:39",
+ "timestampMillis": "1740387399034",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

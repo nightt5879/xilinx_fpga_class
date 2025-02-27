@@ -1,0 +1,249 @@
+dfgPass::INFOR: DFG Pass going to run on Module: E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter\yuv_filter\hls\csim\code_analyzer\.internal\instrument\app_0\project.symbols.bc
+dfgPass::INFOR:     Parsing the provided input trace files...
+dfgPass::INFOR:     Initializing InstructionCounter...
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond8
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :height:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :fp:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond8
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :width:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :out_image:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :tmp:1
+dfgPass::VERBO:         - memlocal of :fp:0
+dfgPass::VERBO:         - memlocal of :tmp:0
+dfgPass::VERBO:         - invalid TR:4:0
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :height:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :R:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :G:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :B:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :Y:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :U:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :V:1
+dfgPass::VERBO:         - memlocal of :Y:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :U:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :V:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :y:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 fails R.hasBlockSchema
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :height:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Y:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :U:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :V:1
+dfgPass::VERBO:         - memlocal of :Y:0
+dfgPass::VERBO:         - memlocal of :Y_scale:0
+dfgPass::VERBO:         - memlocal of :Yn:1
+dfgPass::VERBO:         - memlocal of :U:0
+dfgPass::VERBO:         - memlocal of :U_scale:0
+dfgPass::VERBO:         - memlocal of :Un:1
+dfgPass::VERBO:         - memlocal of :V:0
+dfgPass::VERBO:         - memlocal of :V_scale:0
+dfgPass::VERBO:         - memlocal of :Vn:1
+dfgPass::VERBO:         - memlocal of :Yn:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Un:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Vn:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :y:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :height:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :R:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :G:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :B:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :Y:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :U:1
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :R:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :G:0
+dfgPass::VERBO:         - memlocal may be aliased :Wrgb
+dfgPass::VERBO:         - memlocal of :B:0
+dfgPass::VERBO:         - memlocal of :V:1
+dfgPass::VERBO:         - memlocal of :Y:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :U:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :V:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :y:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - for.cond7
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :height:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.body12
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Y:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :U:1
+dfgPass::VERBO:         - memlocal of :in:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :V:1
+dfgPass::VERBO:         - memlocal of :Y:0
+dfgPass::VERBO:         - memlocal of :Y_scale:0
+dfgPass::VERBO:         - memlocal of :Yn:1
+dfgPass::VERBO:         - memlocal of :U:0
+dfgPass::VERBO:         - memlocal of :U_scale:0
+dfgPass::VERBO:         - memlocal of :Un:1
+dfgPass::VERBO:         - memlocal of :V:0
+dfgPass::VERBO:         - memlocal of :V_scale:0
+dfgPass::VERBO:         - memlocal of :Vn:1
+dfgPass::VERBO:         - memlocal of :Yn:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Un:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :Vn:0
+dfgPass::VERBO:         - memlocal of :out:0
+dfgPass::VERBO:         - memlocal of :x:0
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - for.inc
+dfgPass::VERBO:         - memlocal of :y:0
+dfgPass::VERBO:         - memlocal of :y:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +1 is not an innermost loop
+dfgPass::VERBO:     +2 fails R.hasBlockSchema
+dfgPass::INFOR:     Parsing trace...
+dfgPass::INFOR:     End of the trace parse

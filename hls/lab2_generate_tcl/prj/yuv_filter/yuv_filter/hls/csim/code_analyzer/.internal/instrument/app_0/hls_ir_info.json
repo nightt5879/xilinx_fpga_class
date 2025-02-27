@@ -1,0 +1,97 @@
+{
+    "top_level_hw_fn_id": 216,
+    "functions": {
+        "17": {
+            "fn_id": 17,
+            "mangled_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "fully_qualified_name": "llvm.memcpy.p0i8.p0i8.i64",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "216": {
+            "fn_id": 216,
+            "mangled_name": "yuv_filter",
+            "fully_qualified_name": "yuv_filter",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                "line": 30,
+                "column": 1
+            }
+        },
+        "217": {
+            "fn_id": 217,
+            "mangled_name": "rgb2yuv",
+            "fully_qualified_name": "rgb2yuv",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                "line": 55,
+                "column": 1
+            }
+        },
+        "218": {
+            "fn_id": 218,
+            "mangled_name": "yuv_scale",
+            "fully_qualified_name": "yuv_scale",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                "line": 136,
+                "column": 1
+            }
+        },
+        "219": {
+            "fn_id": 219,
+            "mangled_name": "yuv2rgb",
+            "fully_qualified_name": "yuv2rgb",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                "line": 93,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "11": {
+            "fn_id": 217,
+            "lp_id": 11,
+            "label": "RGB2YUV_LOOP_X"
+        },
+        "12": {
+            "fn_id": 217,
+            "lp_id": 12,
+            "label": "RGB2YUV_LOOP_Y"
+        },
+        "13": {
+            "fn_id": 218,
+            "lp_id": 13,
+            "label": "YUV_SCALE_LOOP_X"
+        },
+        "14": {
+            "fn_id": 218,
+            "lp_id": 14,
+            "label": "YUV_SCALE_LOOP_Y"
+        },
+        "15": {
+            "fn_id": 219,
+            "lp_id": 15,
+            "label": "YUV2RGB_LOOP_X"
+        },
+        "16": {
+            "fn_id": 219,
+            "lp_id": 16,
+            "label": "YUV2RGB_LOOP_Y"
+        }
+    }
+}

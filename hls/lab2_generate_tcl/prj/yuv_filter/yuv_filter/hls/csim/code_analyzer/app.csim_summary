@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter\\yuv_filter\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Feb 24 16:56:33 2025",
+ "timestampMillis": "1740387393001",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Feb 24 16:56:33 2025",
+ "timestampMillis": "1740387393001",
+ "buildStep": {
+  "cmdId": "3ed1a815-f28d-11ef-bc45-744ca175a020",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 24 16:56:33 2025",
+ "timestampMillis": "1740387393002",
+ "status": {
+  "cmdId": "3ed1a815-f28d-11ef-bc45-744ca175a020",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 24 16:56:38 2025",
+ "timestampMillis": "1740387398787",
+ "status": {
+  "cmdId": "3ed1a815-f28d-11ef-bc45-744ca175a020",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 24 16:56:38 2025",
+ "timestampMillis": "1740387398787",
+ "report": {
+  "path": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_generate_tcl\\prj\\yuv_filter",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "3ed1a815-f28d-11ef-bc45-744ca175a020"
+ }
+}
+</ENTRY>

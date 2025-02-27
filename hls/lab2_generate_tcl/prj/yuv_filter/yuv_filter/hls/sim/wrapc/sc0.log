@@ -1,0 +1,7 @@
+   Build using "E:/xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_yuv_filter.cpp
+   Compiling yuv_filter.c_pre.c.tb.c
+   Compiling image_aux.c_pre.c.tb.c
+   Compiling yuv_filter_test.c_pre.c.tb.c
+   Compiling apatb_yuv_filter_ir.ll
+   Generating cosim.tv.exe

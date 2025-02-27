@@ -1,0 +1,1764 @@
+[
+    {
+        "name": "yuv_filter",
+        "df_function": "%F216",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 30,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 52,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 30,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 52,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<Call(R2 yuv_filter) BB 'entry_iso0' Callee 'rgb2yuv'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 49,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 49,
+                        "column": 22
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_74_*0(0,58982432)arg.A1(58982400,16)",
+                                "name": "in->width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 69,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_74_*0(0,58982432)arg.A2(58982416,16)",
+                                "name": "in->height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 70,
+                                        "column": 17
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "in->channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 80,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "in->channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 81,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "in->channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 82,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A1(58982400,16)",
+                                "name": "_yuv.width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 71,
+                                        "column": 15
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A2(58982416,16)",
+                                "name": "_yuv.height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 72,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 86,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 87,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 88,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F216_R2",
+                        "description": "<call 'rgb2yuv'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 49,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 49,
+                                "column": 22
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F217",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 49,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 49,
+                                "column": 22
+                            }
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<Call(R3 yuv_filter) BB 'entry_iso2' Callee 'yuv_scale'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 50,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 50,
+                        "column": 56
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A1(58982400,16)",
+                                "name": "_yuv.width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 149,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A2(58982416,16)",
+                                "name": "_yuv.height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 150,
+                                        "column": 17
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 160,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 161,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 43,
+                                    "column": 12
+                                },
+                                "id": "VId_79_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_yuv.channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 162,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A1(58982400,16)",
+                                "name": "_scale.width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 151,
+                                        "column": 15
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A2(58982416,16)",
+                                "name": "_scale.height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 152,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 166,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 167,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 168,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 33,
+                                    "column": 0
+                                },
+                                "id": "VId_76_!c?(?,?)",
+                                "name": "Y_scale",
+                                "display_name": "yuv_scale_t Y_scale"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 50,
+                                        "column": 4
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 34,
+                                    "column": 0
+                                },
+                                "id": "VId_77_!c?(?,?)",
+                                "name": "U_scale",
+                                "display_name": "yuv_scale_t U_scale"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 50,
+                                        "column": 4
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 35,
+                                    "column": 0
+                                },
+                                "id": "VId_78_!c?(?,?)",
+                                "name": "V_scale",
+                                "display_name": "yuv_scale_t V_scale"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 50,
+                                        "column": 4
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F216_R3",
+                        "description": "<call 'yuv_scale'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 50,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 50,
+                                "column": 56
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F218",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 50,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 50,
+                                "column": 56
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<Call(R4 yuv_filter) BB 'entry_iso3' Callee 'yuv2rgb'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 51,
+                        "column": 4
+                    },
+                    "end_loc": {
+                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                        "line": 51,
+                        "column": 34
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A1(58982400,16)",
+                                "name": "_scale.width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 109,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A2(58982416,16)",
+                                "name": "_scale.height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 110,
+                                        "column": 17
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 120,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 121,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 44,
+                                    "column": 12
+                                },
+                                "id": "VId_80_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "_scale.channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 122,
+                                        "column": 14
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_75_*0(0,58982432)arg.A1(58982400,16)",
+                                "name": "out->width",
+                                "display_name": "image_dim_t image_t::width"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372800,
+                                                "end": 7372802,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 111,
+                                        "column": 15
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_75_*0(0,58982432)arg.A2(58982416,16)",
+                                "name": "out->height",
+                                "display_name": "image_dim_t image_t::height"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 7372802,
+                                                "end": 7372804,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 112,
+                                        "column": 16
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "out->channels.ch1[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch1[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 129,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "out->channels.ch2[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch2[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 130,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                                "name": "out->channels.ch3[*][*]",
+                                "display_name": "image_pix_t image_t::channel_t::ch3[1920][1280]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                        "line": 131,
+                                        "column": 34
+                                    },
+                                    "access_type": "i8",
+                                    "access_bit_width": 8,
+                                    "exec_count": 54400
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F216_R4",
+                        "description": "<call 'yuv2rgb'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 51,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 51,
+                                "column": 34
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F219",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 51,
+                                "column": 4
+                            },
+                            "end_loc": {
+                                "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                                "line": 51,
+                                "column": 34
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "in->channels.ch1[*][*]_RAW_1_3_#0": {
+                "name": "in->channels.ch1[*][*]_RAW_1_3_#0",
+                "variable_id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "in->channels.ch1[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch1[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "in->channels.ch2[*][*]_RAW_1_3_#1": {
+                "name": "in->channels.ch2[*][*]_RAW_1_3_#1",
+                "variable_id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "in->channels.ch2[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch2[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "in->channels.ch3[*][*]_RAW_1_3_#2": {
+                "name": "in->channels.ch3[*][*]_RAW_1_3_#2",
+                "variable_id": "VId_74_*0(0,58982432)arg.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "in->channels.ch3[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch3[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "in->width_RAW_1_3_#3": {
+                "name": "in->width_RAW_1_3_#3",
+                "variable_id": "VId_74_*0(0,58982432)arg.A1(58982400,16)",
+                "variable_name": "in->width",
+                "declaration": "image_dim_t image_t::width",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "in->height_RAW_1_3_#4": {
+                "name": "in->height_RAW_1_3_#4",
+                "variable_id": "VId_74_*0(0,58982432)arg.A2(58982416,16)",
+                "variable_name": "in->height",
+                "declaration": "image_dim_t image_t::height",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "Y_scale_RAW_1_4_#5": {
+                "name": "Y_scale_RAW_1_4_#5",
+                "variable_id": "VId_76_!c?(?,?)",
+                "variable_name": "Y_scale",
+                "declaration": "yuv_scale_t Y_scale",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 33,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "U_scale_RAW_1_4_#6": {
+                "name": "U_scale_RAW_1_4_#6",
+                "variable_id": "VId_77_!c?(?,?)",
+                "variable_name": "U_scale",
+                "declaration": "yuv_scale_t U_scale",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 34,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "V_scale_RAW_1_4_#7": {
+                "name": "V_scale_RAW_1_4_#7",
+                "variable_id": "VId_78_!c?(?,?)",
+                "variable_name": "V_scale",
+                "declaration": "yuv_scale_t V_scale",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 35,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "_yuv.channels.ch1[*][*]_RAW_3_4_#8": {
+                "name": "_yuv.channels.ch1[*][*]_RAW_3_4_#8",
+                "variable_id": "VId_79_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_yuv.channels.ch1[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch1[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 43,
+                    "column": 12
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "_yuv.channels.ch2[*][*]_RAW_3_4_#9": {
+                "name": "_yuv.channels.ch2[*][*]_RAW_3_4_#9",
+                "variable_id": "VId_79_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_yuv.channels.ch2[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch2[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 43,
+                    "column": 12
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "_yuv.channels.ch3[*][*]_RAW_3_4_#10": {
+                "name": "_yuv.channels.ch3[*][*]_RAW_3_4_#10",
+                "variable_id": "VId_79_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_yuv.channels.ch3[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch3[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 43,
+                    "column": 12
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "_yuv.width_RAW_3_4_#11": {
+                "name": "_yuv.width_RAW_3_4_#11",
+                "variable_id": "VId_79_.A1(58982400,16)",
+                "variable_name": "_yuv.width",
+                "declaration": "image_dim_t image_t::width",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 43,
+                    "column": 12
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "_yuv.height_RAW_3_4_#12": {
+                "name": "_yuv.height_RAW_3_4_#12",
+                "variable_id": "VId_79_.A2(58982416,16)",
+                "variable_name": "_yuv.height",
+                "declaration": "image_dim_t image_t::height",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 43,
+                    "column": 12
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "_scale.channels.ch1[*][*]_RAW_4_5_#13": {
+                "name": "_scale.channels.ch1[*][*]_RAW_4_5_#13",
+                "variable_id": "VId_80_.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_scale.channels.ch1[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch1[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 44,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "_scale.channels.ch2[*][*]_RAW_4_5_#14": {
+                "name": "_scale.channels.ch2[*][*]_RAW_4_5_#14",
+                "variable_id": "VId_80_.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_scale.channels.ch2[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch2[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 44,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "_scale.channels.ch3[*][*]_RAW_4_5_#15": {
+                "name": "_scale.channels.ch3[*][*]_RAW_4_5_#15",
+                "variable_id": "VId_80_.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "_scale.channels.ch3[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch3[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 44,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "_scale.width_RAW_4_5_#16": {
+                "name": "_scale.width_RAW_4_5_#16",
+                "variable_id": "VId_80_.A1(58982400,16)",
+                "variable_name": "_scale.width",
+                "declaration": "image_dim_t image_t::width",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 44,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "_scale.height_RAW_4_5_#17": {
+                "name": "_scale.height_RAW_4_5_#17",
+                "variable_id": "VId_80_.A2(58982416,16)",
+                "variable_name": "_scale.height",
+                "declaration": "image_dim_t image_t::height",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 44,
+                    "column": 12
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "out->channels.ch1[*][*]_RAW_5_2_#18": {
+                "name": "out->channels.ch1[*][*]_RAW_5_2_#18",
+                "variable_id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A0(0,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "out->channels.ch1[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch1[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "out->channels.ch2[*][*]_RAW_5_2_#19": {
+                "name": "out->channels.ch2[*][*]_RAW_5_2_#19",
+                "variable_id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A1(19660800,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "out->channels.ch2[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch2[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "out->channels.ch3[*][*]_RAW_5_2_#20": {
+                "name": "out->channels.ch3[*][*]_RAW_5_2_#20",
+                "variable_id": "VId_75_*0(0,58982432)arg.A0(0,58982400).A2(39321600,19660800)[?(?,10240)][?(?,8)]",
+                "variable_name": "out->channels.ch3[*][*]",
+                "declaration": "image_pix_t image_t::channel_t::ch3[1920][1280]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "out->width_RAW_5_2_#21": {
+                "name": "out->width_RAW_5_2_#21",
+                "variable_id": "VId_75_*0(0,58982432)arg.A1(58982400,16)",
+                "variable_name": "out->width",
+                "declaration": "image_dim_t image_t::width",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            },
+            "out->height_RAW_5_2_#22": {
+                "name": "out->height_RAW_5_2_#22",
+                "variable_id": "VId_75_*0(0,58982432)arg.A2(58982416,16)",
+                "variable_name": "out->height",
+                "declaration": "image_dim_t image_t::height",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "E:\\robot\\project\\xup_high_level_synthesis_design_flow\\source\\lab2\\yuv_filter.c",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

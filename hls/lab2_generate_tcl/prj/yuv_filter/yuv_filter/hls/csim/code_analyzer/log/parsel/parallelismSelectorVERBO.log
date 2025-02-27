@@ -1,0 +1,1345 @@
+parallelismSelector::VERBO: Summary of inputs: 
+parallelismSelector::VERBO: Output directory: "E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter\yuv_filter\hls\csim\code_analyzer\output"
+parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter
+parallelismSelector::VERBO: FPGA clock frequency is set to 100 MHz
+parallelismSelector::VERBO: Will use user-driven complete partitioning settings
+parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that appear in the codegen directives will be completely partitioned
+parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter\yuv_filter\hls\csim\code_analyzer\.internal\instrument\app_0\annotated.bc
+parallelismSelector::VERBO: FPGA frequency: 100000000 Hz
+parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 100000000 Hz
+parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: E:\xilinx\Vitis\2024.2\vcxx\data\platform\logic\zynq.logic
+parallelismSelector::VERBO: Device characteristics: Area -- (LUTs: 53200, FFs: 106400, DSPs: 220, BRAMs: 280, URAMs: 0)
+parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstraint -- (LUTs: 53200, FFs: 106400, DSPs: 220, BRAMs: 280, URAMs: 0)
+parallelismSelector::VERBO: Code Analyzer Id: 0
+parallelismSelector::VERBO: Dataflow Hardware Function: yuv_filter
+parallelismSelector::VERBO: Adding outline as primary transformation
+parallelismSelector::VERBO: RecipeFile: "E:\robot\project\xilinx_fpga_class\hls\lab2_generate_tcl\prj\yuv_filter\yuv_filter\hls\csim\code_analyzer\.internal\dataflow\0\recipe.json"
+parallelismSelector::VERBO: Applying transformation: (region_outline)
+parallelismSelector::VERBO: Applying transformation: (outline)
+parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
+                              74 <- {74}
+                              75 <- {75}
+                              76 <- {76}
+                              77 <- {77}
+                              78 <- {78}
+                              83 <- {74, 127}
+                              84 <- {79, 128}
+                              96 <- {79, 129}
+                              97 <- {80, 130}
+                              111 <- {80, 134}
+                              112 <- {75, 135}
+                              127 <- {74}
+                              128 <- {79}
+                              129 <- {79}
+                              130 <- {80}
+                              134 <- {80}
+                              135 <- {75}
+                            
+parallelismSelector::VERBO: No optimization objective set
+parallelismSelector::VERBO: Variable Infos:
+parallelismSelector::VERBO:     'in' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:31:0 VariableId 74
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:32:0 VariableId 75
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'Y_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:33:0 VariableId 76
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'U_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:34:0 VariableId 77
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'V_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:35:0 VariableId 78
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_yuv' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:43:0 VariableId 79
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:44:0 VariableId 80
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 216
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:56:0 VariableId 83
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 217
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:57:0 VariableId 84
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 217
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:137:0 VariableId 96
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 218
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:138:0 VariableId 97
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 218
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'Y_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:139:0 VariableId 98
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 218
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'U_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:140:0 VariableId 99
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 218
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'V_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:141:0 VariableId 100
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 218
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:94:0 VariableId 111
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 219
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:95:0 VariableId 112
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 219
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'in' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:31:0 VariableId 127
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 220
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_yuv' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:43:0 VariableId 128
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 220
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_yuv' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:43:0 VariableId 129
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 221
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:44:0 VariableId 130
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 221
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'Y_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:33:0 VariableId 131
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 221
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'U_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:34:0 VariableId 132
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 221
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'V_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:35:0 VariableId 133
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 221
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '_scale' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:44:0 VariableId 134
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 222
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'out' E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:32:0 VariableId 135
+                                  ElementBitsize=58982432
+                                  IsHlsStream=no
+                                  FunctionId= 222
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO: Equivalence table
+                             Object with value: 84 is mapped to the object with value: 79
+                             Object with value: 96 is mapped to the object with value: 79
+                             Object with value: 97 is mapped to the object with value: 80
+                             Object with value: 111 is mapped to the object with value: 80
+                             Object with value: 128 is mapped to the object with value: 79
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                             Object with value: 134 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: Nesting structure:
+                            +- Loop with id 11, Label=RGB2YUV_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4
+                               +- Loop with id 12, Label=RGB2YUV_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7, Vars=79,83,
+                            +- Loop with id 13, Label=YUV_SCALE_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4
+                               +- Loop with id 14, Label=YUV_SCALE_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7, Vars=79,80,
+                            +- Loop with id 15, Label=YUV2RGB_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4
+                               +- Loop with id 16, Label=YUV2RGB_LOOP_Y, Trip Count: (1<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7, Vars=80,112,
+                            
+parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
+                            +- Loop with id 11, Label=RGB2YUV_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4
+                               +- Loop with id 12, Label=RGB2YUV_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7, Vars=79,83,
+                            +- Loop with id 13, Label=YUV_SCALE_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4
+                               +- Loop with id 14, Label=YUV_SCALE_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7, Vars=79,80,
+                            +- Loop with id 15, Label=YUV2RGB_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4
+                               +- Loop with id 16, Label=YUV2RGB_LOOP_Y, Trip Count: (1<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7, Vars=80,112,
+                            
+parallelismSelector::VERBO: Function 'yuv_filter' not inlined as per top-levels
+parallelismSelector::VERBO: Function 'Outline_T3_F216_R2_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T4_F216_R3_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T5_F216_R4_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'rgb2yuv' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Function 'yuv_scale' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Function 'yuv2rgb' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
+                            +- Loop with id 11, Label=RGB2YUV_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4
+                               +- Loop with id 12, Label=RGB2YUV_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7, Vars=79,83,
+                            +- Loop with id 13, Label=YUV_SCALE_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4
+                               +- Loop with id 14, Label=YUV_SCALE_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7, Vars=79,80,
+                            +- Loop with id 15, Label=YUV2RGB_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4
+                               +- Loop with id 16, Label=YUV2RGB_LOOP_Y, Trip Count: (1<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7, Vars=80,112,
+                            
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4: the dynamic loop had a trip count of min=200 max=200 during C simulation. (#pragma HLS loop_tripcount min=200 max=200)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7: the dynamic loop had a trip count of min=272 max=272 during C simulation. (#pragma HLS loop_tripcount min=272 max=272)
+parallelismSelector::VERBO: Max iterations for loop 11 are 200
+parallelismSelector::VERBO:  - loop 11 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":75:4
+parallelismSelector::VERBO: Max iterations for loop 12 are 272
+parallelismSelector::VERBO:  - loop 12 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":78:7
+parallelismSelector::VERBO: Max iterations for loop 13 are 200
+parallelismSelector::VERBO:  - loop 13 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":155:4
+parallelismSelector::VERBO: Max iterations for loop 14 are 272
+parallelismSelector::VERBO:  - loop 14 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":158:7
+parallelismSelector::VERBO: Max iterations for loop 15 are 200
+parallelismSelector::VERBO:  - loop 15 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":115:4
+parallelismSelector::VERBO: Max iterations for loop 16 are 272
+parallelismSelector::VERBO:  - loop 16 is "E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c":118:7
+parallelismSelector::VERBO: Initial branch:
+                            FunctionPipelineTopLevel: Maybe
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknown
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 12 is unknown
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 12 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 13 is unknown
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 12 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 13 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 14 is unknown
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 12 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 13 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 14 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 15 is unknown
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 11 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 12 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 13 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 14 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 15 is unknownFunction pipeline is not legal because the static trip count upper bound of loop 16 is unknown
+parallelismSelector::VERBO: Initial branch after first round of constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Nesting structure after user pragma constraints:
+                            +- Loop with id 11, Label=RGB2YUV_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:75:4
+                               +- Loop with id 12, Label=RGB2YUV_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:78:7, Vars=79,83,
+                            +- Loop with id 13, Label=YUV_SCALE_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:155:4
+                               +- Loop with id 14, Label=YUV_SCALE_LOOP_Y, Trip Count: (0<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:158:7, Vars=79,80,
+                            +- Loop with id 15, Label=YUV2RGB_LOOP_X, Trip Count: (1<=Static, Dynamic Min/Avg/Max=200/200/200 [x1]), [PerfectNest], Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:115:4
+                               +- Loop with id 16, Label=YUV2RGB_LOOP_Y, Trip Count: (1<=Static, Dynamic Min/Avg/Max=272/272/272 [x200]), Loc=E:/robot/project\xup_high_level_synthesis_design_flow/source/lab2/yuv_filter.c:118:7, Vars=80,112,
+                            
+parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200, unroll/pipeline with factors 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Initial branch after applying Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: DataflowConstrainer: Constraining Func/Loop with Id 216
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=74
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=74
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=74
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=74
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=74
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=76
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=77
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=78
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=79
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=79
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=79
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=79
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=79
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=80
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=80
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=80
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=80
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=80
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=75
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=75
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=75
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=75
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=75
+parallelismSelector::VERBO: DataflowConstrainer: No VarIds in Loop/Func to be constrained
+parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, 2, 4, 8, 16, 17, 34, 68, 136, 272, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Removing unroll factor 2 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 4 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 8 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 16 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 17 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 34 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 68 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 136 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 272 from loop 12 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 2 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 4 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 8 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 16 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 17 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 34 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 68 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 136 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 272 from loop 14 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 2 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 4 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 8 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 16 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 17 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 34 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 68 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 136 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing unroll factor 272 from loop 16 because we only want to keep the pipeline/unroll setting as unroll possibility
+parallelismSelector::VERBO: Removing reshape options from the design space because optimizing reshape is disabled
+                            
+parallelismSelector::VERBO: Initial branch after applying heuristic constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Initial branch after applying second round of Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            +- pipeline, unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- pipeline, unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- pipeline, unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- pipeline, unroll with factors 1, unroll/pipeline with factors 2, 4, 8, 16, 17, 34, 68, 136, 272 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Initial branch after performance pragma constraints:
+                            FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- unroll with factors 1 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- unroll with factors 1 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- unroll with factors 1 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Initial branch after PerfEst evaluation constraints:
+                            FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- unroll with factors 1 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- unroll with factors 1 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- unroll with factors 1 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Initial constrained branch:
+                            FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- unroll with factors 1 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- unroll with factors 1 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- unroll with factors 1 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- unroll with factors 1 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- unroll with factors 1 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- unroll with factors 1 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: yuv_filter
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(0 F=220) (127->74)(128->79)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(3 F=217) (83->127)(84->128)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 83 is mapped to the object with value: 74
+                             Object with value: 84 is mapped to the object with value: 79
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: Analyzing Loop "RGB2YUV_LOOP_Y" (LoopId 12):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 12 Label: RGB2YUV_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "RGB2YUV_LOOP_X" (LoopId 11):
+parallelismSelector::VERBO:         LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 816
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 12): 816
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 11 Label: RGB2YUV_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 817}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 818}
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 816}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 818}
+parallelismSelector::VERBO:        - Critical path: for.cond7.for.end_crit_edge, for.body, for.end, for.body12.lr.ph, for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "rgb2yuv" (FunctionId 217):
+parallelismSelector::VERBO:         LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 11): 163600
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: rgb2yuv
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 163603}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end105_crit_edge -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end105 -> {1: 163604}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163604}
+parallelismSelector::VERBO:        - Critical path: for.body, for.end, for.body.lr.ph, entry, for.cond.for.end105_crit_edge, for.end105
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F216_R2_Call" (FunctionId 220):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F216_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 163605}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163605}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=221) (129->79)(130->80)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(4 F=218) (96->129)(97->130)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 96 is mapped to the object with value: 79
+                             Object with value: 97 is mapped to the object with value: 80
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: Analyzing Loop "YUV_SCALE_LOOP_Y" (LoopId 14):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 14 Label: YUV_SCALE_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "YUV_SCALE_LOOP_X" (LoopId 13):
+parallelismSelector::VERBO:         LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 816
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 14): 816
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 13 Label: YUV_SCALE_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 816}
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 817}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 818}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 818}
+parallelismSelector::VERBO:        - Critical path: for.body12.lr.ph, for.body12, for.cond7.for.end_crit_edge, for.end, for.body
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv_scale" (FunctionId 218):
+parallelismSelector::VERBO:         LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 13): 163600
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv_scale
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end61_crit_edge -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end61 -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 163603}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163604}
+parallelismSelector::VERBO:        - Critical path: entry, for.cond.for.end61_crit_edge, for.end61, for.end, for.body.lr.ph, for.body
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F216_R3_Call" (FunctionId 221):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F216_R3_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 163605}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163605}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(2 F=222) (134->80)(135->75)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(5 F=219) (111->134)(112->135)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 111 is mapped to the object with value: 80
+                             Object with value: 112 is mapped to the object with value: 75
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: Analyzing Loop "YUV2RGB_LOOP_Y" (LoopId 16):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 16 Label: YUV2RGB_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.true60 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: cond.false61 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: cond.end -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: cond.end75 -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: cond.true99 -> {1: 8}
+parallelismSelector::VERBO:          - EndCycles: cond.false181 -> {1: 14}
+parallelismSelector::VERBO:          - EndCycles: cond.false123 -> {1: 10}
+parallelismSelector::VERBO:          - EndCycles: cond.end197 -> {1: 16}
+parallelismSelector::VERBO:          - EndCycles: cond.end143 -> {1: 11}
+parallelismSelector::VERBO:          - EndCycles: cond.true163 -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: cond.true122 -> {1: 9}
+parallelismSelector::VERBO:          - EndCycles: cond.true180 -> {1: 14}
+parallelismSelector::VERBO:          - EndCycles: cond.end195 -> {1: 15}
+parallelismSelector::VERBO:          - EndCycles: cond.end145 -> {1: 12}
+parallelismSelector::VERBO:          - EndCycles: cond.false164 -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: cond.false100 -> {1: 8}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 16}
+parallelismSelector::VERBO:        - Critical path: for.body12, cond.false, cond.true60, cond.false61, cond.end, cond.end75, cond.false181, cond.false123, cond.end197, cond.end143, cond.true180, cond.end195, cond.end145, cond.false164, cond.false100
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "YUV2RGB_LOOP_X" (LoopId 15):
+parallelismSelector::VERBO:         LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 4624
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 16): 4624
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 15 Label: YUV2RGB_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.end197 -> {1: 4624}
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 4625}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 4626}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4626}
+parallelismSelector::VERBO:        - Critical path: for.body, for.body12.lr.ph, for.body12, cond.end197, for.cond7.for.end_crit_edge, for.end
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv2rgb" (FunctionId 219):
+parallelismSelector::VERBO:         LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 925200
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 15): 925200
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv2rgb
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end220_crit_edge -> {1: 925204}
+parallelismSelector::VERBO:          - EndCycles: for.end220 -> {1: 925204}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 925203}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 925204}
+parallelismSelector::VERBO:        - Critical path: entry, for.body.lr.ph, for.body, for.cond.for.end220_crit_edge, for.end220, for.end
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F216_R4_Call" (FunctionId 222):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F216_R4_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 925205}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 925205}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv_filter" (FunctionId 216):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv_filter
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 1252419}
+parallelismSelector::VERBO:          - EndCycles: entry_iso4 -> {1: 1252419}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 163607}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 327213}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 1252419}
+parallelismSelector::VERBO:        - Critical path: entry, codeRepl2, entry_iso4, codeRepl, codeRepl1
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 3
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 816
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 818
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 3
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 816
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 818
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 17
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4624
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4626
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 925200
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv_filter : 216
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(0 F=220) (127->74)(128->79)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F216_R2_Call : 220
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(3 F=217) (83->127)(84->128)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 83 is mapped to the object with value: 74
+                             Object with value: 84 is mapped to the object with value: 79
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: rgb2yuv : 217
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 11
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 12
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 756 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 588 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 12 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 763 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(1 F=221) (129->79)(130->80)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F216_R3_Call : 221
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(4 F=218) (96->129)(97->130)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 96 is mapped to the object with value: 79
+                             Object with value: 97 is mapped to the object with value: 80
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv_scale : 218
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 13
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 14
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 298 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 130 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 14 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 305 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(2 F=222) (134->80)(135->75)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F216_R4_Call : 222
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(5 F=219) (111->134)(112->135)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 111 is mapped to the object with value: 80
+                             Object with value: 112 is mapped to the object with value: 75
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv2rgb : 219
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 15
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 16
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 711 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 543 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 16 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 718 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Is valid space because UsedArea.Max <= GlobalConstr.AreaConstr
+parallelismSelector::VERBO: Initial constrained branch with estimates:
+                            FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (LoopId 11 [RGB2YUV_LOOP_X]), min-max latency/interval: {unroll 1: lat/intv 163600}
+                               +- Access to VariableId 74: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Access to VariableId 79: {1: lat/intv 1} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 12 [RGB2YUV_LOOP_Y]), min-max latency/interval: {unroll 1: lat/intv 816}
+                                  +- Access to VariableId 74: {1: lat/intv 1} (unroll: latency/interval)
+                                  +- Access to VariableId 79: {1: lat/intv 1} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 13 [YUV_SCALE_LOOP_X]), min-max latency/interval: {unroll 1: lat/intv 163600}
+                               +- Access to VariableId 79: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Access to VariableId 80: {1: lat/intv 1} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 14 [YUV_SCALE_LOOP_Y]), min-max latency/interval: {unroll 1: lat/intv 816}
+                                  +- Access to VariableId 79: {1: lat/intv 1} (unroll: latency/interval)
+                                  +- Access to VariableId 80: {1: lat/intv 1} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 15 [YUV2RGB_LOOP_X]), min-max latency/interval: {unroll 1: lat/intv 925200}
+                               +- Access to VariableId 75: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Access to VariableId 80: {1: lat/intv 1} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 16 [YUV2RGB_LOOP_Y]), min-max latency/interval: {unroll 1: lat/intv 4624}
+                                  +- Access to VariableId 75: {1: lat/intv 1} (unroll: latency/interval)
+                                  +- Access to VariableId 80: {1: lat/intv 1} (unroll: latency/interval)
+                            Id: 0 contains valid solution: --, min-max latency/interval:  lat 1252419 intv 1252420, min-max area:  LUTs: 1828 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: Initial FPGA area occupied (min): Area -- (LUTs: 1828, FFs: 0, DSPs: 10, BRAMs: 0, URAMs: 0)
+parallelismSelector::VERBO: Initial FPGA area occupied (max): Area -- (LUTs: 1828, FFs: 0, DSPs: 10, BRAMs: 0, URAMs: 0)
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            +- unroll with factors 1 (Label RGB2YUV_LOOP_X) (LoopId 11)
+                               +- unroll with factors 1 (Label RGB2YUV_LOOP_Y) (LoopId 12)
+                            +- unroll with factors 1 (Label YUV_SCALE_LOOP_X) (LoopId 13)
+                               +- unroll with factors 1 (Label YUV_SCALE_LOOP_Y) (LoopId 14)
+                            +- unroll with factors 1 (Label YUV2RGB_LOOP_X) (LoopId 15)
+                               +- unroll with factors 1 (Label YUV2RGB_LOOP_Y) (LoopId 16)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: yuv_filter
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(0 F=220) (127->74)(128->79)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(3 F=217) (83->127)(84->128)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 83 is mapped to the object with value: 74
+                             Object with value: 84 is mapped to the object with value: 79
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: Analyzing Loop "RGB2YUV_LOOP_Y" (LoopId 12):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 12 Label: RGB2YUV_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "RGB2YUV_LOOP_X" (LoopId 11):
+parallelismSelector::VERBO:         LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 816
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 12): 816
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 11 Label: RGB2YUV_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 817}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 818}
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 816}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 818}
+parallelismSelector::VERBO:        - Critical path: for.cond7.for.end_crit_edge, for.body, for.end, for.body12.lr.ph, for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "rgb2yuv" (FunctionId 217):
+parallelismSelector::VERBO:         LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 11): 163600
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: rgb2yuv
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 163603}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end105_crit_edge -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end105 -> {1: 163604}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163604}
+parallelismSelector::VERBO:        - Critical path: for.body, for.end, for.body.lr.ph, entry, for.cond.for.end105_crit_edge, for.end105
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F216_R2_Call" (FunctionId 220):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F216_R2_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 163605}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163605}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=221) (129->79)(130->80)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(4 F=218) (96->129)(97->130)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 96 is mapped to the object with value: 79
+                             Object with value: 97 is mapped to the object with value: 80
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: Analyzing Loop "YUV_SCALE_LOOP_Y" (LoopId 14):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 14 Label: YUV_SCALE_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: for.body12
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "YUV_SCALE_LOOP_X" (LoopId 13):
+parallelismSelector::VERBO:         LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 816
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 14): 816
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 13 Label: YUV_SCALE_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 816}
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 817}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 818}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 818}
+parallelismSelector::VERBO:        - Critical path: for.body12.lr.ph, for.body12, for.cond7.for.end_crit_edge, for.end, for.body
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv_scale" (FunctionId 218):
+parallelismSelector::VERBO:         LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 13): 163600
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv_scale
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end61_crit_edge -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end61 -> {1: 163604}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 163603}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163604}
+parallelismSelector::VERBO:        - Critical path: entry, for.cond.for.end61_crit_edge, for.end61, for.end, for.body.lr.ph, for.body
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F216_R3_Call" (FunctionId 221):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F216_R3_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 163605}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 163605}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(2 F=222) (134->80)(135->75)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(5 F=219) (111->134)(112->135)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 111 is mapped to the object with value: 80
+                             Object with value: 112 is mapped to the object with value: 75
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: Analyzing Loop "YUV2RGB_LOOP_Y" (LoopId 16):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 16 Label: YUV2RGB_LOOP_Y
+parallelismSelector::VERBO:          - EndCycles: for.body12 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.true -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.false -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: cond.true60 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: cond.false61 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: cond.end -> {1: 5}
+parallelismSelector::VERBO:          - EndCycles: cond.end75 -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: cond.true99 -> {1: 8}
+parallelismSelector::VERBO:          - EndCycles: cond.false181 -> {1: 14}
+parallelismSelector::VERBO:          - EndCycles: cond.false123 -> {1: 10}
+parallelismSelector::VERBO:          - EndCycles: cond.end197 -> {1: 16}
+parallelismSelector::VERBO:          - EndCycles: cond.end143 -> {1: 11}
+parallelismSelector::VERBO:          - EndCycles: cond.true163 -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: cond.true122 -> {1: 9}
+parallelismSelector::VERBO:          - EndCycles: cond.true180 -> {1: 14}
+parallelismSelector::VERBO:          - EndCycles: cond.end195 -> {1: 15}
+parallelismSelector::VERBO:          - EndCycles: cond.end145 -> {1: 12}
+parallelismSelector::VERBO:          - EndCycles: cond.false164 -> {1: 13}
+parallelismSelector::VERBO:          - EndCycles: cond.false100 -> {1: 8}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 16}
+parallelismSelector::VERBO:        - Critical path: for.body12, cond.false, cond.true60, cond.false61, cond.end, cond.end75, cond.false181, cond.false123, cond.end197, cond.end143, cond.true180, cond.end195, cond.end145, cond.false164, cond.false100
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "YUV2RGB_LOOP_X" (LoopId 15):
+parallelismSelector::VERBO:         LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 4624
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 16): 4624
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 15 Label: YUV2RGB_LOOP_X
+parallelismSelector::VERBO:          - EndCycles: for.body -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.body12.lr.ph -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: cond.end197 -> {1: 4624}
+parallelismSelector::VERBO:          - EndCycles: for.cond7.for.end_crit_edge -> {1: 4625}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 4626}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4626}
+parallelismSelector::VERBO:        - Critical path: for.body, for.body12.lr.ph, for.body12, cond.end197, for.cond7.for.end_crit_edge, for.end
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0}, OwnedIIMem: {1: 0}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv2rgb" (FunctionId 219):
+parallelismSelector::VERBO:         LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 925200
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 15): 925200
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv2rgb
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end220_crit_edge -> {1: 925204}
+parallelismSelector::VERBO:          - EndCycles: for.end220 -> {1: 925204}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 925203}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 925204}
+parallelismSelector::VERBO:        - Critical path: entry, for.body.lr.ph, for.body, for.cond.for.end220_crit_edge, for.end220, for.end
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F216_R4_Call" (FunctionId 222):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F216_R4_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 925205}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 925205}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "yuv_filter" (FunctionId 216):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: yuv_filter
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 1252419}
+parallelismSelector::VERBO:          - EndCycles: entry_iso4 -> {1: 1252419}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 163607}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 327213}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 1252419}
+parallelismSelector::VERBO:        - Critical path: entry, codeRepl2, entry_iso4, codeRepl, codeRepl1
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 3
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 12, Label: RGB2YUV_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 816
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 818
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 11, Label: RGB2YUV_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 3
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 14, Label: YUV_SCALE_LOOP_Y, TC: 272, IL: {1: 2}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 816
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 818
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 13, Label: YUV_SCALE_LOOP_X, TC: 200, IL: {1: 818}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 163600
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 17
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 16, Label: YUV2RGB_LOOP_Y, TC: 272, IL: {1: 16}, IIMem: {1: 1.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4624
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     Initiation Interval:
+parallelismSelector::VERBO:     LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4626
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 15, Label: YUV2RGB_LOOP_X, TC: 200, IL: {1: 4626}, IIMem: {1: 0}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 925200
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv_filter : 216
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(0 F=220) (127->74)(128->79)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F216_R2_Call : 220
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(3 F=217) (83->127)(84->128)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 83 is mapped to the object with value: 74
+                             Object with value: 84 is mapped to the object with value: 79
+                             Object with value: 127 is mapped to the object with value: 74
+                             Object with value: 128 is mapped to the object with value: 79
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: rgb2yuv : 217
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 11
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 12
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 756 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 588 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 12 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 763 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 777 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(1 F=221) (129->79)(130->80)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F216_R3_Call : 221
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(4 F=218) (96->129)(97->130)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 96 is mapped to the object with value: 79
+                             Object with value: 97 is mapped to the object with value: 80
+                             Object with value: 129 is mapped to the object with value: 79
+                             Object with value: 130 is mapped to the object with value: 80
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv_scale : 218
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 13
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 14
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 298 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 130 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 14 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 305 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 319 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(2 F=222) (134->80)(135->75)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F216_R4_Call : 222
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(5 F=219) (111->134)(112->135)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 111 is mapped to the object with value: 80
+                             Object with value: 112 is mapped to the object with value: 75
+                             Object with value: 134 is mapped to the object with value: 80
+                             Object with value: 135 is mapped to the object with value: 75
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: yuv2rgb : 219
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 15
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 16
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 711 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 543 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 16 LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 718 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 7 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 14 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 732 FFs: 0 DSPs: 10 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Estimated metrics for the application:
+parallelismSelector::VERBO: Loop with Id 11:
+parallelismSelector::VERBO:     Trip count: 200 - 200
+parallelismSelector::VERBO:     II: 818 - 818
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 12:
+parallelismSelector::VERBO:     Variable with Id 83 (in):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Variable with Id 84 (out):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Trip count: 272 - 272
+parallelismSelector::VERBO:     II: 3 - 3
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 13:
+parallelismSelector::VERBO:     Trip count: 200 - 200
+parallelismSelector::VERBO:     II: 818 - 818
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 14:
+parallelismSelector::VERBO:     Variable with Id 96 (in):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Variable with Id 97 (out):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Trip count: 272 - 272
+parallelismSelector::VERBO:     II: 3 - 3
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 15:
+parallelismSelector::VERBO:     Trip count: 200 - 200
+parallelismSelector::VERBO:     II: 4626 - 4626
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 16:
+parallelismSelector::VERBO:     Variable with Id 111 (in):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Variable with Id 112 (out):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Trip count: 272 - 272
+parallelismSelector::VERBO:     II: 17 - 17
+parallelismSelector::VERBO:     IsPipelinedRegion: false
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Function with Id 216:
+parallelismSelector::VERBO:     Interval: 1252420 - 1252420
+                                Latency: 1252419 - 1252419
+parallelismSelector::VERBO: Function with Id 217:
+parallelismSelector::VERBO:     Interval: 163605 - 163605
+                                Latency: 163604 - 163604
+parallelismSelector::VERBO: Function with Id 218:
+parallelismSelector::VERBO:     Interval: 163605 - 163605
+                                Latency: 163604 - 163604
+parallelismSelector::VERBO: Function with Id 219:
+parallelismSelector::VERBO:     Interval: 925205 - 925205
+                                Latency: 925204 - 925204
+parallelismSelector::VERBO: Function with Id 220:
+parallelismSelector::VERBO:     Interval: 163606 - 163606
+                                Latency: 163605 - 163605
+parallelismSelector::VERBO: Function with Id 221:
+parallelismSelector::VERBO:     Interval: 163606 - 163606
+                                Latency: 163605 - 163605
+parallelismSelector::VERBO: Function with Id 222:
+parallelismSelector::VERBO:     Interval: 925206 - 925206
+                                Latency: 925205 - 925205
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: E:\robot\project\xup_high_level_synthesis_design_flow\source\lab2\yuv_filter.c:49-49:4-22, TI: 163605) for RegionTask 'Task(T3,F216,R2)'
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: E:\robot\project\xup_high_level_synthesis_design_flow\source\lab2\yuv_filter.c:50-50:4-56, TI: 163605) for RegionTask 'Task(T4,F216,R3)'
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: E:\robot\project\xup_high_level_synthesis_design_flow\source\lab2\yuv_filter.c:51-51:4-34, TI: 925205) for RegionTask 'Task(T5,F216,R4)'

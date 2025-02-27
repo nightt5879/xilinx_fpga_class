@@ -1,0 +1,12 @@
+{
+  "name": "yuv_filter",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "yuv_filter"
+  },
+  "template": "empty_hls_component"
+}
