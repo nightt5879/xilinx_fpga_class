@@ -4,6 +4,11 @@
         "-IE:\\xilinx\\Vitis\\2024.2\\include\\etc",
         "-IE:\\xilinx\\Vitis\\2024.2\\include\\ap_sysc",
         "-IE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\auto_cc\\include",
-        "-IE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\systemc\\include"
+        "-IE:\\xilinx\\Vitis\\2024.2\\win64\\tools\\systemc\\include",
+        "-IE:\\vitis\\Vitis\\2024.2\\include",
+        "-IE:\\vitis\\Vitis\\2024.2\\include\\etc",
+        "-IE:\\vitis\\Vitis\\2024.2\\include\\ap_sysc",
+        "-IE:\\vitis\\Vitis\\2024.2\\win64\\tools\\auto_cc\\include",
+        "-IE:\\vitis\\Vitis\\2024.2\\win64\\tools\\systemc\\include"
     ]
 }
