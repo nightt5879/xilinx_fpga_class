@@ -1,0 +1,25 @@
+02/28/25 17:09:11: Running xcd server. This server was built by gradle.
+02/28/25 17:09:11: Server was asked to start on port: '52781'
+02/28/25 17:09:11: Server is using token UUID: 'a122aa92-fbff-4c90-a62c-a8fe5f143a7f'
+02/28/25 17:09:11: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/28/25 17:09:11: Attempting to start server on port '52781'
+02/28/25 17:09:11: Running Dispatch Server
+02/28/25 17:09:11: Version 2.2.0
+02/28/25 17:09:13: Dispatch Server: Accepted socket connection from client
+02/28/25 17:09:13: Starting Socket connection
+02/28/25 17:09:13: EXCHANGE_TOKEN received, server token: a122aa92-fbff-4c90-a62c-a8fe5f143a7f, passed token: a122aa92-fbff-4c90-a62c-a8fe5f143a7f
+02/28/25 17:09:13: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+02/28/25 17:09:13: SESSION_MGR: creating session with session uuid: '9910c242-5d04-4a91-94ee-047fdaf650fb' and name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:13: KERNEL_SVC: creating session with uuid: '9910c242-5d04-4a91-94ee-047fdaf650fb' and name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:13: GUIDANCE_SMGR: creating guidance session with uuid: '9910c242-5d04-4a91-94ee-047fdaf650fb' and name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:13: SYSTEM_DIAGRAM: creating session with uuid: '9910c242-5d04-4a91-94ee-047fdaf650fb' and name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:21: Dispatch Server: Accepted socket connection from client
+02/28/25 17:09:21: Starting Socket connection
+02/28/25 17:09:39: SESSION_MGR: closing session for UUID '9910c242-5d04-4a91-94ee-047fdaf650fb' with name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:39: KERNEL_SVC: closing session for UUID '9910c242-5d04-4a91-94ee-047fdaf650fb' with name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:39: GUIDANCE_SMGR: closing session for UUID '9910c242-5d04-4a91-94ee-047fdaf650fb' with name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:39: SYSTEM_DIAGRAM: closing session for UUID '9910c242-5d04-4a91-94ee-047fdaf650fb' with name 'v++_compile_yuv_filter_solution'
+02/28/25 17:09:39: STOP_SERVER received, server token: a122aa92-fbff-4c90-a62c-a8fe5f143a7f, passed token: a122aa92-fbff-4c90-a62c-a8fe5f143a7f
+02/28/25 17:09:39: Socket received request to stop server.
+02/28/25 17:09:39: Dispatch Server: do_await_stop
+02/28/25 17:09:39: SERVER: destructor for server bound to port 52781

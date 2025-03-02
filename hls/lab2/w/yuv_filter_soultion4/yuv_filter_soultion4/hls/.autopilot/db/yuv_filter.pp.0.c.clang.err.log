@@ -1,0 +1,34 @@
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yuv_filter_XLX_SEP_ PragmaOptions=name=yuv_filter_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=yuv_filter
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:38:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yuv_filter_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:77:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rgb2yuv_XLX_SEP_ PragmaOptions=min=200 max=1920_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1920
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_soultion4/hls_config.cfg:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=rgb2yuv_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE PIPELINE
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:80:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=rgb2yuv_XLX_SEP_ PragmaOptions=min=200 max=1280_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1280
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yuv2rgb_XLX_SEP_ PragmaOptions=min=200 max=1920_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1920
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_soultion4/hls_config.cfg:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yuv2rgb_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE PIPELINE
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:120:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yuv2rgb_XLX_SEP_ PragmaOptions=min=200 max=1280_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1280
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:157:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yuv_scale_XLX_SEP_ PragmaOptions=min=200 max=1920_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1920
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_soultion4/hls_config.cfg:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yuv_scale_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE PIPELINE
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:160:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=loop_tripcount_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yuv_scale_XLX_SEP_ PragmaOptions=min=200 max=1280_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS loop_tripcount min=200 max=1280
+        ^
+11 warnings generated.

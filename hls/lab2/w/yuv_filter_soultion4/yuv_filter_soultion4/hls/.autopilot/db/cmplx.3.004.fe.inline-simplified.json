@@ -1,0 +1,56 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 1 2",
+    "file": "yuv_filter.c",
+    "fileloc": 30,
+    "instructions": 52,
+    "name": "yuv_filter",
+    "total_instructions": 241
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "yuv_filter.c",
+    "fileloc": 137,
+    "instructions": 50,
+    "loads": {
+      "L": 5
+    },
+    "name": "yuv_scale",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 50
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "yuv_filter.c",
+    "fileloc": 94,
+    "instructions": 74,
+    "loads": {
+      "L": 5
+    },
+    "name": "yuv2rgb",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 74
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "yuv_filter.c",
+    "fileloc": 56,
+    "instructions": 65,
+    "loads": {
+      "L": 5
+    },
+    "name": "rgb2yuv",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 65
+  }
+}

@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'yuv_filter'" level="0">
+<item name = "Date">Sun Mar  2 09:57:30 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">yuv_filter_solution2</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3200546, 213819104, 32.005 ms, 2.138 sec, 3200547, 213819105, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- RGB2YUV_LOOP_X">3200400, 196611840, 16002 ~ 102402, -, -, 200 ~ 1920, no</column>
+<column name=" + RGB2YUV_LOOP_Y">16000, 102400, 80, -, -, 200 ~ 1280, no</column>
+<column name="- YUV_SCALE_LOOP_X">160400, 9834240, 802 ~ 5122, -, -, 200 ~ 1920, no</column>
+<column name=" + YUV_SCALE_LOOP_Y">800, 5120, 4, -, -, 200 ~ 1280, no</column>
+<column name="- YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y">120076, 7372876, 80, 3, 1, 40000 ~ 2457600, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

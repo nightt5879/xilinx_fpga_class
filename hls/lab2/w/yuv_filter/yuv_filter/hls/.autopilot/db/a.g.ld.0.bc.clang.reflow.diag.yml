@@ -1,0 +1,975 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 49, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 59, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 50, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv_scale
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 51, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            out_channels
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_yuv_filter_ir
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            in_channels
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 49, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 59, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 50, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv_scale
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 51, Column: 4 }
+Function:        yuv_filter
+Args:            
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_yuv_filter_ir
+Args:            
+  - Callee:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_yuv_filter_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          rgb2yuv
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 59, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          yuv_scale
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 143, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          yuv2rgb
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 97, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       in_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 80, Column: 6 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.i.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep33seq
+  - ArrayName:       in_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 81, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.i.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep34seq
+  - ArrayName:       in_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 82, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.i.load.12
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep35seq
+  - ArrayName:       out_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 129, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          for.body10.i.store.58
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep36seq
+  - ArrayName:       out_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 130, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          for.body10.i.store.61
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep37seq
+  - ArrayName:       out_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 131, Column: 34 }
+  - OrigDirection:   write
+  - OrigID:          for.body10.i.store.64
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep33seq
+  - ArrayName:       in_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep34seq
+  - ArrayName:       in_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep35seq
+  - ArrayName:       out_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep36seq
+  - ArrayName:       out_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep37seq
+  - ArrayName:       out_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_X
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep35seq
+  - ArrayName:       out_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep36seq
+  - ArrayName:       out_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep37seq
+  - ArrayName:       out_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in_channels_ch1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep33seq
+  - ArrayName:       in_channels_ch2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            BadAccessLen
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Sequential access length is not divisible by 2
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep34seq
+  - ArrayName:       in_channels_ch3
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          ' '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        RGB2YUV_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        YUV_SCALE_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:158:7'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        YUV2RGB_LOOP_Y
+  - String:          '> at '
+  - LoopLoc:         'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7'
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            in_channels_ch1
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            in_channels_ch2
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            in_channels_ch3
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            out_channels_ch1
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            out_channels_ch2
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Failure
+Pass:            reflow-interface-check
+Name:            UnspportedNonScalarType
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 37, Column: 0 }
+Function:        yuv_filter
+Args:            
+  - String:          'Cannot apply interface mode '''
+  - String:          ap_none
+  - String:          ''' '
+  - String:          'on function argument '''
+  - Name:            out_channels_ch3
+  - String:          ''' since this interface mode only supports scalar types'
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      in_channels_ch1
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep33seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      in_channels_ch2
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 78, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 78, Column: 7 }
+  - OrigDirection:   read
+  - OrigID:          scevgep34seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      in_channels_ch3
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep35seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      out_channels_ch1
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep36seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      out_channels_ch2
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                   Line: 118, Column: 7 }
+Function:        yuv_filter
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 118, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          scevgep37seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      out_channels_ch3
+  - String:          ' '
+  - Function:        yuv_filter
+    DebugLoc:        { File: 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c', 
+                       Line: 37, Column: 0 }
+  - String:          ' '
+...

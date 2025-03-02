@@ -1,0 +1,25 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="yuv_filter" language="c" vlnv="xilinx.com:hls:yuv_filter:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="M_AXI_GMEM" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="16"/>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0xA0" dataWidth="32"/>
+    </ports>
+    <args>
+      <arg id="0" name="in_channels_ch1" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x10" size="0x8" type="void*"/>
+      <arg id="0" name="in_channels_ch2" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x1C" size="0x8" type="void*"/>
+      <arg id="0" name="in_channels_ch3" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x28" size="0x8" type="void*"/>
+      <arg id="0" name="in_width" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x34" size="0x8" type="void*"/>
+      <arg id="0" name="in_height" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x40" size="0x8" type="void*"/>
+      <arg id="1" name="out_channels_ch1" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x4C" size="0x8" type="void*"/>
+      <arg id="1" name="out_channels_ch2" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x58" size="0x8" type="void*"/>
+      <arg id="1" name="out_channels_ch3" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x64" size="0x8" type="void*"/>
+      <arg id="1" name="out_width" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x70" size="0x8" type="void*"/>
+      <arg id="1" name="out_height" addressQualifier="1" port="M_AXI_GMEM" hostOffset="0x0" hostSize="0x8" offset="0x7C" size="0x8" type="void*"/>
+      <arg id="2" name="Y_scale" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x88" size="0x4" type="unsigned int"/>
+      <arg id="3" name="U_scale" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x90" size="0x4" type="unsigned int"/>
+      <arg id="4" name="V_scale" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x98" size="0x4" type="unsigned int"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

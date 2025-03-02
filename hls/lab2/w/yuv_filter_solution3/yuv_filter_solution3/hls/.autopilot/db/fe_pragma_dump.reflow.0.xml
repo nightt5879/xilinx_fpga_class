@@ -1,0 +1,11 @@
+<pragmas>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="76" pragmaType="loop_tripcount" parentfunction="rgb2yuv" min="200" max="1920" avg="1060"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="14" pragmaType="pipeline" parentfunction="rgb2yuv" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="79" pragmaType="loop_tripcount" parentfunction="rgb2yuv" min="200" max="1280" avg="740"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="156" pragmaType="loop_tripcount" parentfunction="yuv_scale" min="200" max="1920" avg="1060"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="15" pragmaType="pipeline" parentfunction="yuv_scale" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="159" pragmaType="loop_tripcount" parentfunction="yuv_scale" min="200" max="1280" avg="740"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="116" pragmaType="loop_tripcount" parentfunction="yuv2rgb" min="200" max="1920" avg="1060"/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="16" pragmaType="pipeline" parentfunction="yuv2rgb" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c" line="119" pragmaType="loop_tripcount" parentfunction="yuv2rgb" min="200" max="1280" avg="740"/>
+</pragmas>

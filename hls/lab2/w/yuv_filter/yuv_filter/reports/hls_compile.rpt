@@ -1,0 +1,298 @@
+
+
+================================================================
+== Synthesis Summary Report of 'yuv_filter'
+================================================================
++ General Information: 
+    * Date:           Fri Feb 28 16:04:13 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        yuv_filter
+    * Solution:       hls (Vitis Kernel Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------+------+------+----------+-----------+----------+----------+---------+----------+---------------+--------+-----------+------------+-----+
+    |                          Modules                         | Issue|      | Latency  |  Latency  | Iteration|          |   Trip  |          |               |        |           |            |     |
+    |                          & Loops                         | Type | Slack| (cycles) |    (ns)   |  Latency | Interval |  Count  | Pipelined|     BRAM      |   DSP  |     FF    |     LUT    | URAM|
+    +----------------------------------------------------------+------+------+----------+-----------+----------+----------+---------+----------+---------------+--------+-----------+------------+-----+
+    |+ yuv_filter                                              |     -|  0.00|  17203512|  1.720e+08|         -|  17203513|        -|        no|  12291 (4389%)|  8 (3%)|  4525 (4%)|  6994 (13%)|    -|
+    | + yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y      |     -|  0.00|   7372879|  7.373e+07|         -|   7372879|        -|        no|              -|  3 (1%)|  887 (~0%)|   1567 (2%)|    -|
+    |  o RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y                         |    II|  7.30|   7372877|  7.373e+07|        81|         3|  2457600|       yes|              -|       -|          -|           -|    -|
+    | + yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y  |     -|  0.34|   2457606|  2.458e+07|         -|   2457606|        -|        no|              -|       -|  255 (~0%)|   434 (~0%)|    -|
+    |  o YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y                     |     -|  7.30|   2457604|  2.458e+07|         6|         1|  2457600|       yes|              -|       -|          -|           -|    -|
+    | + yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y      |     -|  0.00|   7372878|  7.373e+07|         -|   7372878|        -|        no|              -|  4 (1%)|  669 (~0%)|   1119 (2%)|    -|
+    |  o YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y                         |    II|  7.30|   7372876|  7.373e+07|        80|         3|  2457600|       yes|              -|       -|          -|           -|    -|
+    +----------------------------------------------------------+------+------+----------+-----------+----------+----------+---------+----------+---------------+--------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 8 -> 16    | 64            | 64      | slave  | 0        | 512       | 16           | 16           | 16          | 16          | BRAM=3            |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+--------------------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| Interface     | Register           | Offset | Width | Access | Description                      | Bit Fields                                                                         |
++---------------+--------------------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+| s_axi_control | CTRL               | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 4=AP_CONTINUE 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER               | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                                           |
+| s_axi_control | IP_IER             | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                                      |
+| s_axi_control | IP_ISR             | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                                      |
+| s_axi_control | in_channels_ch1_1  | 0x10   | 32    | W      | Data signal of in_channels_ch1   |                                                                                    |
+| s_axi_control | in_channels_ch1_2  | 0x14   | 32    | W      | Data signal of in_channels_ch1   |                                                                                    |
+| s_axi_control | in_channels_ch2_1  | 0x1c   | 32    | W      | Data signal of in_channels_ch2   |                                                                                    |
+| s_axi_control | in_channels_ch2_2  | 0x20   | 32    | W      | Data signal of in_channels_ch2   |                                                                                    |
+| s_axi_control | in_channels_ch3_1  | 0x28   | 32    | W      | Data signal of in_channels_ch3   |                                                                                    |
+| s_axi_control | in_channels_ch3_2  | 0x2c   | 32    | W      | Data signal of in_channels_ch3   |                                                                                    |
+| s_axi_control | in_width_1         | 0x34   | 32    | W      | Data signal of in_width          |                                                                                    |
+| s_axi_control | in_width_2         | 0x38   | 32    | W      | Data signal of in_width          |                                                                                    |
+| s_axi_control | in_height_1        | 0x40   | 32    | W      | Data signal of in_height         |                                                                                    |
+| s_axi_control | in_height_2        | 0x44   | 32    | W      | Data signal of in_height         |                                                                                    |
+| s_axi_control | out_channels_ch1_1 | 0x4c   | 32    | W      | Data signal of out_channels_ch1  |                                                                                    |
+| s_axi_control | out_channels_ch1_2 | 0x50   | 32    | W      | Data signal of out_channels_ch1  |                                                                                    |
+| s_axi_control | out_channels_ch2_1 | 0x58   | 32    | W      | Data signal of out_channels_ch2  |                                                                                    |
+| s_axi_control | out_channels_ch2_2 | 0x5c   | 32    | W      | Data signal of out_channels_ch2  |                                                                                    |
+| s_axi_control | out_channels_ch3_1 | 0x64   | 32    | W      | Data signal of out_channels_ch3  |                                                                                    |
+| s_axi_control | out_channels_ch3_2 | 0x68   | 32    | W      | Data signal of out_channels_ch3  |                                                                                    |
+| s_axi_control | out_width_1        | 0x70   | 32    | W      | Data signal of out_width         |                                                                                    |
+| s_axi_control | out_width_2        | 0x74   | 32    | W      | Data signal of out_width         |                                                                                    |
+| s_axi_control | out_height_1       | 0x7c   | 32    | W      | Data signal of out_height        |                                                                                    |
+| s_axi_control | out_height_2       | 0x80   | 32    | W      | Data signal of out_height        |                                                                                    |
+| s_axi_control | Y_scale            | 0x88   | 32    | W      | Data signal of Y_scale           |                                                                                    |
+| s_axi_control | U_scale            | 0x90   | 32    | W      | Data signal of U_scale           |                                                                                    |
+| s_axi_control | V_scale            | 0x98   | 32    | W      | Data signal of V_scale           |                                                                                    |
++---------------+--------------------+--------+-------+--------+----------------------------------+------------------------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+---------------+-----------+
+| Interface | Type          | Ports     |
++-----------+---------------+-----------+
+| ap_clk    | clock         | ap_clk    |
+| ap_rst_n  | reset         | ap_rst_n  |
+| interrupt | interrupt     | interrupt |
+| ap_ctrl   | ap_ctrl_chain |           |
++-----------+---------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| in       | inout     | pointer       |
+| out      | inout     | pointer       |
+| Y_scale  | in        | unsigned char |
+| U_scale  | in        | unsigned char |
+| V_scale  | in        | unsigned char |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+---------------------------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                                           |
++----------+---------------+-----------+----------+---------------------------------------------------+
+| in       | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| in       | s_axi_control | interface | offset   |                                                   |
+| in       | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| in       | s_axi_control | interface | offset   |                                                   |
+| in       | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| in       | s_axi_control | interface | offset   |                                                   |
+| in       | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| in       | s_axi_control | interface | offset   |                                                   |
+| in       | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| in       | s_axi_control | interface | offset   |                                                   |
+| out      | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| out      | s_axi_control | interface | offset   |                                                   |
+| out      | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| out      | s_axi_control | interface | offset   |                                                   |
+| out      | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| out      | s_axi_control | interface | offset   |                                                   |
+| out      | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| out      | s_axi_control | interface | offset   |                                                   |
+| out      | m_axi_gmem    | interface |          | channel=0 channel=0 channel=0 channel=0 channel=0 |
+| out      | s_axi_control | interface | offset   |                                                   |
+| Y_scale  | s_axi_control | register  |          | name=Y_scale offset=0x88 range=32                 |
+| U_scale  | s_axi_control | register  |          | name=U_scale offset=0x90 range=32                 |
+| V_scale  | s_axi_control | register  |          | name=V_scale offset=0x98 range=32                 |
++----------+---------------+-----------+----------+---------------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* All M_AXI Variable Accesses
++--------------+------------------+-----------------------------------------------------------------+-----------+--------------+----------+----------------+----------------------------------------------------------------+------------+------------------------------------------------+
+| HW Interface | Variable         | Access Location                                                 | Direction | Burst Status | Length   | Loop           | Loop Location                                                  | Resolution | Problem                                        |
++--------------+------------------+-----------------------------------------------------------------+-----------+--------------+----------+----------------+----------------------------------------------------------------+------------+------------------------------------------------+
+| m_axi_gmem   | in_channels_ch1  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:80:6   | read      | Widen Fail   |          | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | in_channels_ch1  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:80:6   | read      | Fail         |          | RGB2YUV_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4  | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | in_channels_ch1  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:80:6   | read      | Inferred     | variable | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  |            |                                                |
+| m_axi_gmem   | in_channels_ch2  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:81:14  | read      | Widen Fail   |          | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | in_channels_ch2  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:81:14  | read      | Fail         |          | RGB2YUV_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4  | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | in_channels_ch2  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:81:14  | read      | Inferred     | variable | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  |            |                                                |
+| m_axi_gmem   | in_channels_ch3  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:82:14  | read      | Widen Fail   |          | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | in_channels_ch3  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:82:14  | read      | Fail         |          | RGB2YUV_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:75:4  | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | in_channels_ch3  | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:82:14  | read      | Inferred     | variable | RGB2YUV_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:78:7  |            |                                                |
+| m_axi_gmem   | out_channels_ch1 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:129:34 | write     | Widen Fail   |          | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | out_channels_ch1 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:129:34 | write     | Fail         |          | YUV2RGB_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4 | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | out_channels_ch1 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:129:34 | write     | Inferred     | variable | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 |            |                                                |
+| m_axi_gmem   | out_channels_ch2 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:130:34 | write     | Widen Fail   |          | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | out_channels_ch2 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:130:34 | write     | Fail         |          | YUV2RGB_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4 | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | out_channels_ch2 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:130:34 | write     | Inferred     | variable | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 |            |                                                |
+| m_axi_gmem   | out_channels_ch3 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:131:34 | write     | Widen Fail   |          | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 | 214-234    | Sequential access length is not divisible by 2 |
+| m_axi_gmem   | out_channels_ch3 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:131:34 | write     | Fail         |          | YUV2RGB_LOOP_X | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:115:4 | 214-230    | Stride is incompatible                         |
+| m_axi_gmem   | out_channels_ch3 | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:131:34 | write     | Inferred     | variable | YUV2RGB_LOOP_Y | E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:118:7 |            |                                                |
++--------------+------------------+-----------------------------------------------------------------+-----------+--------------+----------+----------------+----------------------------------------------------------------+------------+------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                                                     | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++----------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + yuv_filter                                             | 8   |        |              |        |           |         |
+|   icmp_ln75_fu_430_p2                                    |     |        | icmp_ln75    | seteq  | auto      | 0       |
+|   mul_16ns_16ns_32_1_1_U51                               | 1   |        | mul_ln30     | mul    | auto      | 0       |
+|  + yuv_filter_Pipeline_RGB2YUV_LOOP_X_RGB2YUV_LOOP_Y     | 3   |        |              |        |           |         |
+|    icmp_ln75_fu_275_p2                                   |     |        | icmp_ln75    | seteq  | auto      | 0       |
+|    add_ln75_1_fu_280_p2                                  |     |        | add_ln75_1   | add    | fabric    | 0       |
+|    add_ln75_fu_292_p2                                    |     |        | add_ln75     | add    | fabric    | 0       |
+|    icmp_ln78_fu_298_p2                                   |     |        | icmp_ln78    | seteq  | auto      | 0       |
+|    select_ln60_fu_303_p3                                 |     |        | select_ln60  | select | auto_sel  | 0       |
+|    select_ln75_fu_311_p3                                 |     |        | select_ln75  | select | auto_sel  | 0       |
+|    add_ln86_1_fu_343_p2                                  |     |        | add_ln86_1   | add    | fabric    | 0       |
+|    add_ln86_fu_372_p2                                    |     |        | add_ln86     | add    | fabric    | 0       |
+|    lshr_ln80_fu_503_p2                                   |     |        | lshr_ln80    | lshr   | auto_pipe | 0       |
+|    lshr_ln81_fu_527_p2                                   |     |        | lshr_ln81    | lshr   | auto_pipe | 0       |
+|    lshr_ln82_fu_547_p2                                   |     |        | lshr_ln82    | lshr   | auto_pipe | 0       |
+|    add_ln83_3_fu_580_p2                                  |     |        | add_ln83_3   | add    | fabric    | 0       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U5                      | 1   |        | mul_ln83     | mul    | dsp_slice | 3       |
+|    add_ln83_4_fu_745_p2                                  |     |        | add_ln83_4   | add    | fabric    | 0       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U5                      | 1   |        | add_ln83_1   | add    | dsp_slice | 3       |
+|    Y_fu_792_p2                                           |     |        | Y            | add    | fabric    | 0       |
+|    mul_8ns_8s_16_1_1_U1                                  |     |        | mul_ln84     | mul    | auto      | 0       |
+|    mac_muladd_8ns_7s_16s_16_4_1_U3                       | 1   |        | mul_ln84_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8ns_7s_16s_16_4_1_U3                       | 1   |        | sext_ln84    | sext   | dsp_slice | 3       |
+|    mac_muladd_8ns_7s_16s_16_4_1_U3                       | 1   |        | add_ln84     | add    | dsp_slice | 3       |
+|    add_ln84_2_fu_619_p2                                  |     |        | add_ln84_2   | add    | fabric    | 0       |
+|    xor_ln84_fu_684_p2                                    |     |        | xor_ln84     | xor    | auto      | 0       |
+|    mul_8ns_8s_16_1_1_U2                                  |     |        | mul_ln85     | mul    | auto      | 0       |
+|    sub_ln85_fu_651_p2                                    |     |        | sub_ln85     | sub    | fabric    | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U4                     | 1   |        | mul_ln85_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U4                     | 1   |        | zext_ln85    | zext   | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U4                     | 1   |        | add_ln85     | add    | dsp_slice | 3       |
+|    add_ln85_2_fu_700_p2                                  |     |        | add_ln85_2   | add    | fabric    | 0       |
+|    xor_ln85_fu_779_p2                                    |     |        | xor_ln85     | xor    | auto      | 0       |
+|    add_ln78_fu_482_p2                                    |     |        | add_ln78     | add    | fabric    | 0       |
+|  + yuv_filter_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y | 0   |        |              |        |           |         |
+|    icmp_ln155_fu_220_p2                                  |     |        | icmp_ln155   | seteq  | auto      | 0       |
+|    add_ln155_1_fu_226_p2                                 |     |        | add_ln155_1  | add    | fabric    | 0       |
+|    add_ln155_fu_243_p2                                   |     |        | add_ln155    | add    | fabric    | 0       |
+|    icmp_ln158_fu_249_p2                                  |     |        | icmp_ln158   | seteq  | auto      | 0       |
+|    select_ln144_fu_254_p3                                |     |        | select_ln144 | select | auto_sel  | 0       |
+|    select_ln155_fu_262_p3                                |     |        | select_ln155 | select | auto_sel  | 0       |
+|    mul_8ns_8ns_15_1_1_U19                                |     |        | mul_ln163    | mul    | auto      | 0       |
+|    mul_8ns_8ns_15_1_1_U20                                |     |        | mul_ln164    | mul    | auto      | 0       |
+|    mul_8ns_8ns_15_1_1_U21                                |     |        | mul_ln165    | mul    | auto      | 0       |
+|    add_ln158_fu_310_p2                                   |     |        | add_ln158    | add    | fabric    | 0       |
+|  + yuv_filter_Pipeline_YUV2RGB_LOOP_X_YUV2RGB_LOOP_Y     | 4   |        |              |        |           |         |
+|    icmp_ln115_fu_286_p2                                  |     |        | icmp_ln115   | seteq  | auto      | 0       |
+|    add_ln115_1_fu_291_p2                                 |     |        | add_ln115_1  | add    | fabric    | 0       |
+|    add_ln115_fu_303_p2                                   |     |        | add_ln115    | add    | fabric    | 0       |
+|    icmp_ln118_fu_309_p2                                  |     |        | icmp_ln118   | seteq  | auto      | 0       |
+|    select_ln98_fu_314_p3                                 |     |        | select_ln98  | select | auto_sel  | 0       |
+|    select_ln115_fu_322_p3                                |     |        | select_ln115 | select | auto_sel  | 0       |
+|    add_ln120_1_fu_354_p2                                 |     |        | add_ln120_1  | add    | fabric    | 0       |
+|    add_ln120_fu_377_p2                                   |     |        | add_ln120    | add    | fabric    | 0       |
+|    C_fu_403_p2                                           |     |        | C            | add    | fabric    | 0       |
+|    xor_ln124_fu_463_p2                                   |     |        | xor_ln124    | xor    | auto      | 0       |
+|    xor_ln125_fu_437_p2                                   |     |        | xor_ln125    | xor    | auto      | 0       |
+|    mac_muladd_9s_9ns_8ns_18_4_1_U34                      | 1   |        | mul_ln126    | mul    | dsp_slice | 3       |
+|    mac_muladd_9s_9ns_8ns_18_4_1_U34                      | 1   |        | add_ln126    | add    | dsp_slice | 3       |
+|    mac_muladd_9ns_8s_18s_18_4_1_U35                      | 1   |        | mul_ln126_1  | mul    | dsp_slice | 3       |
+|    mac_muladd_9ns_8s_18s_18_4_1_U35                      | 1   |        | add_ln126_1  | add    | dsp_slice | 3       |
+|    icmp_ln126_fu_652_p2                                  |     |        | icmp_ln126   | seteq  | auto      | 0       |
+|    select_ln126_fu_674_p3                                |     |        | select_ln126 | select | auto_sel  | 0       |
+|    or_ln126_fu_682_p2                                    |     |        | or_ln126     | or     | auto      | 0       |
+|    R_fu_688_p3                                           |     |        | R            | select | auto_sel  | 0       |
+|    mac_muladd_9s_8s_18s_18_4_1_U36                       | 1   |        | mul_ln127    | mul    | dsp_slice | 3       |
+|    mac_muladd_9s_8s_18s_18_4_1_U36                       | 1   |        | sext_ln127_2 | sext   | dsp_slice | 3       |
+|    mac_muladd_8s_8s_18s_18_4_1_U37                       | 1   |        | mul_ln127_1  | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_18s_18_4_1_U37                       | 1   |        | sext_ln127_3 | sext   | dsp_slice | 3       |
+|    mac_muladd_9s_8s_18s_18_4_1_U36                       | 1   |        | add_ln127    | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_18s_18_4_1_U37                       | 1   |        | add_ln127_1  | add    | dsp_slice | 3       |
+|    icmp_ln127_fu_731_p2                                  |     |        | icmp_ln127   | seteq  | auto      | 0       |
+|    select_ln127_fu_762_p3                                |     |        | select_ln127 | select | auto_sel  | 0       |
+|    or_ln127_fu_769_p2                                    |     |        | or_ln127     | or     | auto      | 0       |
+|    G_fu_774_p3                                           |     |        | G            | select | auto_sel  | 0       |
+|    icmp_ln128_fu_696_p2                                  |     |        | icmp_ln128   | setgt  | auto      | 0       |
+|    select_ln128_fu_828_p3                                |     |        | select_ln128 | select | auto_sel  | 0       |
+|    or_ln128_fu_835_p2                                    |     |        | or_ln128     | or     | auto      | 0       |
+|    B_fu_840_p3                                           |     |        | B            | select | auto_sel  | 0       |
+|    shl_ln129_fu_498_p2                                   |     |        | shl_ln129    | shl    | auto_pipe | 0       |
+|    shl_ln129_2_fu_716_p2                                 |     |        | shl_ln129_2  | shl    | auto_pipe | 0       |
+|    shl_ln130_fu_740_p2                                   |     |        | shl_ln130    | shl    | auto_pipe | 0       |
+|    shl_ln130_2_fu_797_p2                                 |     |        | shl_ln130_2  | shl    | auto_pipe | 0       |
+|    shl_ln131_fu_806_p2                                   |     |        | shl_ln131    | shl    | auto_pipe | 0       |
+|    shl_ln131_2_fu_863_p2                                 |     |        | shl_ln131_2  | shl    | auto_pipe | 0       |
+|    add_ln118_fu_389_p2                                   |     |        | add_ln118    | add    | fabric    | 0       |
++----------------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------------+--------------+-----------+-------+------+--------+----------------------+------+---------+------------------+
+| Name                     | Usage        | Type      | BRAM  | URAM | Pragma | Variable             | Impl | Latency | Bitwidth, Depth, |
+|                          |              |           |       |      |        |                      |      |         | Banks            |
++--------------------------+--------------+-----------+-------+------+--------+----------------------+------+---------+------------------+
+| + yuv_filter             |              |           | 12291 | 0    |        |                      |      |         |                  |
+|   control_s_axi_U        | interface    | s_axilite |       |      |        |                      |      |         |                  |
+|   gmem_m_axi_U           | interface    | m_axi     | 3     |      |        |                      |      |         |                  |
+|   p_yuv_channels_ch1_U   | ram_1p array |           | 2048  |      |        | p_yuv_channels_ch1   | auto | 1       | 8, 2457600, 1    |
+|   p_yuv_channels_ch2_U   | ram_1p array |           | 2048  |      |        | p_yuv_channels_ch2   | auto | 1       | 8, 2457600, 1    |
+|   p_yuv_channels_ch3_U   | ram_1p array |           | 2048  |      |        | p_yuv_channels_ch3   | auto | 1       | 8, 2457600, 1    |
+|   p_scale_channels_ch1_U | ram_1p array |           | 2048  |      |        | p_scale_channels_ch1 | auto | 1       | 8, 2457600, 1    |
+|   p_scale_channels_ch2_U | ram_1p array |           | 2048  |      |        | p_scale_channels_ch2 | auto | 1       | 8, 2457600, 1    |
+|   p_scale_channels_ch3_U | ram_1p array |           | 2048  |      |        | p_scale_channels_ch3 | auto | 1       | 8, 2457600, 1    |
++--------------------------+--------------+-----------+-------+------+--------+----------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+------------------+-------------------------------------+
+| Type           | Options          | Location                            |
++----------------+------------------+-------------------------------------+
+| loop_tripcount | min=200 max=1920 | ../../yuv_filter.c:76 in rgb2yuv    |
+| loop_tripcount | min=200 max=1280 | ../../yuv_filter.c:79 in rgb2yuv    |
+| loop_tripcount | min=200 max=1920 | ../../yuv_filter.c:116 in yuv2rgb   |
+| loop_tripcount | min=200 max=1280 | ../../yuv_filter.c:119 in yuv2rgb   |
+| loop_tripcount | min=200 max=1920 | ../../yuv_filter.c:156 in yuv_scale |
+| loop_tripcount | min=200 max=1280 | ../../yuv_filter.c:159 in yuv_scale |
++----------------+------------------+-------------------------------------+
+
+

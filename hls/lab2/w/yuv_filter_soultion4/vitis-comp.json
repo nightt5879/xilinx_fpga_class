@@ -1,0 +1,11 @@
+{
+  "name": "yuv_filter_soultion4",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "yuv_filter_soultion4"
+  }
+}

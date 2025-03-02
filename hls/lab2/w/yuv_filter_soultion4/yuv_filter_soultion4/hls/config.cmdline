@@ -1,0 +1,3 @@
+relativeroot=E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_soultion4
+original_argv=-c --mode hls --config E:\robot\project\xilinx_fpga_class\hls\lab2\w\yuv_filter_soultion4\hls_config.cfg --work_dir yuv_filter_soultion4 
+

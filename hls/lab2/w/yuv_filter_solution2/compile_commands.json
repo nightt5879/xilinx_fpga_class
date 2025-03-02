@@ -1,0 +1,39 @@
+[
+  {
+    "directory": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2\\w\\yuv_filter_solution2",
+    "arguments": [
+      "E:\\vitis\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\vitis\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=yuv_filter",
+      "-c",
+      "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/yuv_filter.c"
+    ],
+    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/yuv_filter.c"
+  },
+  {
+    "directory": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2\\w\\yuv_filter_solution2",
+    "arguments": [
+      "E:\\vitis\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\vitis\\Vitis\\2024.2\\include",
+      "-c",
+      "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/image_aux.c"
+    ],
+    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/image_aux.c"
+  },
+  {
+    "directory": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2\\w\\yuv_filter_solution2",
+    "arguments": [
+      "E:\\vitis\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\vitis\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\vitis\\Vitis\\2024.2\\include",
+      "-c",
+      "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/yuv_filter_test.c"
+    ],
+    "file": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2/yuv_filter_test.c"
+  }
+]

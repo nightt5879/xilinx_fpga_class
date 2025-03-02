@@ -1,0 +1,128 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "rgb2yuv",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "RGB2YUV_LOOP_X",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg",
+    "sourceLine": 14,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "rgb2yuv",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "RGB2YUV_LOOP_Y",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg",
+    "sourceLine": 15,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "yuv2rgb",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "YUV2RGB_LOOP_X",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg",
+    "sourceLine": 16,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "yuv_scale",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "YUV_SCALE_LOOP_X",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg",
+    "sourceLine": 17,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "yuv_scale",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "YUV_SCALE_LOOP_Y",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg",
+    "sourceLine": 18,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "yuv_filter",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "yuv_filter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

@@ -1,0 +1,66 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_filter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yuv_filter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb2yuv" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv2rgb" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter_solution2/hls_config.cfg:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="off=true" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yuv_scale" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=200 max=1280" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'in_channels_ch1' since this interface mode only supports scalar types">
+        <args Name="in_channels_ch1"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'in_channels_ch2' since this interface mode only supports scalar types">
+        <args Name="in_channels_ch2"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'in_channels_ch3' since this interface mode only supports scalar types">
+        <args Name="in_channels_ch3"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'out_channels_ch1' since this interface mode only supports scalar types">
+        <args Name="out_channels_ch1"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'out_channels_ch2' since this interface mode only supports scalar types">
+        <args Name="out_channels_ch2"/>
+    </msg>
+    <msg msg_groups="" msg_id="214-414" msg_severity="WARNING" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Cannot apply interface mode 'ap_none' on function argument 'out_channels_ch3' since this interface mode only supports scalar types">
+        <args Name="out_channels_ch3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Inlining function 'rgb2yuv' into 'yuv_filter'">
+        <args Callee="rgb2yuv" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 59 Column 0" Caller="yuv_filter" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Inlining function 'yuv_scale' into 'yuv_filter'">
+        <args Callee="yuv_scale" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 143 Column 0" Caller="yuv_filter" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c:37:0" msg_body="Inlining function 'yuv2rgb' into 'yuv_filter'">
+        <args Callee="yuv2rgb" Callee-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 97 Column 0" Caller="yuv_filter" Caller-DebugLoc="File E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c Line 37 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

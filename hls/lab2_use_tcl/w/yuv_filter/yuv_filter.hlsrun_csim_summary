@@ -1,0 +1,120 @@
+<ENTRY>
+{
+ "thisFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\w\\yuv_filter\\yuv_filter.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/28/25 15:19:00",
+ "timestampMillis": "1740727140104",
+ "buildStep": {
+  "cmdId": "91bf7e39-dc40-4056-bc8a-413fb6cef152",
+  "name": "vitis-run",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\w\\logs\\hls_run_csim.log",
+  "commandLine": "vitis-run --mode hls --tcl E:/robot/project/xilinx_fpga_class/hls/lab2_use_tcl/run_hls.tcl",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\w"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/28/25 15:19:00",
+ "timestampMillis": "1740727140105",
+ "status": {
+  "cmdId": "91bf7e39-dc40-4056-bc8a-413fb6cef152",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/28/25 15:19:00",
+ "timestampMillis": "1740727140105",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "yuv_filter",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\yuv_filter.c"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/28/25 15:19:00",
+ "timestampMillis": "1740727140105",
+ "buildStep": {
+  "cmdId": "260503f8-01d5-4473-a5bc-db6b8f6ade62",
+  "name": "csim_design",
+  "logFile": "E:/robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\w\\yuv_filter\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab2_use_tcl\\w"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/28/25 15:19:00",
+ "timestampMillis": "1740727140106",
+ "status": {
+  "cmdId": "260503f8-01d5-4473-a5bc-db6b8f6ade62",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/28/25 15:19:01",
+ "timestampMillis": "1740727141396",
+ "status": {
+  "cmdId": "260503f8-01d5-4473-a5bc-db6b8f6ade62",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/28/25 15:19:01",
+ "timestampMillis": "1740727141417",
+ "status": {
+  "cmdId": "91bf7e39-dc40-4056-bc8a-413fb6cef152",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

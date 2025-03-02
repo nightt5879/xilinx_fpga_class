@@ -1,0 +1,43 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/yuv_filter 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=E:\robot\project\xilinx_fpga_class\hls\lab2/yuv_filter.c' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:\robot\project\xilinx_fpga_class\hls\lab2/image_aux.c' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab2/image_aux.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:\robot\project\xilinx_fpga_class\hls\lab2/yuv_filter_test.c' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab2/yuv_filter_test.c' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=E:\robot\project\xilinx_fpga_class\hls\lab2/test_data' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'E:/robot/project/xilinx_fpga_class/hls/lab2/test_data' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=yuv_filter' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'clock=10' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(12)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' from E:/robot/project/xilinx_fpga_class/hls/lab2/w/yuv_filter/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../../yuv_filter_test.c in debug mode
+   Compiling ../../../../../../image_aux.c in debug mode
+   Compiling ../../../../../../yuv_filter.c in debug mode
+   Generating csim.exe
+../../../../../../yuv_filter.c:40:30: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long long)' [-Wimplicit-function-declaration]
+   image_t *yuv = (image_t *)malloc(sizeof(image_t));
+                             ^
+../../../../../../yuv_filter.c:40:30: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+1 warning generated.
+Test passed!
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.978 seconds; peak allocated memory: 620.258 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

@@ -1,0 +1,216 @@
+
+
+================================================================
+== Vitis HLS Report for 'yuv_scale'
+================================================================
+* Date:           Sun Mar  2 10:35:43 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        yuv_filter_soultion4
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.268 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max    |  min  |   max   |   Type  |
+    +---------+---------+----------+-----------+-------+---------+---------+
+    |    40007|  2457607|  0.400 ms|  24.576 ms|  40007|  2457607|       no|
+    +---------+---------+----------+-----------+-------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------+------------------------------------------------------+---------+---------+----------+-----------+-------+---------+------------------------------------------------+
+        |                                                                |                                                      |  Latency (cycles) |  Latency (absolute)  |     Interval    |                    Pipeline                    |
+        |                            Instance                            |                        Module                        |   min   |   max   |    min   |    max    |  min  |   max   |                      Type                      |
+        +----------------------------------------------------------------+------------------------------------------------------+---------+---------+----------+-----------+-------+---------+------------------------------------------------+
+        |grp_yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_98  |yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y  |    40004|  2457604|  0.400 ms|  24.576 ms|  40001|  2457601|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +----------------------------------------------------------------+------------------------------------------------------+---------+---------+----------+-----------+-------+---------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    1|     114|    307|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     97|    -|
+|Register         |        -|    -|      94|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    1|     208|    406|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------+------------------------------------------------------+---------+----+-----+-----+-----+
+    |                            Instance                            |                        Module                        | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------------------------------------------+------------------------------------------------------+---------+----+-----+-----+-----+
+    |mul_16ns_16ns_32_1_1_U62                                        |mul_16ns_16ns_32_1_1                                  |        0|   1|    0|    6|    0|
+    |grp_yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_98  |yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y  |        0|   0|  114|  301|    0|
+    +----------------------------------------------------------------+------------------------------------------------------+---------+----+-----+-----+-----+
+    |Total                                                           |                                                      |        0|   1|  114|  307|    0|
+    +----------------------------------------------------------------+------------------------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |U_scale_blk_n         |   9|          2|    1|          2|
+    |V_scale_blk_n         |   9|          2|    1|          2|
+    |Y_scale_blk_n         |   9|          2|    1|          2|
+    |ap_NS_fsm             |  25|          5|    1|          5|
+    |ap_done               |   9|          2|    1|          2|
+    |p_scale_height_blk_n  |   9|          2|    1|          2|
+    |p_scale_width_blk_n   |   9|          2|    1|          2|
+    |p_yuv_height_blk_n    |   9|          2|    1|          2|
+    |p_yuv_width_blk_n     |   9|          2|    1|          2|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  97|         21|    9|         21|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                    | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |U_scale_1_reg_167                                                            |   8|   0|    8|          0|
+    |V_scale_1_reg_162                                                            |   8|   0|    8|          0|
+    |Y_scale_1_reg_172                                                            |   8|   0|    8|          0|
+    |ap_CS_fsm                                                                    |   4|   0|    4|          0|
+    |ap_done_reg                                                                  |   1|   0|    1|          0|
+    |bound_reg_187                                                                |  32|   0|   32|          0|
+    |grp_yuv_scale_Pipeline_YUV_SCALE_LOOP_X_YUV_SCALE_LOOP_Y_fu_98_ap_start_reg  |   1|   0|    1|          0|
+    |height_reg_182                                                               |  16|   0|   16|          0|
+    |width_reg_177                                                                |  16|   0|   16|          0|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                        |  94|   0|   94|          0|
+    +-----------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|              RTL Ports              | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                               |   in|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_rst                               |   in|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_start                             |   in|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_done                              |  out|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_continue                          |   in|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_idle                              |  out|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|ap_ready                             |  out|    1|  ap_ctrl_hs|             yuv_scale|  return value|
+|p_yuv_channels_ch1_dout              |   in|    8|     ap_fifo|    p_yuv_channels_ch1|       pointer|
+|p_yuv_channels_ch1_empty_n           |   in|    1|     ap_fifo|    p_yuv_channels_ch1|       pointer|
+|p_yuv_channels_ch1_read              |  out|    1|     ap_fifo|    p_yuv_channels_ch1|       pointer|
+|p_yuv_channels_ch1_num_data_valid    |   in|    3|     ap_fifo|    p_yuv_channels_ch1|       pointer|
+|p_yuv_channels_ch1_fifo_cap          |   in|    3|     ap_fifo|    p_yuv_channels_ch1|       pointer|
+|p_yuv_channels_ch2_dout              |   in|    8|     ap_fifo|    p_yuv_channels_ch2|       pointer|
+|p_yuv_channels_ch2_empty_n           |   in|    1|     ap_fifo|    p_yuv_channels_ch2|       pointer|
+|p_yuv_channels_ch2_read              |  out|    1|     ap_fifo|    p_yuv_channels_ch2|       pointer|
+|p_yuv_channels_ch2_num_data_valid    |   in|    3|     ap_fifo|    p_yuv_channels_ch2|       pointer|
+|p_yuv_channels_ch2_fifo_cap          |   in|    3|     ap_fifo|    p_yuv_channels_ch2|       pointer|
+|p_yuv_channels_ch3_dout              |   in|    8|     ap_fifo|    p_yuv_channels_ch3|       pointer|
+|p_yuv_channels_ch3_empty_n           |   in|    1|     ap_fifo|    p_yuv_channels_ch3|       pointer|
+|p_yuv_channels_ch3_read              |  out|    1|     ap_fifo|    p_yuv_channels_ch3|       pointer|
+|p_yuv_channels_ch3_num_data_valid    |   in|    3|     ap_fifo|    p_yuv_channels_ch3|       pointer|
+|p_yuv_channels_ch3_fifo_cap          |   in|    3|     ap_fifo|    p_yuv_channels_ch3|       pointer|
+|p_yuv_width_dout                     |   in|   16|     ap_fifo|           p_yuv_width|       pointer|
+|p_yuv_width_empty_n                  |   in|    1|     ap_fifo|           p_yuv_width|       pointer|
+|p_yuv_width_read                     |  out|    1|     ap_fifo|           p_yuv_width|       pointer|
+|p_yuv_width_num_data_valid           |   in|    3|     ap_fifo|           p_yuv_width|       pointer|
+|p_yuv_width_fifo_cap                 |   in|    3|     ap_fifo|           p_yuv_width|       pointer|
+|p_yuv_height_dout                    |   in|   16|     ap_fifo|          p_yuv_height|       pointer|
+|p_yuv_height_empty_n                 |   in|    1|     ap_fifo|          p_yuv_height|       pointer|
+|p_yuv_height_read                    |  out|    1|     ap_fifo|          p_yuv_height|       pointer|
+|p_yuv_height_num_data_valid          |   in|    3|     ap_fifo|          p_yuv_height|       pointer|
+|p_yuv_height_fifo_cap                |   in|    3|     ap_fifo|          p_yuv_height|       pointer|
+|p_scale_channels_ch1_din             |  out|    8|     ap_fifo|  p_scale_channels_ch1|       pointer|
+|p_scale_channels_ch1_full_n          |   in|    1|     ap_fifo|  p_scale_channels_ch1|       pointer|
+|p_scale_channels_ch1_write           |  out|    1|     ap_fifo|  p_scale_channels_ch1|       pointer|
+|p_scale_channels_ch1_num_data_valid  |   in|   32|     ap_fifo|  p_scale_channels_ch1|       pointer|
+|p_scale_channels_ch1_fifo_cap        |   in|   32|     ap_fifo|  p_scale_channels_ch1|       pointer|
+|p_scale_channels_ch2_din             |  out|    8|     ap_fifo|  p_scale_channels_ch2|       pointer|
+|p_scale_channels_ch2_full_n          |   in|    1|     ap_fifo|  p_scale_channels_ch2|       pointer|
+|p_scale_channels_ch2_write           |  out|    1|     ap_fifo|  p_scale_channels_ch2|       pointer|
+|p_scale_channels_ch2_num_data_valid  |   in|   32|     ap_fifo|  p_scale_channels_ch2|       pointer|
+|p_scale_channels_ch2_fifo_cap        |   in|   32|     ap_fifo|  p_scale_channels_ch2|       pointer|
+|p_scale_channels_ch3_din             |  out|    8|     ap_fifo|  p_scale_channels_ch3|       pointer|
+|p_scale_channels_ch3_full_n          |   in|    1|     ap_fifo|  p_scale_channels_ch3|       pointer|
+|p_scale_channels_ch3_write           |  out|    1|     ap_fifo|  p_scale_channels_ch3|       pointer|
+|p_scale_channels_ch3_num_data_valid  |   in|   32|     ap_fifo|  p_scale_channels_ch3|       pointer|
+|p_scale_channels_ch3_fifo_cap        |   in|   32|     ap_fifo|  p_scale_channels_ch3|       pointer|
+|p_scale_width_din                    |  out|   16|     ap_fifo|         p_scale_width|       pointer|
+|p_scale_width_full_n                 |   in|    1|     ap_fifo|         p_scale_width|       pointer|
+|p_scale_width_write                  |  out|    1|     ap_fifo|         p_scale_width|       pointer|
+|p_scale_width_num_data_valid         |   in|    3|     ap_fifo|         p_scale_width|       pointer|
+|p_scale_width_fifo_cap               |   in|    3|     ap_fifo|         p_scale_width|       pointer|
+|p_scale_height_din                   |  out|   16|     ap_fifo|        p_scale_height|       pointer|
+|p_scale_height_full_n                |   in|    1|     ap_fifo|        p_scale_height|       pointer|
+|p_scale_height_write                 |  out|    1|     ap_fifo|        p_scale_height|       pointer|
+|p_scale_height_num_data_valid        |   in|    3|     ap_fifo|        p_scale_height|       pointer|
+|p_scale_height_fifo_cap              |   in|    3|     ap_fifo|        p_scale_height|       pointer|
+|Y_scale_dout                         |   in|    8|     ap_fifo|               Y_scale|       pointer|
+|Y_scale_empty_n                      |   in|    1|     ap_fifo|               Y_scale|       pointer|
+|Y_scale_read                         |  out|    1|     ap_fifo|               Y_scale|       pointer|
+|Y_scale_num_data_valid               |   in|    3|     ap_fifo|               Y_scale|       pointer|
+|Y_scale_fifo_cap                     |   in|    3|     ap_fifo|               Y_scale|       pointer|
+|U_scale_dout                         |   in|    8|     ap_fifo|               U_scale|       pointer|
+|U_scale_empty_n                      |   in|    1|     ap_fifo|               U_scale|       pointer|
+|U_scale_read                         |  out|    1|     ap_fifo|               U_scale|       pointer|
+|U_scale_num_data_valid               |   in|    3|     ap_fifo|               U_scale|       pointer|
+|U_scale_fifo_cap                     |   in|    3|     ap_fifo|               U_scale|       pointer|
+|V_scale_dout                         |   in|    8|     ap_fifo|               V_scale|       pointer|
+|V_scale_empty_n                      |   in|    1|     ap_fifo|               V_scale|       pointer|
+|V_scale_read                         |  out|    1|     ap_fifo|               V_scale|       pointer|
+|V_scale_num_data_valid               |   in|    3|     ap_fifo|               V_scale|       pointer|
+|V_scale_fifo_cap                     |   in|    3|     ap_fifo|               V_scale|       pointer|
++-------------------------------------+-----+-----+------------+----------------------+--------------+
+

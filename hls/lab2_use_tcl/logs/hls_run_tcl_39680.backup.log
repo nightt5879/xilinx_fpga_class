@@ -1,0 +1,14 @@
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'E:/robot/project/xilinx_fpga_class/hls/lab2_use_tcl/run_hls.tcl'
+couldn't change working directory to "./w": no such file or directory
+    while executing
+"cd ./w"
+    (file "E:/robot/project/xilinx_fpga_class/hls/lab2_use_tcl/run_hls.tcl" line 3)
+    invoked from within
+"source E:/robot/project/xilinx_fpga_class/hls/lab2_use_tcl/run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 0.882 seconds; peak allocated memory: 30.164 MB.
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.
