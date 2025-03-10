@@ -20,7 +20,7 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.bc"
             ],
-            "exectime": 0.23575043678283691,
+            "exectime": 0.20020508766174316,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir_test.c.0.o', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir_test.c.0.o.d']": {
@@ -42,7 +42,7 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir_test.c.0.o"
             ],
-            "exectime": 0.18256354331970215,
+            "exectime": 0.28325629234313965,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.o', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\fir.c.0.o.d']": {
@@ -64,7 +64,7 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\fir.c.0.o"
             ],
-            "exectime": 0.1299452781677246,
+            "exectime": 0.14058923721313477,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
@@ -74,7 +74,7 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
             ],
-            "exectime": 0.3233621120452881,
+            "exectime": 0.30283045768737793,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
@@ -86,7 +86,7 @@
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
             ],
-            "exectime": 0.251420259475708,
+            "exectime": 0.23279118537902832,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
@@ -125,7 +125,7 @@
                 "-fslxpthreads",
                 "-lpthread"
             ],
-            "exectime": 1.1027593612670898,
+            "exectime": 1.0024514198303223,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\hls_ir_info.json']": {
@@ -138,7 +138,7 @@
                 "--hw-function",
                 "fir"
             ],
-            "exectime": 0.21873688697814941,
+            "exectime": 0.20056557655334473,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
@@ -149,14 +149,14 @@
                 "--reuse-filemanager=false",
                 "--output=E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
             ],
-            "exectime": 0.29425597190856934,
+            "exectime": 0.2893943786621094,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
             "command": [
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
             ],
-            "exectime": 0.30243945121765137,
+            "exectime": 0.215590238571167,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\annotated.bc']": {
@@ -171,11 +171,11 @@
                 "-staticFile",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
                 "-traceFile",
-                "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_1\\thread0000-trace.txt",
+                "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_2\\thread0000-trace.txt",
                 "-o",
                 "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir\\fir\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\annotated.bc"
             ],
-            "exectime": 0.3361365795135498,
+            "exectime": 0.31409454345703125,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         },
         "['E:\\\\robot\\\\project\\\\xilinx_fpga_class\\\\hls\\\\lab4\\\\prj\\\\fir\\\\fir\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
@@ -222,7 +222,7 @@
                 "--df-target",
                 "%F206"
             ],
-            "exectime": 1.7694005966186523,
+            "exectime": 1.4156880378723145,
             "cwd": "E:\\robot\\project\\xilinx_fpga_class\\hls\\lab4\\prj\\fir"
         }
     }

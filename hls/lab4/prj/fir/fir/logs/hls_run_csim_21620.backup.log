@@ -22,11 +22,59 @@ INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls
 INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir_test.c as test bench code with instrumentation
 INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as test bench code with instrumentation
 In file included from E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c:29:
-E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:48:10: fatal error: 'ap_cint.h' file not found
-#include "ap_cint.h"
-         ^~~~~~~~~~~
-1 error generated.
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:49:9: error: unknown type name 'ap_int'
+typedef ap_int<6> dinA_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:49:15: error: expected identifier or '('
+typedef ap_int<6> dinA_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:50:9: error: unknown type name 'ap_int'
+typedef ap_int<12> dinB_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:50:15: error: expected identifier or '('
+typedef ap_int<12> dinB_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:51:9: error: unknown type name 'ap_int'
+typedef ap_int<22> dinC_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:51:15: error: expected identifier or '('
+typedef ap_int<22> dinC_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:52:9: error: unknown type name 'ap_int'
+typedef ap_int<33> dinD_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:52:15: error: expected identifier or '('
+typedef ap_int<33> dinD_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:54:9: error: unknown type name 'ap_int'
+typedef ap_int<18> dout1_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:54:15: error: expected identifier or '('
+typedef ap_int<18> dout1_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:55:9: error: unknown type name 'ap_uint'
+typedef ap_uint<13> dout2_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:55:16: error: expected identifier or '('
+typedef ap_uint<13> dout2_t;
+               ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:56:9: error: unknown type name 'ap_int'
+typedef ap_int<22> dout3_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:56:15: error: expected identifier or '('
+typedef ap_int<22> dout3_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:57:9: error: unknown type name 'ap_int'
+typedef ap_int<6> dout4_t;
+        ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:57:15: error: expected identifier or '('
+typedef ap_int<6> dout4_t;
+              ^
+E:/robot/project/xilinx_fpga_class/hls/lab4/fir.h:64:9: error: unknown type name 'int38'
+typedef int38   acc_t;
+        ^
+17 errors generated.
 slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Compiling source code E:/robot/project/xilinx_fpga_class/hls/lab4/fir.c as hardware code with instrumentation'
 ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
 ERROR: Problem running csim: child process exited abnormally
-INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 9.552 seconds; peak allocated memory: 619.895 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.661 seconds; peak allocated memory: 618.895 MB.

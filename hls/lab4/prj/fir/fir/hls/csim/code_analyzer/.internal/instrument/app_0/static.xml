@@ -38,7 +38,7 @@
 <DisplayName>data_t</DisplayName>
 <Location>
 <File>5</File>
-<Line>53</Line>
+<Line>54</Line>
 </Location>
 <OfTypeID>4</OfTypeID>
 </UserDataType>
@@ -171,7 +171,7 @@
 <DisplayName>coef_t</DisplayName>
 <Location>
 <File>5</File>
-<Line>52</Line>
+<Line>53</Line>
 </Location>
 <OfTypeID>4</OfTypeID>
 </UserDataType>
@@ -179,7 +179,7 @@
 <DisplayName>acc_t</DisplayName>
 <Location>
 <File>5</File>
-<Line>54</Line>
+<Line>55</Line>
 </Location>
 <OfTypeID>18</OfTypeID>
 </UserDataType>

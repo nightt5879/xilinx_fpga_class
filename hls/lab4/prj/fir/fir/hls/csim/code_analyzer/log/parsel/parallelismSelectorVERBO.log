@@ -274,11 +274,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F206_R2_Atomic" (FunctionId 207):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F206_R2_Atomic
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 3}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot_iso1, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0, newFuncRoot_iso1
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=208) (17->12)(18->19)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -324,13 +324,13 @@ parallelismSelector::VERBO:
 parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 206):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: fir
-parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
-parallelismSelector::VERBO:        - Critical path: codeRepl1, for.end_iso4, codeRepl, codeRepl2, entry
+parallelismSelector::VERBO:        - Critical path: codeRepl2, for.end_iso4, codeRepl1, entry, codeRepl
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:
@@ -409,11 +409,11 @@ parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
 parallelismSelector::VERBO: Analyzing Function "Outline_T3_F206_R2_Atomic" (FunctionId 207):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: Outline_T3_F206_R2_Atomic
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
 parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 3}
-parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
-parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot_iso1, newFuncRoot
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, newFuncRoot_iso0, newFuncRoot_iso1
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(1 F=208) (17->12)(18->19)
 parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
@@ -459,13 +459,13 @@ parallelismSelector::VERBO:
 parallelismSelector::VERBO: Analyzing Function "fir" (FunctionId 206):
 parallelismSelector::VERBO:     MARegionScheduler::finalize():
 parallelismSelector::VERBO:        - Function: fir
-parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
-parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
-parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: for.end_iso4 -> {1: 123}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 121}
 parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 5}
 parallelismSelector::VERBO:        - MaxEndCycle: {1: 123}
-parallelismSelector::VERBO:        - Critical path: codeRepl1, for.end_iso4, codeRepl, codeRepl2, entry
+parallelismSelector::VERBO:        - Critical path: codeRepl2, for.end_iso4, codeRepl1, entry, codeRepl
 parallelismSelector::VERBO: 
 parallelismSelector::VERBO: Filling in latencies and intervals per loop...
 parallelismSelector::VERBO:     Initiation Interval:
